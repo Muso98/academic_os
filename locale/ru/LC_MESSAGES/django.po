@@ -1,0 +1,480 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+# Sidebar
+msgid "Dashboard"
+msgstr "Панель управления"
+
+msgid "Tasks"
+msgstr "Задачи"
+
+msgid "Observations"
+msgstr "Наблюдения"
+
+msgid "Resources"
+msgstr "Ресурсы"
+
+msgid "Documents"
+msgstr "Документы"
+
+msgid "Orders"
+msgstr "Приказы"
+
+msgid "Reports"
+msgstr "Отчеты"
+
+# Dashboard Content
+msgid "Welcome back"
+msgstr "Добро пожаловать"
+
+msgid "Here's what's happening in your academic workspace today."
+msgstr "Краткий обзор вашей академической деятельности на сегодня."
+
+msgid "My KPI Score"
+msgstr "Мой KPI"
+
+msgid "Completed Tasks"
+msgstr "Выполненные задачи"
+
+msgid "All time"
+msgstr "За все время"
+
+msgid "Performance Analytics"
+msgstr "Анализ эффективности"
+
+msgid "Task Distribution"
+msgstr "Распределение задач"
+
+msgid "Pending Tasks"
+msgstr "Ожидающие задачи"
+
+msgid "No pending tasks."
+msgstr "Нет ожидающих задач."
+
+msgid "Recent Observations"
+msgstr "Недавние наблюдения"
+
+msgid "No recent observations."
+msgstr "Нет новых наблюдений."
+
+msgid "View All"
+msgstr "Посмотреть все"
+
+msgid "Internal Orders Archive"
+msgstr ""
+
+msgid "Add first certificate"
+msgstr ""
+
+msgid "Address"
+msgstr ""
+
+msgid "Low"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "Location / Address"
+msgstr ""
+
+msgid "Download"
+msgstr ""
+
+msgid "Class"
+msgstr ""
+
+msgid "Rejected"
+msgstr ""
+
+msgid "Reports List"
+msgstr ""
+
+msgid "My Reports"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Observation Journal - Academic OS"
+msgstr ""
+
+msgid "Reject"
+msgstr ""
+
+msgid "Sign In"
+msgstr ""
+
+msgid "Pending"
+msgstr ""
+
+msgid "No reports yet."
+msgstr ""
+
+msgid "Approve Report"
+msgstr ""
+
+msgid "items"
+msgstr ""
+
+msgid "Submit Report"
+msgstr ""
+
+msgid "Leave a comment about errors..."
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Sign in to your account"
+msgstr ""
+
+msgid "Teacher"
+msgstr ""
+
+msgid "Edit Profile"
+msgstr ""
+
+msgid "Deadline"
+msgstr ""
+
+msgid "Approved"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Issued:"
+msgstr ""
+
+msgid "Profile Picture"
+msgstr ""
+
+msgid "Contact Information"
+msgstr ""
+
+msgid "High"
+msgstr ""
+
+msgid "Yes, Approve"
+msgstr ""
+
+msgid "Reject Report"
+msgstr ""
+
+msgid "Upload Resource"
+msgstr ""
+
+msgid "Uploaded By"
+msgstr ""
+
+msgid "Orders - Academic OS"
+msgstr ""
+
+msgid "Priority"
+msgstr ""
+
+msgid "Under Review"
+msgstr ""
+
+msgid "Clear Filters"
+msgstr ""
+
+msgid "Save Changes"
+msgstr ""
+
+msgid "Start Date"
+msgstr ""
+
+msgid "Score"
+msgstr ""
+
+msgid "Personal Details"
+msgstr ""
+
+msgid "No certificates yet."
+msgstr ""
+
+msgid "Bio"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Version"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Educational Resources"
+msgstr ""
+
+msgid "Action"
+msgstr ""
+
+msgid "Number"
+msgstr ""
+
+msgid "Tasks assigned to you or created by you."
+msgstr ""
+
+msgid "Completed"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "No tasks found. Click 'New Task' to get started!"
+msgstr ""
+
+msgid "In Progress"
+msgstr ""
+
+msgid "Medium"
+msgstr ""
+
+msgid "Reports - Academic OS"
+msgstr ""
+
+msgid "Orders List"
+msgstr ""
+
+msgid "Record of all lesson observations."
+msgstr ""
+
+msgid "Certificates & Awards"
+msgstr ""
+
+msgid "Email Address"
+msgstr ""
+
+msgid "First Name"
+msgstr ""
+
+msgid "No orders uploaded yet."
+msgstr ""
+
+msgid "Comment:"
+msgstr ""
+
+msgid "New Order"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Observations Journal"
+msgstr ""
+
+msgid "No file"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Filters"
+msgstr ""
+
+msgid "File"
+msgstr ""
+
+msgid "Invalid username or password."
+msgstr ""
+
+msgid "Phone Number"
+msgstr ""
+
+msgid "Are you sure you want to approve this report?"
+msgstr ""
+
+msgid "Reason for Rejection:"
+msgstr ""
+
+msgid "Extended Profile"
+msgstr ""
+
+msgid "End Date"
+msgstr ""
+
+msgid "Expires:"
+msgstr ""
+
+msgid "Topic"
+msgstr ""
+
+msgid "My Tasks"
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+msgid "Phone"
+msgstr ""
+
+msgid "Mutual Lesson Observation Journal"
+msgstr ""
+
+msgid "Lesson Observations"
+msgstr ""
+
+msgid " Enter your password"
+msgstr ""
+
+msgid " Enter your username"
+msgstr ""
+
+msgid "No observations found."
+msgstr ""
+
+msgid "New Task"
+msgstr ""
+
+msgid "All Reports (Admin)"
+msgstr ""
+
+msgid "Member"
+msgstr ""
+
+msgid "My Profile"
+msgstr ""
+
+msgid "Brief description about yourself."
+msgstr ""
+
+msgid "Approve"
+msgstr ""
+
+msgid "History"
+msgstr ""
+
+msgid "Observer"
+msgstr ""
+
+msgid "New Observation"
+msgstr ""
+
+msgid "Last Name"
+msgstr ""
+
+msgid "Resource Center"
+msgstr ""
+
+msgid "Actions"
+msgstr ""
+
+msgid "Login - Academic OS"
+msgstr ""
+
+msgid "No resources found. Upload one to get started."
+msgstr ""
+
+msgid "Repository of study materials and documents."
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Quick Actions"
+msgstr ""
+
+msgid "Average Score"
+msgstr ""
+
+msgid "Methodist Dashboard"
+msgstr ""
+
+msgid "No observations yet"
+msgstr ""
+
+msgid "No statistics yet"
+msgstr ""
+
+msgid "Back to List"
+msgstr ""
+
+msgid "Active Teachers"
+msgstr ""
+
+msgid "Task Details"
+msgstr ""
+
+msgid "New Lesson Observation"
+msgstr ""
+
+msgid "Created By"
+msgstr ""
+
+msgid "Lesson Details"
+msgstr ""
+
+msgid "Total Observations"
+msgstr ""
+
+msgid "Assignees"
+msgstr ""
+
+msgid "No deadline"
+msgstr ""
+
+msgid "Edit Task"
+msgstr ""
+
+msgid "Save Task"
+msgstr ""
+
+msgid "Create Task"
+msgstr ""
+
+msgid "High Priority"
+msgstr ""
+
+msgid "Low Priority"
+msgstr ""
+
+msgid "Upload"
+msgstr ""
+
+msgid "All Observations"
+msgstr ""
+
+msgid "Dependencies"
+msgstr ""
+
+msgid "Methodist Dashboard - Academic OS"
+msgstr ""
+
+msgid "Top Teachers"
+msgstr ""
+
+msgid "Submit Observation"
+msgstr ""
+
+msgid "Created At"
+msgstr ""
+
+msgid "Evaluation Criteria"
+msgstr ""
+
+msgid "Medium Priority"
+msgstr ""
+
+msgid "Class Group"
+msgstr ""
+
+msgid "Tasks"
+msgstr "Задачи"
+
+msgid "Reports"
+msgstr "Отчеты"
+
+msgid "Orders"
+msgstr "Приказы"
+

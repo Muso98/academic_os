@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Orders - Academic OS" %}{% endblock %}
+
+{% block page_title %}{% trans "Internal Orders Archive" %}{% endblock %}
+
+{% block content %}
+<div class="card border-0 shadow-sm">
+    <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+        <h5 class="mb-0 text-primary fw-bold"><i class="bi bi-file-earmark-text me-2"></i>{% trans "Orders List" %}</h5>
+        {% if user.is_superuser or user.is_staff %}
+        <a href="{% url 'order_create' %}" class="btn btn-primary btn-sm">
+            <i class="bi bi-plus-lg me-1"></i> {% trans "New Order" %}
+        </a>
+        {% endif %}
+    </div>
+    <div class="card-body p-0">
+        {% if orders %}
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="bg-light">
+                    <tr>
+                        <th class="ps-4">{% trans "Number" %}</th>
+                        <th>{% trans "Subject" %}</th>
+                        <th>{% trans "Date" %}</th>
+                        <th class="text-end pe-4">{% trans "File" %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for order in orders %}
+                    <tr>
+                        <td class="ps-4 fw-bold text-secondary">{{ order.order_number }}</td>
+                        <td>{{ order.title }}</td>
+                        <td><span class="badge bg-light text-dark border">{{ order.date_signed }}</span></td>
+                        <td class="text-end pe-4">
+                            <a href="{{ order.file.url }}" class="btn btn-outline-primary btn-sm" download>
+                                <i class="bi bi-download me-1"></i> {% trans "Download" %}
+                            </a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <div class="text-center py-5">
+            <i class="bi bi-folder-x fs-1 text-muted mb-3"></i>
+            <p class="text-muted">{% trans "No orders uploaded yet." %}</p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

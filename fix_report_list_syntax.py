@@ -1,0 +1,162 @@
+import os
+
+file_path = r"m:\my projects\ACADEMIC OS\academic_os\documents\templates\documents\report_list.html"
+
+content = """{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Reports - Academic OS" %}{% endblock %}
+
+{% block page_title %}
+{% if is_admin %}{% trans "All Reports (Admin)" %}{% else %}{% trans "My Reports" %}{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="card border-0 shadow-sm">
+    <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+        <h5 class="mb-0 text-primary fw-bold"><i class="bi bi-journal-text me-2"></i>{% trans "Reports List" %}</h5>
+        {% if not is_admin %}
+        <a href="{% url 'report_create' %}" class="btn btn-success btn-sm text-white">
+            <i class="bi bi-plus-lg me-1"></i> {% trans "Submit Report" %}
+        </a>
+        {% endif %}
+    </div>
+    <div class="card-body p-0">
+        {% if reports %}
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="bg-light">
+                    <tr>
+                        {% if is_admin %}<th class="ps-4">{% trans "Teacher" %}</th>{% endif %}
+                        <th {% if not is_admin %}class="ps-4" {% endif %}>{% trans "Subject" %}</th>
+                        <th>{% trans "Type" %}</th>
+                        <th>{% trans "Status" %}</th>
+                        <th>{% trans "Date" %}</th>
+                        <th class="text-end pe-4">{% trans "Actions" %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for report in reports %}
+                    <tr>
+                        {% if is_admin %}
+                        <td class="ps-4 fw-bold">{{ report.teacher.get_full_name|default:report.teacher.username }}</td>
+                        {% endif %}
+                        <td {% if not is_admin %}class="ps-4" {% endif %}>
+                            <div class="d-flex flex-column">
+                                <span class="fw-medium">{{ report.title }}</span>
+                                {% if report.admin_comment %}
+                                <small class="text-danger" style="font-size: 0.75rem;">{% trans "Comment:" %} {{ report.admin_comment }}</small>
+                                {% endif %}
+                            </div>
+                        </td>
+                        <td><span class="badge bg-light text-dark border">{{ report.get_report_type_display }}</span>
+                        </td>
+                        <td>
+                            {% if report.status == 'APPROVED' %}
+                            <span class="badge bg-success-subtle text-success border border-success px-2 py-1"><i
+                                    class="bi bi-check-circle me-1"></i>{% trans "Approved" %}</span>
+                            {% elif report.status == 'REJECTED' %}
+                            <span class="badge bg-danger-subtle text-danger border border-danger px-2 py-1"><i
+                                    class="bi bi-x-circle me-1"></i>{% trans "Rejected" %}</span>
+                            {% else %}
+                            <span class="badge bg-warning-subtle text-warning border border-warning px-2 py-1"><i
+                                    class="bi bi-hourglass-split me-1"></i>{% trans "Under Review" %}</span>
+                            {% endif %}
+                        </td>
+                        <td><small class="text-muted">{{ report.submitted_at|date:"d.m.Y H:i" }}</small></td>
+                        <td class="text-end pe-4">
+                            <div class="d-flex justify-content-end gap-2">
+                                <a href="{{ report.file.url }}" class="btn btn-outline-primary btn-sm" download
+                                    title="{% trans 'Download' %}">
+                                    <i class="bi bi-download"></i>
+                                </a>
+                                {% if is_admin and report.status == 'SUBMITTED' %}
+                                <!-- Admin Actions -->
+                                <button type="button" class="btn btn-sm btn-outline-success" data-bs-toggle="modal"
+                                    data-bs-target="#approveModal{{ report.id }}" title="{% trans 'Approve' %}">
+                                    <i class="bi bi-check-lg"></i>
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal"
+                                    data-bs-target="#rejectModal{{ report.id }}" title="{% trans 'Reject' %}">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
+                                {% endif %}
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <div class="text-center py-5">
+            <i class="bi bi-inbox fs-1 text-muted mb-3"></i>
+            <p class="text-muted">{% trans "No reports yet." %}</p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Modals -->
+{% if is_admin %}
+{% for report in reports %}
+{% if report.status == 'SUBMITTED' %}
+<!-- Approve Modal -->
+<div class="modal fade" id="approveModal{{ report.id }}" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title fw-bold">{% trans "Approve Report" %}</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <i class="bi bi-check-circle text-success fs-1 mb-3"></i>
+                <p class="mb-3">{% trans "Are you sure you want to approve this report?" %}</p>
+                <form action="{% url 'report_update_status' report.id %}" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="status" value="APPROVED">
+                    <button type="submit" class="btn btn-success w-100">{% trans "Yes, Approve" %}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Reject Modal -->
+<div class="modal fade" id="rejectModal{{ report.id }}" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h6 class="modal-title fw-bold">{% trans "Reject Report" %}</h6>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <form action="{% url 'report_update_status' report.id %}" method="post">
+                <div class="modal-body">
+                    {% csrf_token %}
+                    <input type="hidden" name="status" value="REJECTED">
+                    <div class="mb-3">
+                        <label class="form-label fw-medium">{% trans "Reason for Rejection:" %}</label>
+                        <textarea name="admin_comment" class="form-control" rows="3" required
+                            placeholder="{% trans 'Leave a comment about errors...' %}"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{% trans "Cancel"
+                        %}</button>
+                    <button type="submit" class="btn btn-danger">{% trans "Reject" %}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endblock %}
+"""
+
+with open(file_path, 'w', encoding='utf-8') as f:
+    f.write(content)
+
+print(f"Successfully forcefully overwrote {file_path}")

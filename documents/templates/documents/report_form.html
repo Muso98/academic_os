@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Hisobot Topshirish - Academic OS{% endblock %}
+
+{% block page_title %}Hisobot Topshirish{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-white py-3">
+                <h5 class="mb-0 text-primary fw-bold">Hisobot Ma'lumotlari</h5>
+            </div>
+            <div class="card-body p-4">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+
+                    <div class="mb-3">
+                        <label for="title" class="form-label fw-bold">Hisobot Nomi</label>
+                        <input type="text" class="form-control" id="title" name="title"
+                            placeholder="Masalan: 2024-yil 1-chorak hisoboti" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="report_type" class="form-label fw-bold">Hisobot Turi</label>
+                        <select class="form-select" id="report_type" name="report_type" required>
+                            <option value="QUARTERLY">Choraklik Hisobot</option>
+                            <option value="ANNUAL">Yillik Hisobot</option>
+                            <option value="OTHER">Boshqa</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="file" class="form-label fw-bold">Hisobot Fayli (PDF/Word/Excel)</label>
+                        <input type="file" class="form-control" id="file" name="file" required>
+                    </div>
+
+                    <div class="d-flex justify-content-end gap-2">
+                        <a href="{% url 'report_list' %}" class="btn btn-light border">Bekor qilish</a>
+                        <button type="submit" class="btn btn-primary px-4"><i
+                                class="bi bi-send me-2"></i>Yuborish</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

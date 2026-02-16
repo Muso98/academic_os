@@ -1,0 +1,480 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+# Sidebar
+msgid "Dashboard"
+msgstr "Boshqaruv Paneli"
+
+msgid "Tasks"
+msgstr "Vazifalar"
+
+msgid "Observations"
+msgstr "Kuzatuvlar"
+
+msgid "Resources"
+msgstr "Resurslar"
+
+msgid "Documents"
+msgstr "Hujjatlar"
+
+msgid "Orders"
+msgstr "Buyruqlar"
+
+msgid "Reports"
+msgstr "Hisobotlar"
+
+# Dashboard Content
+msgid "Welcome back"
+msgstr "Xush kelibsiz"
+
+msgid "Here's what's happening in your academic workspace today."
+msgstr "Bugungi akademik faoliyatingiz haqida qisqacha ma'lumot."
+
+msgid "My KPI Score"
+msgstr "Mening KPI Ballim"
+
+msgid "Completed Tasks"
+msgstr "Bajarilgan Vazifalar"
+
+msgid "All time"
+msgstr "Jami"
+
+msgid "Performance Analytics"
+msgstr "Samaradorlik Tahlili"
+
+msgid "Task Distribution"
+msgstr "Vazifalar Taqsimoti"
+
+msgid "Pending Tasks"
+msgstr "Kutilayotgan Vazifalar"
+
+msgid "No pending tasks."
+msgstr "Kutilayotgan vazifalar yo'q."
+
+msgid "Recent Observations"
+msgstr "So'nggi Kuzatuvlar"
+
+msgid "No recent observations."
+msgstr "Yangi kuzatuvlar yo'q."
+
+msgid "View All"
+msgstr "Barchasini ko'rish"
+
+msgid "Internal Orders Archive"
+msgstr "Ichki Buyruqlar Arxivi"
+
+msgid "Add first certificate"
+msgstr "Birinchi sertifikatni qo'shish"
+
+msgid "Address"
+msgstr "Manzil"
+
+msgid "Low"
+msgstr "Past"
+
+msgid "Add"
+msgstr "Qo'shish"
+
+msgid "Location / Address"
+msgstr "Joylashuv / Manzil"
+
+msgid "Download"
+msgstr "Yuklash"
+
+msgid "Class"
+msgstr "Sinf"
+
+msgid "Rejected"
+msgstr "Rad etildi"
+
+msgid "Reports List"
+msgstr "Hisobotlar Ro'yxati"
+
+msgid "My Reports"
+msgstr "Mening Hisobotlarim"
+
+msgid "Cancel"
+msgstr "Bekor qilish"
+
+msgid "Observation Journal - Academic OS"
+msgstr "Kuzatuv Jurnali - Academic OS"
+
+msgid "Reject"
+msgstr "Rad etish"
+
+msgid "Sign In"
+msgstr "Kirish"
+
+msgid "Pending"
+msgstr "Kutilmoqda"
+
+msgid "No reports yet."
+msgstr "Hozircha hisobotlar yo'q."
+
+msgid "Approve Report"
+msgstr "Hisobotni Tasdiqlash"
+
+msgid "items"
+msgstr "ta"
+
+msgid "Submit Report"
+msgstr "Hisobot Topshirish"
+
+msgid "Leave a comment about errors..."
+msgstr "Xatoliklar haqida izoh qoldiring..."
+
+msgid "Search"
+msgstr "Qidirish"
+
+msgid "Sign in to your account"
+msgstr "Hisobingizga kiring"
+
+msgid "Teacher"
+msgstr "O'qituvchi"
+
+msgid "Edit Profile"
+msgstr "Profilni Tahrirlash"
+
+msgid "Deadline"
+msgstr "Muddat"
+
+msgid "Approved"
+msgstr "Tasdiqlandi"
+
+msgid "Date"
+msgstr "Sana"
+
+msgid "Issued:"
+msgstr "Berilgan:"
+
+msgid "Profile Picture"
+msgstr "Profil Rasmi"
+
+msgid "Contact Information"
+msgstr "Bog'lanish Ma'lumotlari"
+
+msgid "High"
+msgstr "Yuqori"
+
+msgid "Yes, Approve"
+msgstr "Ha, Tasdiqlash"
+
+msgid "Reject Report"
+msgstr "Hisobotni Rad etish"
+
+msgid "Upload Resource"
+msgstr "Resurs Yuklash"
+
+msgid "Uploaded By"
+msgstr "Yuklagan"
+
+msgid "Orders - Academic OS"
+msgstr "Buyruqlar - Academic OS"
+
+msgid "Priority"
+msgstr "Muhimlik"
+
+msgid "Under Review"
+msgstr "Tekshiruvda"
+
+msgid "Clear Filters"
+msgstr "Filtrlarni tozalash"
+
+msgid "Save Changes"
+msgstr "O'zgarishlarni Saqlash"
+
+msgid "Start Date"
+msgstr "Boshlanish Sanasi"
+
+msgid "Score"
+msgstr "Ball"
+
+msgid "Personal Details"
+msgstr "Shaxsiy Ma'lumotlar"
+
+msgid "No certificates yet."
+msgstr "Hozircha sertifikatlar yo'q."
+
+msgid "Bio"
+msgstr "Tarjimayi Hol"
+
+msgid "Password"
+msgstr "Parol"
+
+msgid "Description"
+msgstr "Tavsif"
+
+msgid "Version"
+msgstr "Versiya"
+
+msgid "Status"
+msgstr "Holat"
+
+msgid "Type"
+msgstr "Tur"
+
+msgid "Educational Resources"
+msgstr "O'quv Resurslari"
+
+msgid "Action"
+msgstr "Amal"
+
+msgid "Number"
+msgstr "Raqam"
+
+msgid "Tasks assigned to you or created by you."
+msgstr "Sizga tayinlangan yoki siz yaratgan vazifalar."
+
+msgid "Completed"
+msgstr "Bajarildi"
+
+msgid "All"
+msgstr "Barchasi"
+
+msgid "No tasks found. Click 'New Task' to get started!"
+msgstr "Vazifalar topilmadi. Boshlash uchun 'Yangi Vazifa' tugmasini bosing!"
+
+msgid "In Progress"
+msgstr "Jarayonda"
+
+msgid "Medium"
+msgstr "O'rta"
+
+msgid "Reports - Academic OS"
+msgstr "Hisobotlar - Academic OS"
+
+msgid "Orders List"
+msgstr "Buyruqlar Ro'yxati"
+
+msgid "Record of all lesson observations."
+msgstr "Barcha dars kuzatuvlari tarixi."
+
+msgid "Certificates & Awards"
+msgstr "Sertifikatlar va Mukofotlar"
+
+msgid "Email Address"
+msgstr "Email Manzili"
+
+msgid "First Name"
+msgstr "Ism"
+
+msgid "No orders uploaded yet."
+msgstr "Hozircha buyruqlar yuklanmagan."
+
+msgid "Comment:"
+msgstr "Izoh:"
+
+msgid "New Order"
+msgstr "Yangi Buyruq"
+
+msgid "Username"
+msgstr "Foydalanuvchi nomi"
+
+msgid "Observations Journal"
+msgstr "Kuzatuvlar Jurnali"
+
+msgid "No file"
+msgstr "Fayl yo'q"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Filters"
+msgstr "Filtrlar"
+
+msgid "File"
+msgstr "Fayl"
+
+msgid "Invalid username or password."
+msgstr "Noto'g'ri foydalanuvchi nomi yoki parol."
+
+msgid "Phone Number"
+msgstr "Telefon Raqami"
+
+msgid "Are you sure you want to approve this report?"
+msgstr "Ushbu hisobotni tasdiqlaysizmi?"
+
+msgid "Reason for Rejection:"
+msgstr "Rad etish sababi:"
+
+msgid "Extended Profile"
+msgstr "Kengaytirilgan Profil"
+
+msgid "End Date"
+msgstr "Tugash Sanasi"
+
+msgid "Expires:"
+msgstr "Amal qiladi:"
+
+msgid "Topic"
+msgstr "Mavzu"
+
+msgid "My Tasks"
+msgstr "Mening Vazifalarim"
+
+msgid "Subject"
+msgstr "Fan"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Mutual Lesson Observation Journal"
+msgstr "O'zaro Dars Kuzatuvi Jurnali"
+
+msgid "Lesson Observations"
+msgstr ""
+
+msgid " Enter your password"
+msgstr ""
+
+msgid " Enter your username"
+msgstr ""
+
+msgid "No observations found."
+msgstr "Kuzatuvlar topilmadi."
+
+msgid "New Task"
+msgstr "Yangi Vazifa"
+
+msgid "All Reports (Admin)"
+msgstr "Barcha Hisobotlar (Admin)"
+
+msgid "Member"
+msgstr "A'zo"
+
+msgid "My Profile"
+msgstr "Mening Profilim"
+
+msgid "Brief description about yourself."
+msgstr "O'zingiz haqingizda qisqacha."
+
+msgid "Approve"
+msgstr "Tasdiqlash"
+
+msgid "History"
+msgstr "Tarix"
+
+msgid "Observer"
+msgstr "Kuzatuvchi"
+
+msgid "New Observation"
+msgstr "Yangi Kuzatuv"
+
+msgid "Last Name"
+msgstr "Familiya"
+
+msgid "Resource Center"
+msgstr "Resurs Markazi"
+
+msgid "Actions"
+msgstr "Amallar"
+
+msgid "Login - Academic OS"
+msgstr "Kirish - Academic OS"
+
+msgid "No resources found. Upload one to get started."
+msgstr "Resurslar topilmadi. Boshlash uchun yuklang."
+
+msgid "Repository of study materials and documents."
+msgstr "O'quv materiallari va hujjatlar ombori."
+
+msgid "Title"
+msgstr "Sarlavha"
+
+msgid "Quick Actions"
+msgstr "Tezkor Amallar"
+
+msgid "Average Score"
+msgstr "O'rtacha Ball"
+
+msgid "Methodist Dashboard"
+msgstr "Metodist Boshqaruv Paneli"
+
+msgid "No observations yet"
+msgstr "Hozircha kuzatuvlar yo'q"
+
+msgid "No statistics yet"
+msgstr "Hozircha statistika yo'q"
+
+msgid "Back to List"
+msgstr "Ro'yxatga Qaytish"
+
+msgid "Active Teachers"
+msgstr "Faol O'qituvchilar"
+
+msgid "Task Details"
+msgstr "Vazifa Tafsilotlari"
+
+msgid "New Lesson Observation"
+msgstr ""
+
+msgid "Created By"
+msgstr "Yaratdi"
+
+msgid "Lesson Details"
+msgstr "Dars Tafsilotlari"
+
+msgid "Total Observations"
+msgstr "Jami Kuzatuvlar"
+
+msgid "Assignees"
+msgstr "Mas'ullar"
+
+msgid "No deadline"
+msgstr ""
+
+msgid "Edit Task"
+msgstr "Vazifani Tahrirlash"
+
+msgid "Save Task"
+msgstr "Vazifani Saqlash"
+
+msgid "Create Task"
+msgstr "Vazifa Yaratish"
+
+msgid "High Priority"
+msgstr "Yuqori Muhimlik"
+
+msgid "Low Priority"
+msgstr "Past Muhimlik"
+
+msgid "Upload"
+msgstr ""
+
+msgid "All Observations"
+msgstr "Barcha Kuzatuvlar"
+
+msgid "Dependencies"
+msgstr "Bog'liqliklar"
+
+msgid "Methodist Dashboard - Academic OS"
+msgstr "Metodist Boshqaruv Paneli - Academic OS"
+
+msgid "Top Teachers"
+msgstr "Eng Yaxshi O'qituvchilar"
+
+msgid "Submit Observation"
+msgstr "Kuzatuvni Yuborish"
+
+msgid "Created At"
+msgstr "Yaratilgan Vaqt"
+
+msgid "Evaluation Criteria"
+msgstr "Baholash Mezonlari"
+
+msgid "Medium Priority"
+msgstr "O'rta Muhimlik"
+
+msgid "Class Group"
+msgstr "Sinf"
+
+msgid "Tasks"
+msgstr "Vazifalar"
+
+msgid "Reports"
+msgstr "Hisobotlar"
+
+msgid "Orders"
+msgstr "Buyruqlar"
+

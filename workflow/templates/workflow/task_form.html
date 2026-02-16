@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block page_title %}{% if object %}{% trans "Edit Task" %}{% else %}{% trans "Create Task" %}{% endif %}{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card shadow-sm border-0">
+            <div class="card-body p-4">
+                <form method="post">
+                    {% csrf_token %}
+
+                    {% for field in form %}
+                    <div class="mb-3">
+                        <label for="{{ field.id_for_label }}" class="form-label fw-medium">{{ field.label }}</label>
+                        {% if field.name == 'title' %}
+                        <input type="text" name="{{ field.name }}" id="{{ field.id_for_label }}" class="form-control"
+                            value="{{ field.value|default:'' }}" required>
+                        {% elif field.name == 'description' %}
+                        <textarea name="{{ field.name }}" id="{{ field.id_for_label }}" class="form-control"
+                            rows="3">{{ field.value|default:'' }}</textarea>
+                        {% elif field.name == 'deadline' %}
+                        <!-- Simple datetime input for now, ideally use a picker library -->
+                        <input type="datetime-local" name="{{ field.name }}" id="{{ field.id_for_label }}"
+                            class="form-control" value="{{ field.value|date:'Y-m-d\TH:i' }}">
+                        {% else %}
+                        {{ field }}
+                        {% endif %}
+
+                        {% if field.help_text %}
+                        <div class="form-text">{{ field.help_text }}</div>
+                        {% endif %}
+                        {% for error in field.errors %}
+                        <div class="text-danger small">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+
+                    <div class="d-flex justify-content-end gap-2 mt-4">
+                        <a href="{% url 'task_list' %}" class="btn btn-outline-secondary">{% trans "Cancel" %}</a>
+                        <button type="submit" class="btn btn-primary">{% trans "Save Task" %}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

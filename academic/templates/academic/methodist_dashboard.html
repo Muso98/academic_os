@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+
+{% block title %}{% trans "Methodist Dashboard - Academic OS" %}{% endblock %}
+
+{% block page_title %}{% trans "Methodist Dashboard" %}{% endblock %}
+
+{% block content %}
+<div class="row g-4 mb-4">
+    <!-- Statistics Cards -->
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm bg-primary text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="text-white-50 text-uppercase small mb-1">{% trans "Total Observations" %}</h6>
+                        <h2 class="mb-0 fw-bold">{{ total_observations }}</h2>
+                    </div>
+                    <div class="bg-white bg-opacity-25 rounded-circle p-3">
+                        <i class="bi bi-eye-fill fs-3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm bg-success text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="text-white-50 text-uppercase small mb-1">{% trans "Resources" %}</h6>
+                        <h2 class="mb-0 fw-bold">{{ total_resources }}</h2>
+                    </div>
+                    <div class="bg-white bg-opacity-25 rounded-circle p-3">
+                        <i class="bi bi-folder-fill fs-3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm bg-info text-white">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="text-white-50 text-uppercase small mb-1">{% trans "Active Teachers" %}</h6>
+                        <h2 class="mb-0 fw-bold">{{ teacher_stats|length }}</h2>
+                    </div>
+                    <div class="bg-white bg-opacity-25 rounded-circle p-3">
+                        <i class="bi bi-people-fill fs-3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Top Teachers -->
+<div class="row g-4 mb-4">
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-white py-3">
+                <h5 class="mb-0 text-primary fw-bold"><i class="bi bi-trophy me-2"></i>{% trans "Top Teachers" %}</h5>
+            </div>
+            <div class="card-body p-0">
+                {% if teacher_stats %}
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="bg-light">
+                            <tr>
+                                <th class="ps-4">#</th>
+                                <th>{% trans "Teacher" %}</th>
+                                <th class="text-center">{% trans "Observations" %}</th>
+                                <th class="text-center">{% trans "Average Score" %}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for stat in teacher_stats %}
+                            <tr>
+                                <td class="ps-4 fw-bold text-secondary">{{ forloop.counter }}</td>
+                                <td>
+                                    {% if stat.teacher__first_name %}
+                                    {{ stat.teacher__first_name }} {{ stat.teacher__last_name }}
+                                    {% else %}
+                                    {{ stat.teacher__username }}
+                                    {% endif %}
+                                </td>
+                                <td class="text-center"><span class="badge bg-light text-dark border">{{ stat.obs_count
+                                        }}</span></td>
+                                <td class="text-center">
+                                    <span class="badge bg-success">{{ stat.avg_score|floatformat:1|default:"N/A"
+                                        }}</span>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <div class="text-center py-4 text-muted">
+                    <i class="bi bi-inbox fs-1 mb-2"></i>
+                    <p>{% trans "No statistics yet" %}</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Observations -->
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
+                <h5 class="mb-0 text-primary fw-bold"><i class="bi bi-clock-history me-2"></i>{% trans "Recent
+                    Observations" %}</h5>
+                <a href="{% url 'observation_list' %}" class="btn btn-sm btn-outline-primary">{% trans "View All" %}</a>
+            </div>
+            <div class="card-body p-0">
+                {% if recent_observations %}
+                <div class="list-group list-group-flush">
+                    {% for obs in recent_observations %}
+                    <div class="list-group-item border-0 py-3">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-1 fw-bold">{{ obs.topic }}</h6>
+                                <p class="mb-1 text-muted small">
+                                    <i class="bi bi-person me-1"></i>{{
+                                    obs.teacher.get_full_name|default:obs.teacher.username }}
+                                    <span class="mx-2">•</span>
+                                    <i class="bi bi-book me-1"></i>{{ obs.subject.name }}
+                                </p>
+                                <small class="text-muted">{{ obs.date }}</small>
+                            </div>
+                            <span class="badge bg-primary rounded-pill">{{ obs.total_score }}</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="text-center py-4 text-muted">
+                    <i class="bi bi-inbox fs-1 mb-2"></i>
+                    <p>{% trans "No observations yet" %}</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Actions -->
+<div class="row">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-white py-3">
+                <h5 class="mb-0 text-primary fw-bold"><i class="bi bi-lightning-fill me-2"></i>{% trans "Quick Actions"
+                    %}</h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <a href="{% url 'observation_create' %}" class="btn btn-outline-primary w-100 py-3">
+                            <i class="bi bi-plus-circle fs-4 d-block mb-2"></i>
+                            {% trans "New Observation" %}
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{% url 'observation_list' %}" class="btn btn-outline-success w-100 py-3">
+                            <i class="bi bi-list-ul fs-4 d-block mb-2"></i>
+                            {% trans "All Observations" %}
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{% url 'resource_list' %}" class="btn btn-outline-info w-100 py-3">
+                            <i class="bi bi-folder2-open fs-4 d-block mb-2"></i>
+                            {% trans "Resources" %}
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{% url 'resource_create' %}" class="btn btn-outline-warning w-100 py-3">
+                            <i class="bi bi-upload fs-4 d-block mb-2"></i>
+                            {% trans "Upload Resource" %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

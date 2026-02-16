@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Academic OS{% endblock %}</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    {% load static %}
+    {% load i18n %}
+    <!-- LINK TO NEW V5 CSS -->
+    <link rel="stylesheet" href="{% static 'css/main_v5.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        /* EMERGENCY OVERRIDE: Force Premium Gradient */
+        .sidebar {
+            background: linear-gradient(180deg, #3730a3 0%, #1e1b4b 100%) !important;
+            min-height: 100vh;
+        }
+
+        .nav-link.active {
+            background-color: #4f46e5 !important;
+            color: #ffffff !important;
+        }
+
+        /* Responsive Sidebar Styles */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+                width: 280px;
+                position: fixed;
+                z-index: 1050;
+                /* Above overlay */
+            }
+
+            .sidebar.show {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0 !important;
+                padding-top: 80px !important;
+                /* Prevent button from covering text */
+            }
+        }
+
+        /* Mobile Toggle Button Style */
+        #sidebarToggle {
+            background-color: #4f46e5;
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s;
+        }
+
+        #sidebarToggle:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    {% block layout %}
+    <!-- Mobile Toggle Button -->
+    <button class="position-fixed top-0 start-0 m-3 d-md-none z-3 shadow-lg text-white" id="sidebarToggle"
+        style="z-index: 1100;">
+        <i class="bi bi-list fs-4"></i>
+    </button>
+    <!-- Overlay -->
+    <div class="position-fixed top-0 start-0 w-100 h-100 bg-black opacity-50 d-none" id="sidebarOverlay"
+        style="z-index: 900; transition: opacity 0.3s;"></div>
+
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <nav class="sidebar text-white">
+            <a href="/" class="d-flex align-items-center mb-4 text-white text-decoration-none px-3">
+                <span class="fs-4 fw-bold tracking-tight">Academic OS</span>
+            </a>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="{% url 'dashboard' %}"
+                        class="nav-link {% if request.resolver_match.url_name == 'dashboard' %}active{% endif %}"
+                        aria-current="page">
+                        <i class="bi bi-grid-1x2-fill"></i>
+                        {% trans "Dashboard" %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'task_list' %}" class="nav-link {% if 'tasks' in request.path %}active{% endif %}">
+                        <i class="bi bi-check-square-fill"></i>
+                        {% trans "Tasks" %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'observation_list' %}"
+                        class="nav-link {% if 'observations' in request.path %}active{% endif %}">
+                        <i class="bi bi-eye-fill"></i>
+                        {% trans "Observations" %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'resource_list' %}"
+                        class="nav-link {% if 'resources' in request.path %}active{% endif %}">
+                        <i class="bi bi-folder-fill"></i>
+                        {% trans "Resources" %}
+                    </a>
+                </li>
+                <!-- Document Flow Section -->
+                <li class="nav-item mt-3">
+                    <span class="text-white-50 small text-uppercase fw-bold px-3">{% trans "Documents" %}</span>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="{% url 'order_list' %}"
+                        class="nav-link {% if 'orders' in request.path %}active{% endif %}">
+                        <i class="bi bi-file-earmark-text-fill"></i>
+                        {% trans "Orders" %}
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'report_list' %}"
+                        class="nav-link {% if 'reports' in request.path %}active{% endif %}">
+                        <i class="bi bi-journal-text"></i>
+                        {% trans "Reports" %}
+                    </a>
+                </li>
+            </ul>
+            <hr class="border-secondary opacity-25">
+
+            <!-- Language Switcher -->
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            <div class="px-3 mb-2">
+                <div class="dropdown">
+                    <button
+                        class="btn btn-sm btn-outline-light border-0 w-100 d-flex align-items-center justify-content-between dropdown-toggle"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="background: rgba(255,255,255,0.05);">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-globe me-2"></i>
+                            <span class="text-uppercase">{{ LANGUAGE_CODE }}</span>
+                        </div>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark shadow">
+                        {% for language in languages %}
+                        <li>
+                            <form action="{% url 'set_language' %}" method="post">
+                                {% csrf_token %}
+                                <input name="next" type="hidden" value="{{ request.path }}">
+                                <input name="language" type="hidden" value="{{ language.code }}">
+                                <button type="submit"
+                                    class="dropdown-item d-flex justify-content-between align-items-center {% if language.code == LANGUAGE_CODE %}active{% endif %}">
+                                    <span>{{ language.name_local }}</span>
+                                    {% if language.code == LANGUAGE_CODE %}
+                                    <i class="bi bi-check2 small"></i>
+                                    {% endif %}
+                                </button>
+                            </form>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Notifications (Sidebar) -->
+            <!-- Notifications (Sidebar Trigger) -->
+            <div class="px-3 mb-3">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none p-2 rounded"
+                    data-bs-toggle="offcanvas" data-bs-target="#notificationOffcanvas"
+                    style="background: rgba(255,255,255,0.1); transition: background 0.2s;">
+                    <div class="position-relative me-3">
+                        <i class="bi bi-bell-fill fs-5"></i>
+                        {% if unread_notifications_count > 0 %}
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger border border-white shadow-sm"
+                            style="font-size: 0.6rem;">
+                            {{ unread_notifications_count }}
+                        </span>
+                        {% endif %}
+                    </div>
+                    <span class="fw-medium">Notifications</span>
+                </a>
+            </div>
+            <div class="dropdown px-3">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                    id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="rounded-circle bg-white text-primary d-flex align-items-center justify-content-center me-2 fw-bold"
+                        style="width: 32px; height: 32px;">
+                        {{ request.user.username|slice:":1"|upper }}
+                    </div>
+                    <strong>{{ request.user.username }}</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <form action="{% url 'logout' %}" method="post">
+                            {% csrf_token %}
+                            <button type="submit" class="dropdown-item">Sign out</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content Wrapper -->
+        <main class="main-content w-100">
+            <div class="container-fluid">
+                {% block header %}
+                <header
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4">
+                    <h1 class="h3 fw-bold text-dark">{% block page_title %}Dashboard{% endblock %}</h1>
+                </header>
+                {% endblock %}
+
+                {% block content %}
+                {% endblock %}
+            </div>
+        </main>
+    </div>
+    {% endblock %}
+
+    <!-- Notification Offcanvas (Right Side) -->
+    <div class="offcanvas offcanvas-end border-0 shadow-lg" tabindex="-1" id="notificationOffcanvas"
+        aria-labelledby="notificationOffcanvasLabel" style="width: 400px;">
+        <div class="offcanvas-header bg-primary text-white">
+            <h5 class="offcanvas-title fw-bold" id="notificationOffcanvasLabel">
+                <i class="bi bi-bell-fill me-2"></i>Notifications
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <!-- Gradient Line -->
+        <div style="height: 4px; background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);"></div>
+
+        <div class="offcanvas-body p-0 bg-light">
+            {% if recent_notifications %}
+            <div class="list-group list-group-flush">
+                {% for notif in recent_notifications %}
+                <a href="{% url 'mark_notification_read' notif.id %}"
+                    class="list-group-item list-group-item-action border-0 py-3 px-4 {% if not notif.is_read %}bg-white border-start border-4 border-primary{% else %}bg-light{% endif %}"
+                    style="transition: all 0.2s;">
+                    <div class="d-flex w-100 justify-content-between mb-1">
+                        <small
+                            class="text-uppercase fw-bold {% if notif.notification_type == 'ERROR' %}text-danger{% elif notif.notification_type == 'SUCCESS' %}text-success{% elif notif.notification_type == 'WARNING' %}text-warning{% else %}text-primary{% endif %}"
+                            style="font-size: 0.7rem;">
+                            {{ notif.notification_type }}
+                        </small>
+                        <small class="text-muted" style="font-size: 0.7rem;">{{ notif.created_at|timesince }}
+                            ago</small>
+                    </div>
+                    <p class="mb-1 text-dark fw-medium">{{ notif.message }}</p>
+                    {% if not notif.is_read %}
+                    <span class="badge bg-primary rounded-pill mt-2" style="font-size: 0.6rem;">NEW</span>
+                    {% endif %}
+                </a>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="d-flex flex-column align-items-center justify-content-center h-100 text-center p-4">
+                <div class="rounded-circle bg-white p-4 mb-3 shadow-sm">
+                    <i class="bi bi-bell-slash fs-1 text-secondary"></i>
+                </div>
+                <h6 class="text-dark fw-bold">All caught up!</h6>
+                <p class="text-muted small mb-0">No new notifications at the moment.</p>
+            </div>
+            {% endif %}
+        </div>
+        <div class="p-3 bg-white border-top text-center">
+            <a href="#" class="text-decoration-none small text-primary fw-bold text-uppercase tracking-wide">View
+                History</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sidebar = document.querySelector('.sidebar');
+            const toggleBtn = document.getElementById('sidebarToggle');
+            const overlay = document.getElementById('sidebarOverlay');
+            const mainContent = document.querySelector('.main-content');
+
+            // CRITICAL: Ensure overlay is hidden and sidebar is closed on page load
+            if (overlay) {
+                overlay.classList.add('d-none');
+            }
+            if (sidebar) {
+                sidebar.classList.remove('show');
+            }
+            document.body.style.overflow = '';
+
+            function toggleSidebar() {
+                sidebar.classList.toggle('show');
+                overlay.classList.toggle('d-none');
+
+                // Prevent body scroll when menu is open
+                if (sidebar.classList.contains('show')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            }
+
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', toggleSidebar);
+            }
+
+            if (overlay) {
+                overlay.addEventListener('click', toggleSidebar);
+            }
+
+            // Close sidebar when clicking a link on mobile
+            const navLinks = sidebar.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 768) {
+                        toggleSidebar();
+                    }
+                });
+            });
+
+            // IMPROVEMENT: Close sidebar when opening Notification Offcanvas on mobile
+            const notifCanvas = document.getElementById('notificationOffcanvas');
+            if (notifCanvas) {
+                notifCanvas.addEventListener('show.bs.offcanvas', function () {
+                    if (window.innerWidth < 768 && sidebar.classList.contains('show')) {
+                        toggleSidebar();
+                    }
+                });
+            }
+        });
+    </script>
+    {% block extra_js %}{% endblock %}
+</body>
+
+</html>

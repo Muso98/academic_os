@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block page_title %}{% trans "Tasks" %}{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12 d-flex justify-content-between align-items-center">
+        <div>
+            <h4 class="mb-0">{% trans "My Tasks" %}</h4>
+            <p class="text-muted small mb-0">{% trans "Tasks assigned to you or created by you." %}</p>
+        </div>
+        <a href="{% url 'task_create' %}" class="btn btn-primary">
+            <i class="bi bi-plus-lg"></i> {% trans "New Task" %}
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        {% if tasks %}
+        <div class="card shadow-sm border-0">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="bg-light">
+                        <tr>
+                            <th scope="col" class="ps-4">{% trans "Title" %}</th>
+                            <th scope="col">{% trans "Priority" %}</th>
+                            <th scope="col">{% trans "Status" %}</th>
+                            <th scope="col">{% trans "Deadline" %}</th>
+                            <th scope="col" class="text-end pe-4">{% trans "Actions" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for task in tasks %}
+                        <tr>
+                            <td class="ps-4">
+                                <a href="{% url 'task_detail' task.id %}"
+                                    class="text-decoration-none fw-bold text-dark">
+                                    {{ task.title }}
+                                </a>
+                                <div class="small text-muted text-truncate" style="max-width: 200px;">
+                                    {{ task.description|truncatechars:50 }}
+                                </div>
+                            </td>
+                            <td>
+                                {% if task.priority == 'HIGH' %}
+                                <span class="badge bg-danger-subtle text-danger">{% trans "High" %}</span>
+                                {% elif task.priority == 'MEDIUM' %}
+                                <span class="badge bg-warning-subtle text-warning-emphasis">{% trans "Medium" %}</span>
+                                {% else %}
+                                <span class="badge bg-success-subtle text-success">{% trans "Low" %}</span>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if task.status == 'COMPLETED' %}
+                                <span class="badge bg-success">{% trans "Completed" %}</span>
+                                {% elif task.status == 'IN_PROGRESS' %}
+                                <span class="badge bg-primary">{% trans "In Progress" %}</span>
+                                {% else %}
+                                <span class="badge bg-secondary">{% trans "Pending" %}</span>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if task.deadline %}
+                                {{ task.deadline|date:"d.m.Y H:i" }}
+                                {% else %}
+                                -
+                                {% endif %}
+                            </td>
+                            <td class="text-end pe-4">
+                                <a href="{% url 'task_edit' task.id %}" class="btn btn-sm btn-outline-secondary">
+                                    <i class="bi bi-pencil"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% else %}
+        <div class="alert alert-info d-flex align-items-center" role="alert">
+            <i class="bi bi-info-circle flex-shrink-0 me-2"></i>
+            <div>
+                {% trans "No tasks found. Click 'New Task' to get started!" %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
