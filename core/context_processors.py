@@ -1,4 +1,5 @@
 from .models import Notification
+from organization.models import Organization
 
 def notifications(request):
     if request.user.is_authenticated:
@@ -11,4 +12,10 @@ def notifications(request):
     return {
         'unread_notifications_count': 0,
         'recent_notifications': []
+    }
+
+def organization_info(request):
+    org = Organization.objects.first()
+    return {
+        'organization': org
     }

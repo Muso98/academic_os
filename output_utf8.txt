@@ -1,0 +1,11 @@
+Form fields: dict_keys(['username', 'password1', 'password2', 'first_name', 'last_name', 'email', 'groups'])
+Fieldsets: ((None, {'classes': ('wide',), 'fields': ('username', 'password1', 'password2', 'first_name', 'last_name', 'email', 'groups')}),)
+Fieldset: None
+  Field: username | Widget: <django.contrib.admin.widgets.AdminTextInputWidget object at 0x0000022004BECF20>
+  Field: password1 | Widget: <django.forms.widgets.PasswordInput object at 0x0000022004BECE30>
+  Field: password2 | Widget: <django.forms.widgets.PasswordInput object at 0x0000022004BECD70>
+  Field: first_name | Widget: <django.contrib.admin.widgets.AdminTextInputWidget object at 0x0000022004BECC80>
+  Field: last_name | Widget: <django.contrib.admin.widgets.AdminTextInputWidget object at 0x0000022004BED070>
+  Field: email | Widget: <django.contrib.admin.widgets.AdminEmailInputWidget object at 0x0000022004BED1C0>
+  Field: groups | Widget: <django.contrib.admin.widgets.RelatedFieldWidgetWrapper object at 0x0000022004BED220>
+

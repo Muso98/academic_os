@@ -32,6 +32,7 @@ urlpatterns = [
     path('tasks/', include('workflow.urls')), # Task Management
     path('academic/', include('academic.urls')), # Academic Monitoring
     path('users/', include('users.urls')), # User Profile
+    path('hr/', include('hr.urls')), # HR Module
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),

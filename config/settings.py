@@ -40,6 +40,7 @@ ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '127.0.0.1,localhost').split(',')
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -87,6 +88,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'core.context_processors.notifications',
+                'core.context_processors.organization_info',
             ],
         },
     },
@@ -197,3 +199,20 @@ LOGIN_URL = 'login'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Academic OS",
+    "site_header": "Academic OS SuperAdmin",
+    "site_brand": "Academic OS",
+    "welcome_sign": "Tizimga xush kelibsiz (Academic OS)",
+    "copyright": "Academic OS",
+    "search_model": ["auth.User", "organization.Organization"],
+    "language_chooser": True,  # Enables language switcher in top right
+    "show_ui_builder": False,
+    "navigation_expanded": True,
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "theme": "pulse",  # Modern, clean theme
+    "dark_mode_theme": "darkly",
+}

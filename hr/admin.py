@@ -1,11 +1,5 @@
 from django.contrib import admin
-from .models import EmployeeProfile, KPIIndicator, KPIRecord, Certificate
-
-@admin.register(EmployeeProfile)
-class EmployeeProfileAdmin(admin.ModelAdmin):
-    list_display = ('user', 'qualification_category', 'phone_number', 'employment_contract_end_date')
-    search_fields = ('user__username', 'user__first_name', 'user__last_name', 'phone_number')
-    list_filter = ('qualification_category',)
+from .models import KPIIndicator, KPIRecord, Certificate
 
 @admin.register(KPIIndicator)
 class KPIIndicatorAdmin(admin.ModelAdmin):

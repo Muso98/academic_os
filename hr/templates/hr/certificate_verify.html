@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hujjat Haqiqiyligini Tekshirish - Academic OS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4 font-sans">
+
+    <div class="bg-white rounded-2xl shadow-xl max-w-md w-full overflow-hidden border-t-8 border-green-500">
+        <div class="p-6 text-center bg-green-50">
+            <!-- Green Checkmark SVG -->
+            <svg class="w-24 h-24 text-green-500 mx-auto animate-pulse" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <h1 class="mt-4 text-3xl font-extrabold text-green-700 tracking-tight">HUJJAT HAQIQIY!</h1>
+            <p class="mt-2 text-sm text-green-600 font-medium">Ushbu ma'lumotnoma Academic OS tizimi orqali
+                tasdiqlangan.</p>
+        </div>
+
+        <div class="p-6 space-y-4">
+            <h2 class="text-lg font-bold text-gray-800 border-b pb-2">Ma'lumotnoma Tafsilotlari:</h2>
+
+            <div>
+                <p class="text-sm text-gray-500">Hujjat Raqami:</p>
+                <p class="font-bold text-gray-900">{{ cert_year }}-yil {{ cert_num }}-sonli ma'lumotnoma</p>
+            </div>
+
+            <div>
+                <p class="text-sm text-gray-500">Xodim (F.I.Sh):</p>
+                <p class="font-bold text-gray-900 text-lg">{{ employee.get_full_name }}</p>
+            </div>
+
+            <div>
+                <p class="text-sm text-gray-500">Lavozimi (Vazifasi):</p>
+                <p class="font-bold text-gray-900 capitalize">{{ employee_position }}</p>
+            </div>
+
+            <div>
+                <p class="text-sm text-gray-500">Tashkilot / Maktab:</p>
+                <p class="font-bold text-gray-900">{{ organization.name|default:"Noma'lum tashkilot" }}</p>
+            </div>
+
+            <div class="pt-4 mt-4 border-t border-gray-100 text-center">
+                <p class="text-xs text-gray-400">Tekshiruv amaliyoti xavfsiz server orqali amalga oshirildi.</p>
+            </div>
+        </div>
+
+        <div class="bg-gray-50 p-4 text-center border-t border-gray-100">
+            <p class="text-xs text-gray-400 font-medium">&copy; {% now "Y" %} Academic OS. Barcha huquqlar himoyalangan.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

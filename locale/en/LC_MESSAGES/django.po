@@ -1,468 +1,171 @@
+#
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: system@localhost\n"
+"POT-Creation-Date: 2007-10-18 14:00+0100\n"
+"PO-Revision-Date: 2007-10-18 14:00+0100\n"
+"Last-Translator: system\n"
+"Language-Team: en <localhost>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 
-msgid "Dashboard"
-msgstr "Dashboard"
+msgid "Foydalanuvchi"
+msgstr "User"
 
-msgid "Tasks"
-msgstr "Tasks"
+msgid "Foydalanuvchilar"
+msgstr "Users"
 
-msgid "Observations"
-msgstr "Observations"
+msgid "Tashkilot"
+msgstr "Organization"
 
-msgid "Resources"
-msgstr "Resources"
+msgid "Tashkilotlar"
+msgstr "Organizations"
 
-msgid "Documents"
-msgstr "Documents"
+msgid "Nomi"
+msgstr "Name"
 
-msgid "Orders"
-msgstr "Orders"
+msgid "Tuman/Shahar nomi"
+msgstr "District/City"
 
-msgid "Reports"
-msgstr "Reports"
+msgid "Masalan: Angor tumani"
+msgstr "Example: Angor district"
 
-msgid "Internal Orders Archive"
-msgstr ""
+msgid "Direktor ism-sharifi"
+msgstr "Director Full Name"
 
-msgid "Add first certificate"
-msgstr ""
+msgid "Masalan: B.Xolbutayev"
+msgstr "Example: B.Kholbutayev"
 
-msgid "Address"
-msgstr ""
+msgid "Telefon raqami"
+msgstr "Phone Number"
 
-msgid "No recent observations."
-msgstr ""
+msgid "Manzil"
+msgstr "Address"
 
-msgid "Low"
-msgstr ""
+msgid "Kafedra"
+msgstr "Department"
 
-msgid "Add"
-msgstr ""
+msgid "Kafedralar"
+msgstr "Departments"
 
-msgid "Location / Address"
-msgstr ""
+msgid "Mudiri"
+msgstr "Head"
 
-msgid "Download"
-msgstr ""
+msgid "Metod birlashma"
+msgstr "Methodological Unit"
 
-msgid "Class"
-msgstr ""
+msgid "Metod birlashmalar"
+msgstr "Methodological Units"
 
-msgid "Rejected"
-msgstr ""
+msgid "Rahbari"
+msgstr "Leader"
 
-msgid "Reports List"
-msgstr ""
+msgid "Xodim Profili"
+msgstr "Employee Profile"
 
-msgid "My Reports"
-msgstr ""
+msgid "Xodimlar Profillari"
+msgstr "Employee Profiles"
 
-msgid "Cancel"
-msgstr ""
+msgid "Pasport raqami/JShSHIR"
+msgstr "Passport Number/PINFL"
 
-msgid "Observation Journal - Academic OS"
-msgstr ""
+msgid "Oylik maosh (UZS)"
+msgstr "Monthly Salary (UZS)"
 
-msgid "Reject"
-msgstr ""
+msgid "Oylik maosh"
+msgstr "Monthly Salary"
 
-msgid "Sign In"
-msgstr ""
+msgid "Shartnoma tugash sanasi"
+msgstr "Contract End Date"
 
-msgid "Completed Tasks"
-msgstr ""
+msgid "Malaka toifasi / Aniq vazifasi"
+msgstr "Qualification Category / Exact Position"
 
-msgid "Pending"
-msgstr ""
+msgid "Qiyofacha (Avatar)"
+msgstr "Avatar"
 
-msgid "No reports yet."
-msgstr ""
+msgid "Tarjimayi hol (Bio)"
+msgstr "Biography (Bio)"
 
-msgid "Approve Report"
-msgstr ""
+msgid "Sertifikatlar (JSON)"
+msgstr "Certificates (JSON)"
 
-msgid "items"
-msgstr ""
+msgid "Xodim faoliyati va shaxsiy tafsilotlari"
+msgstr "Employee Activity and Personal Details"
 
-msgid "Submit Report"
-msgstr ""
+msgid "Shaxsiy ma'lumotlar (Foydalanuvchi)"
+msgstr "Personal details (User)"
 
-msgid "Leave a comment about errors..."
-msgstr ""
+msgid "Guruhlar va Ruxsatlar (Vazifasi)"
+msgstr "Groups and Permissions (Position)"
 
-msgid "Search"
-msgstr ""
+msgid "Vazifasi (Guruhlar)"
+msgstr "Position (Groups)"
 
-msgid "All time"
-msgstr ""
+msgid "KPI Indikatori"
+msgstr "KPI Indicator"
 
-msgid "Sign in to your account"
-msgstr ""
+msgid "KPI Indikatorlari"
+msgstr "KPI Indicators"
 
-msgid "Teacher"
-msgstr ""
+msgid "Tavsif"
+msgstr "Description"
 
-msgid "Edit Profile"
-msgstr ""
+msgid "Vazni"
+msgstr "Weight"
 
-msgid "Deadline"
-msgstr ""
+msgid "Mezonlar"
+msgstr "Criteria"
 
-msgid "Approved"
-msgstr ""
+msgid "Ushbu indikator uchun beriladigan ball"
+msgstr "Points given for this indicator"
 
-msgid "Date"
-msgstr ""
+msgid "Ushbu KPI ga erishish qoidalari"
+msgstr "Rules for reaching this KPI"
 
-msgid "Issued:"
-msgstr ""
+msgid "KPI Yozuvi (Natijasi)"
+msgstr "KPI Record (Result)"
 
-msgid "Profile Picture"
-msgstr ""
+msgid "KPI Yozuvlari (Natijalari)"
+msgstr "KPI Records (Results)"
 
-msgid "Contact Information"
-msgstr ""
+msgid "Indikator"
+msgstr "Indicator"
 
-msgid "High"
-msgstr ""
+msgid "Erishilgan sana"
+msgstr "Date Achieved"
 
-msgid "Yes, Approve"
-msgstr ""
+msgid "Olingan ball"
+msgstr "Score Obtained"
 
-msgid "Reject Report"
-msgstr ""
+msgid "Isbotlovchi hujjat"
+msgstr "Proof Document"
 
-msgid "Upload Resource"
-msgstr ""
+msgid "Tasdiqlangan"
+msgstr "Verified"
 
-msgid "Uploaded By"
-msgstr ""
+msgid "Sertifikat"
+msgstr "Certificate"
 
-msgid "Orders - Academic OS"
-msgstr ""
+msgid "Sertifikatlar"
+msgstr "Certificates"
 
-msgid "Here's what's happening in your academic workspace today."
-msgstr ""
+msgid "Ma'lumotnoma Tartib Raqami"
+msgstr "Certificate Sequence Number"
 
-msgid "Priority"
-msgstr ""
+msgid "Ma'lumotnoma Tartib Raqamlari"
+msgstr "Certificate Sequence Numbers"
 
-msgid "Under Review"
-msgstr ""
+msgid "Yil (Masalan: 2026)"
+msgstr "Year (Example: 2026)"
 
-msgid "Clear Filters"
-msgstr ""
+msgid "Yil"
+msgstr "Year"
 
-msgid "Save Changes"
-msgstr ""
+msgid "Oxirgi berilgan ma'lumotnoma raqami"
+msgstr "Last issued certificate number"
 
-msgid "Start Date"
-msgstr ""
-
-msgid "Score"
-msgstr ""
-
-msgid "Personal Details"
-msgstr ""
-
-msgid "No certificates yet."
-msgstr ""
-
-msgid "Bio"
-msgstr ""
-
-msgid "Password"
-msgstr ""
-
-msgid "Description"
-msgstr ""
-
-msgid "Version"
-msgstr ""
-
-msgid "Status"
-msgstr ""
-
-msgid "Type"
-msgstr ""
-
-msgid "Educational Resources"
-msgstr ""
-
-msgid "Action"
-msgstr ""
-
-msgid "Number"
-msgstr ""
-
-msgid "Tasks assigned to you or created by you."
-msgstr ""
-
-msgid "Completed"
-msgstr ""
-
-msgid "All"
-msgstr ""
-
-msgid "Performance Analytics"
-msgstr ""
-
-msgid "No tasks found. Click 'New Task' to get started!"
-msgstr ""
-
-msgid "Task Distribution"
-msgstr ""
-
-msgid "In Progress"
-msgstr ""
-
-msgid "Medium"
-msgstr ""
-
-msgid "Reports - Academic OS"
-msgstr ""
-
-msgid "Orders List"
-msgstr ""
-
-msgid "Record of all lesson observations."
-msgstr ""
-
-msgid "Certificates & Awards"
-msgstr ""
-
-msgid "Email Address"
-msgstr ""
-
-msgid "First Name"
-msgstr ""
-
-msgid "No orders uploaded yet."
-msgstr ""
-
-msgid "Comment:"
-msgstr ""
-
-msgid "New Order"
-msgstr ""
-
-msgid "View All"
-msgstr ""
-
-msgid "Username"
-msgstr ""
-
-msgid "Observations Journal"
-msgstr ""
-
-msgid "No file"
-msgstr ""
-
-msgid "Email"
-msgstr ""
-
-msgid "Pending Tasks"
-msgstr ""
-
-msgid "Filters"
-msgstr ""
-
-msgid "File"
-msgstr ""
-
-msgid "Recent Observations"
-msgstr ""
-
-msgid "No pending tasks."
-msgstr ""
-
-msgid "Invalid username or password."
-msgstr ""
-
-msgid "Phone Number"
-msgstr ""
-
-msgid "Are you sure you want to approve this report?"
-msgstr ""
-
-msgid "Reason for Rejection:"
-msgstr ""
-
-msgid "Extended Profile"
-msgstr ""
-
-msgid "End Date"
-msgstr ""
-
-msgid "Expires:"
-msgstr ""
-
-msgid "Topic"
-msgstr ""
-
-msgid "My Tasks"
-msgstr ""
-
-msgid "Subject"
-msgstr ""
-
-msgid "Phone"
-msgstr ""
-
-msgid "Mutual Lesson Observation Journal"
-msgstr ""
-
-msgid "Lesson Observations"
-msgstr ""
-
-msgid " Enter your password"
-msgstr ""
-
-msgid " Enter your username"
-msgstr ""
-
-msgid "No observations found."
-msgstr ""
-
-msgid "New Task"
-msgstr ""
-
-msgid "All Reports (Admin)"
-msgstr ""
-
-msgid "Member"
-msgstr ""
-
-msgid "My Profile"
-msgstr ""
-
-msgid "Brief description about yourself."
-msgstr ""
-
-msgid "Approve"
-msgstr ""
-
-msgid "Welcome back"
-msgstr ""
-
-msgid "History"
-msgstr ""
-
-msgid "Observer"
-msgstr ""
-
-msgid "New Observation"
-msgstr ""
-
-msgid "Last Name"
-msgstr ""
-
-msgid "Resource Center"
-msgstr ""
-
-msgid "Actions"
-msgstr ""
-
-msgid "Login - Academic OS"
-msgstr ""
-
-msgid "No resources found. Upload one to get started."
-msgstr ""
-
-msgid "Repository of study materials and documents."
-msgstr ""
-
-msgid "My KPI Score"
-msgstr ""
-
-msgid "Title"
-msgstr ""
-
-msgid "Quick Actions"
-msgstr ""
-
-msgid "Average Score"
-msgstr ""
-
-msgid "Methodist Dashboard"
-msgstr ""
-
-msgid "No observations yet"
-msgstr ""
-
-msgid "No statistics yet"
-msgstr ""
-
-msgid "Back to List"
-msgstr ""
-
-msgid "Active Teachers"
-msgstr ""
-
-msgid "Task Details"
-msgstr ""
-
-msgid "New Lesson Observation"
-msgstr ""
-
-msgid "Created By"
-msgstr ""
-
-msgid "Lesson Details"
-msgstr ""
-
-msgid "Total Observations"
-msgstr ""
-
-msgid "Assignees"
-msgstr ""
-
-msgid "No deadline"
-msgstr ""
-
-msgid "Edit Task"
-msgstr ""
-
-msgid "Save Task"
-msgstr ""
-
-msgid "Create Task"
-msgstr ""
-
-msgid "High Priority"
-msgstr ""
-
-msgid "Low Priority"
-msgstr ""
-
-msgid "Upload"
-msgstr ""
-
-msgid "All Observations"
-msgstr ""
-
-msgid "Dependencies"
-msgstr ""
-
-msgid "Methodist Dashboard - Academic OS"
-msgstr ""
-
-msgid "Top Teachers"
-msgstr ""
-
-msgid "Submit Observation"
-msgstr ""
-
-msgid "Created At"
-msgstr ""
-
-msgid "Evaluation Criteria"
-msgstr ""
-
-msgid "Medium Priority"
-msgstr ""
-
-msgid "Class Group"
-msgstr ""
+msgid "Oxirgi raqam"
+msgstr "Last number"

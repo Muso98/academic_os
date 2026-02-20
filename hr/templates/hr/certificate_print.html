@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma'lumotnoma - {{ employee.get_full_name }}</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14pt;
+            line-height: 1.5;
+            color: #000;
+            background: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Hide elements when printing */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+        }
+
+        .header-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 16pt;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .header-contact {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #1a0dab;
+            text-decoration: underline;
+            font-size: 13pt;
+        }
+
+        .doc-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 60px;
+            font-weight: bold;
+        }
+
+        .doc-meta span {
+            display: inline-block;
+        }
+
+        .title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18pt;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            text-align: justify;
+            text-indent: 40px;
+            margin-bottom: 30px;
+        }
+
+        .content-line {
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 80px;
+            font-weight: bold;
+        }
+
+        .footer-left {
+            text-align: left;
+        }
+
+        .footer-right {
+            text-align: right;
+        }
+
+        .directors-phone {
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: right;
+            margin-right: -10px;
+        }
+
+        /* Styling for print button */
+        .print-btn-container {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .print-btn {
+            background-color: #4f46e5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .print-btn:hover {
+            background-color: #4338ca;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="print-btn-container no-print">
+        <button class="print-btn" onclick="window.print()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
+                style="vertical-align: middle; margin-right: 5px;">
+                <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                <path
+                    d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z" />
+            </svg>
+            Chop etish
+        </button>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header-title">
+            {% if organization.region %}{{ organization.region|upper }} MAKTABGACHA VA MAKTAB TA'LIMI<br>BO'LIMIGA
+            QARASHLI{% endif %}
+            {{ organization.name|upper }}
+        </div>
+
+        <div class="header-contact">
+            {% if organization.address %}{{ organization.address }}{% else %}Manzil kiritilmagan{% endif %}, Tel: {% if organization.phone_number %}{{ organization.phone_number }}{% else %}kiritilmagan{% endif %}
+        </div>
+
+        <!-- Meta info -->
+        <div class="doc-meta">
+            <div>
+                {{ current_date|date:"Y" }} yil "{{ current_date|date:"d" }}" {{ current_date|date:"F" }} {{ certificate_number }}-son
+            </div>
+            <div>
+                {% if organization.region %}{{ organization.region }}{% else %}__________{% endif %}
+            </div>
+        </div>
+
+        <!-- Title -->
+        <div class="title">
+            MA'LUMOTNOMA
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="content-line">
+                Berildi ushbu ma'lumotnoma shu haqdadirki, {{ employee.get_full_name }}
+                {% if organization.region %}{{ organization.region }}dagi{% endif %} {{ organization.name }}ning
+                {{ employee_position }}
+                vazifasida ishlaydi.
+            </div>
+            <div class="content-line" style="text-align: center; text-indent: 0; margin-top: 40px;">
+                Ma'lumotnoma so'ralgan joyga taqdim etish uchun berildi.
+            </div>
+        </div>
+
+        <!-- Footer / Signatures with QR Code -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-top: 50px;">
+            <!-- QR Code Section -->
+            {% if qr_code_base64 %}
+            <div style="text-align: center;">
+                <img src="data:image/png;base64,{{ qr_code_base64 }}" alt="QR Code"
+                    style="width: 120px; height: 120px; border: 1px solid #ccc; padding: 5px;">
+                <div style="font-size: 8pt; color: #555; margin-top: 5px;">Asl nusxani tekshirish (QR)</div>
+            </div>
+            {% endif %}
+
+            <!-- Signature Section -->
+            <div style="flex-grow: 1; margin-left: 40px;">
+                <div class="footer" style="margin-top: 0;">
+                    <div class="footer-left">
+                        Tashkilot rahbari:
+                    </div>
+                    <div class="footer-right">
+                        {{ organization.director_name|default:"_______________" }}
+                    </div>
+                </div>
+                <div class="directors-phone" style="text-align: right; margin-right: -10px; margin-top: 10px;">
+                    Tel: {{ organization.phone_number|default:"_______________" }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auto-print Trigger -->
+    <script>
+        // Use timeout to allow styles to fully load before printing
+        window.onload = function () {
+            setTimeout(function () {
+                window.print();
+            }, 500);
+        };
+    </script>
+</body>
+
+</html>

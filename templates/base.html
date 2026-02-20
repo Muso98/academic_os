@@ -219,6 +219,12 @@
                 <header
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4">
                     <h1 class="h3 fw-bold text-dark">{% block page_title %}Dashboard{% endblock %}</h1>
+                    {% if organization %}
+                    <div class="fs-5 text-secondary fw-semibold bg-white px-3 py-2 rounded shadow-sm">
+                        <i class="bi bi-building text-primary me-2"></i> {{ organization.name }}
+                        {% if organization.region %}<small class="text-muted ms-1 fs-6">({{ organization.region }})</small>{% endif %}
+                    </div>
+                    {% endif %}
                 </header>
                 {% endblock %}
 
