@@ -142,6 +142,12 @@ class SickLeave(UUIDModel):
         default=STATUS_PENDING,
         verbose_name=_("Holat")
     )
+
+    @property
+    def days_count(self):
+        if self.start_date and self.end_date:
+            return (self.end_date - self.start_date).days + 1
+        return 0
     hr_note = models.TextField(
         blank=True,
         verbose_name=_("HR izohi")
