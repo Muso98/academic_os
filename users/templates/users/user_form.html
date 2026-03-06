@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block page_title %}{% if action == 'edit' %}Xodimni Tahrirlash{% else %}Yangi Xodim Qo'shish{% endif %}{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center animate-fade-in-up">
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm rounded-4">
+            <div
+                class="card-header bg-white border-bottom-0 pt-4 px-4 pb-0 d-flex justify-content-between align-items-center">
+                <h5 class="fw-bold mb-0">
+                    <i
+                        class="bi {% if action == 'edit' %}bi-pencil-square{% else %}bi-person-plus-fill{% endif %} me-2 text-primary"></i>
+                    {% if action == 'edit' %}{{ employee.get_full_name|default:employee.username }} — Tahrirlash{% else
+                    %}Yangi Xodim{% endif %}
+                </h5>
+                <a href="{% url 'user_management' %}" class="btn btn-outline-secondary btn-sm rounded-3">
+                    <i class="bi bi-arrow-left me-1"></i> Orqaga
+                </a>
+            </div>
+            <div class="card-body p-4">
+
+                {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-{{ message.tags }} alert-dismissible fade show rounded-3 border-0 mb-3"
+                    role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+                {% endfor %}
+                {% endif %}
+
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <label class="form-label fw-medium text-secondary">Ism</label>
+                            <input type="text" name="first_name" class="form-control rounded-3"
+                                value="{{ employee.first_name|default:'' }}" {% if action=='create' %}required{% endif
+                                %}>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label fw-medium text-secondary">Familiya</label>
+                            <input type="text" name="last_name" class="form-control rounded-3"
+                                value="{{ employee.last_name|default:'' }}">
+                        </div>
+                        {% if action == 'create' %}
+                        <div class="col-12">
+                            <label class="form-label fw-medium text-secondary">Username <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" name="username" class="form-control rounded-3" required
+                                placeholder="masalan: abdullayev_ali">
+                        </div>
+                        {% else %}
+                        <div class="col-12">
+                            <label class="form-label fw-medium text-secondary">Username</label>
+                            <input type="text" class="form-control rounded-3" value="{{ employee.username }}" disabled>
+                        </div>
+                        {% endif %}
+                        <div class="col-12">
+                            <label class="form-label fw-medium text-secondary">
+                                Parol {% if action == 'edit' %}<small class="text-muted">(bo'sh qoldirsangiz
+                                    o'zgarmaydi)</small>{% else %}<span class="text-danger">*</span>{% endif %}
+                            </label>
+                            <input type="password" name="password" class="form-control rounded-3" {% if action=='create'
+                                %}required{% endif %}
+                                placeholder="{% if action == 'edit' %}Yangi parol (ixtiyoriy){% else %}Parolni kiriting{% endif %}">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label fw-medium text-secondary">Rol (lavozim) <span
+                                    class="text-danger">*</span></label>
+                            <select name="role" class="form-select rounded-3" required>
+                                <option value="">— Rol tanlang —</option>
+                                {% for role_key, role_label in school_roles %}
+                                <option value="{{ role_key }}" {% if current_role==role_key %}selected{% endif %}>
+                                    {{ role_label }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end gap-2 pt-4 border-top mt-4">
+                        <a href="{% url 'user_management' %}" class="btn btn-outline-secondary rounded-3 px-4">Bekor
+                            qilish</a>
+                        <button type="submit" class="btn btn-primary rounded-3 px-4 shadow-sm">
+                            <i class="bi bi-save me-1"></i>
+                            {% if action == 'edit' %}Saqlash{% else %}Qo'shish{% endif %}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

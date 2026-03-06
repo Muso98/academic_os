@@ -3,6 +3,7 @@ from django.conf import settings
 from core.models import UUIDModel
 from core.fields import EncryptedField
 from django.utils.translation import gettext_lazy as _
+from django.utils import timezone
 
 class EmployeeProfile(UUIDModel):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='employee_profile', verbose_name=_("Foydalanuvchi"))
@@ -106,3 +107,64 @@ class CertificateSequence(UUIDModel):
         sequence.last_number += 1
         sequence.save()
         return sequence.last_number
+
+
+class SickLeave(UUIDModel):
+    """
+    Xodimning kasallik varaqasi: xodim faylni yuklaydi,
+    HR bo'limi ko'rib chiqib kasallik kunlarini tasdiqlaydi.
+    """
+    STATUS_PENDING = 'pending'
+    STATUS_APPROVED = 'approved'
+    STATUS_REJECTED = 'rejected'
+
+    STATUS_CHOICES = [
+        (STATUS_PENDING, _("Kutilmoqda")),
+        (STATUS_APPROVED, _("Tasdiqlandi")),
+        (STATUS_REJECTED, _("Rad etildi")),
+    ]
+
+    employee = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name='sick_leaves',
+        verbose_name=_("Xodim")
+    )
+    start_date = models.DateField(verbose_name=_("Boshlash sanasi"))
+    end_date = models.DateField(verbose_name=_("Tugash sanasi"))
+    certificate_file = models.FileField(
+        upload_to='sick_leaves/',
+        verbose_name=_("Kasallik varaqasi (fayl)")
+    )
+    status = models.CharField(
+        max_length=20,
+        choices=STATUS_CHOICES,
+        default=STATUS_PENDING,
+        verbose_name=_("Holat")
+    )
+    hr_note = models.TextField(
+        blank=True,
+        verbose_name=_("HR izohi")
+    )
+    reviewed_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True, blank=True,
+        related_name='reviewed_sick_leaves',
+        verbose_name=_("Ko'rib chiqqan HR")
+    )
+    submitted_at = models.DateTimeField(auto_now_add=True, verbose_name=_("Yuborilgan vaqt"))
+    reviewed_at = models.DateTimeField(null=True, blank=True, verbose_name=_("Ko'rib chiqilgan vaqt"))
+
+    class Meta:
+        verbose_name = _("Kasallik Varaqasi")
+        verbose_name_plural = _("Kasallik Varaqalari")
+        ordering = ['-submitted_at']
+
+    def __str__(self):
+        return f"{self.employee.get_full_name() or self.employee.username} | {self.start_date} - {self.end_date} | {self.get_status_display()}"
+
+    @property
+    def days_count(self):
+        """Kasallik kunlari soni."""
+        return (self.end_date - self.start_date).days + 1

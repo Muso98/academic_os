@@ -169,3 +169,7 @@ msgstr "Последний выданный номер справки"
 
 msgid "Oxirgi raqam"
 msgstr "Последний номер"
+
+# Kasallik Varaqasi (Sick Leave)
+
+# Sick Leave

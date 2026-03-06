@@ -169,3 +169,5 @@ msgstr "Last issued certificate number"
 
 msgid "Oxirgi raqam"
 msgstr "Last number"
+
+# Sick Leave

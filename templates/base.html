@@ -131,6 +131,52 @@
                     </a>
                 </li>
             </ul>
+
+            <!-- Sick Leave Section -->
+            <ul class="nav nav-pills flex-column mb-2 mt-1">
+                <li class="nav-item">
+                    <span class="text-white-50 small text-uppercase fw-bold px-3">{% trans "Sick Leave" %}</span>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="{% url 'sick_leave_submit' %}"
+                        class="nav-link {% if 'sick-leave/submit' in request.path %}active{% endif %}">
+                        <i class="bi bi-clipboard2-pulse-fill"></i>
+                        {% trans "Submit Sick Leave" %}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'sick_leave_list' %}"
+                        class="nav-link {% if 'sick-leave/my' in request.path %}active{% endif %}">
+                        <i class="bi bi-card-list"></i>
+                        {% trans "My Sick Leaves" %}
+                    </a>
+                </li>
+                {% if request.user.is_superuser or request.user.groups.all.0.name == 'HR' %}
+                <li class="nav-item">
+                    <a href="{% url 'sick_leave_hr_list' %}"
+                        class="nav-link {% if 'sick-leave/hr' in request.path %}active{% endif %}">
+                        <i class="bi bi-clipboard2-check-fill"></i>
+                        {% trans "HR Review" %}
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+
+            <!-- Admin Settings Section -->
+            {% if request.user.is_superuser %}
+            <ul class="nav nav-pills flex-column mb-2 mt-1">
+                <li class="nav-item">
+                    <span class="text-white-50 small text-uppercase fw-bold px-3">{% trans "Admin" %}</span>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="{% url 'user_management' %}"
+                        class="nav-link {% if 'users/manage' in request.path %}active{% endif %}">
+                        <i class="bi bi-people-fill"></i>
+                        {% trans "Xodimlar" %}
+                    </a>
+                </li>
+            </ul>
+            {% endif %}
             <hr class="border-secondary opacity-25">
 
             <!-- Language Switcher -->
@@ -199,6 +245,8 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
                     <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
+                    <li><a class="dropdown-item" href="{% url 'sick_leave_list' %}"><i
+                                class="bi bi-clipboard2-pulse me-2"></i>Kasallik varaqlariim</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
@@ -222,7 +270,8 @@
                     {% if organization %}
                     <div class="fs-5 text-secondary fw-semibold bg-white px-3 py-2 rounded shadow-sm">
                         <i class="bi bi-building text-primary me-2"></i> {{ organization.name }}
-                        {% if organization.region %}<small class="text-muted ms-1 fs-6">({{ organization.region }})</small>{% endif %}
+                        {% if organization.region %}<small class="text-muted ms-1 fs-6">({{ organization.region
+                            }})</small>{% endif %}
                     </div>
                     {% endif %}
                 </header>

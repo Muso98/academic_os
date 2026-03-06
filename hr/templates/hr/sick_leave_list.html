@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block page_title %}Mening Kasallik Varaqlariim{% endblock %}
+
+{% block content %}
+<div class="animate-fade-in-up">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="fw-bold mb-0"><i class="bi bi-clipboard2-pulse me-2 text-danger"></i>Mening Kasallik Varaqlariim</h4>
+        <a href="{% url 'sick_leave_submit' %}" class="btn btn-danger rounded-3 shadow-sm">
+            <i class="bi bi-plus-lg me-1"></i> Yangi yuborish
+        </a>
+    </div>
+
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show rounded-3 border-0 shadow-sm mb-4"
+        role="alert">
+        <i class="bi bi-info-circle me-2"></i> {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    {% if leaves %}
+    <div class="row g-3">
+        {% for leave in leaves %}
+        <div class="col-12">
+            <div class="card border-0 shadow-sm rounded-4">
+                <div class="card-body p-4">
+                    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                        <div>
+                            <div class="d-flex align-items-center gap-2 mb-1">
+                                <i class="bi bi-calendar-range text-danger"></i>
+                                <span class="fw-semibold">{{ leave.start_date|date:"d.m.Y" }} — {{
+                                    leave.end_date|date:"d.m.Y" }}</span>
+                                <span class="badge bg-secondary-subtle text-secondary rounded-pill">{{ leave.days_count
+                                    }} kun</span>
+                            </div>
+                            <small class="text-muted">Yuborilgan: {{ leave.submitted_at|date:"d.m.Y H:i" }}</small>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            {% if leave.status == 'approved' %}
+                            <span class="badge bg-success-subtle text-success rounded-pill px-3 py-2 fs-6"><i
+                                    class="bi bi-check-circle me-1"></i> Tasdiqlandi</span>
+                            {% elif leave.status == 'rejected' %}
+                            <span class="badge bg-danger-subtle text-danger rounded-pill px-3 py-2 fs-6"><i
+                                    class="bi bi-x-circle me-1"></i> Rad etildi</span>
+                            {% else %}
+                            <span class="badge bg-warning-subtle text-warning rounded-pill px-3 py-2 fs-6"><i
+                                    class="bi bi-hourglass-split me-1"></i> Kutilmoqda</span>
+                            {% endif %}
+                            <a href="{{ leave.certificate_file.url }}" class="btn btn-sm btn-outline-primary rounded-3"
+                                target="_blank" download>
+                                <i class="bi bi-download me-1"></i> Fayl
+                            </a>
+                        </div>
+                    </div>
+                    {% if leave.hr_note %}
+                    <div class="alert alert-light rounded-3 mt-3 mb-0 py-2 px-3">
+                        <small class="text-muted"><i class="bi bi-chat-left-text me-1"></i><strong>HR izohi:</strong> {{
+                            leave.hr_note }}</small>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="text-center py-5">
+        <i class="bi bi-clipboard2-x fs-1 text-muted mb-3 d-block"></i>
+        <p class="text-muted">Siz hali kasallik varaqasi yubormagansiz.</p>
+        <a href="{% url 'sick_leave_submit' %}" class="btn btn-danger rounded-3">
+            <i class="bi bi-plus-lg me-1"></i> Hozir yuborish
+        </a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

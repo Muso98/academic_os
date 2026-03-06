@@ -469,12 +469,10 @@ msgstr "O'rta Muhimlik"
 msgid "Class Group"
 msgstr "Sinf"
 
-msgid "Tasks"
-msgstr "Vazifalar"
 
-msgid "Reports"
-msgstr "Hisobotlar"
 
-msgid "Orders"
-msgstr "Buyruqlar"
 
+
+# Kasallik Varaqasi (Sick Leave)
+
+# Sick Leave
