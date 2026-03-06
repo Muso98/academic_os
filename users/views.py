@@ -25,14 +25,11 @@ SCHOOL_ROLES = [
 
 @login_required
 def profile_view(request):
-    try:
-        profile = request.user.employee_profile
-    except EmployeeProfile.DoesNotExist:
-        profile = None
+    profile, created = EmployeeProfile.objects.get_or_create(user=request.user)
 
     if request.method == 'POST':
         u_form = UserUpdateForm(request.POST, instance=request.user)
-        p_form = ProfileUpdateForm(request.POST, request.FILES, instance=profile) if profile else None
+        p_form = ProfileUpdateForm(request.POST, request.FILES, instance=profile)
 
         if u_form.is_valid() and (not p_form or p_form.is_valid()):
             u_form.save()
