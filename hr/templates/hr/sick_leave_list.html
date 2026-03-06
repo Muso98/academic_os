@@ -31,10 +31,8 @@
                         <div>
                             <div class="d-flex align-items-center gap-2 mb-1">
                                 <i class="bi bi-calendar-range text-danger"></i>
-                                <span class="fw-semibold">{{ leave.start_date|date:"d.m.Y" }} — {{
-                                    leave.end_date|date:"d.m.Y" }}</span>
-                                <span class="badge bg-secondary-subtle text-secondary rounded-pill">{{ leave.days_count
-                                    }} kun</span>
+                                <span class="fw-semibold">{{ leave.start_date|date:"d.m.Y" }} — {{ leave.end_date|date:"d.m.Y" }}</span>
+                                <span class="badge bg-secondary-subtle text-secondary rounded-pill">{{ leave.days_count }} kun</span>
                             </div>
                             <small class="text-muted">Yuborilgan: {{ leave.submitted_at|date:"d.m.Y H:i" }}</small>
                         </div>
@@ -57,8 +55,7 @@
                     </div>
                     {% if leave.hr_note %}
                     <div class="alert alert-light rounded-3 mt-3 mb-0 py-2 px-3">
-                        <small class="text-muted"><i class="bi bi-chat-left-text me-1"></i><strong>HR izohi:</strong> {{
-                            leave.hr_note }}</small>
+                        <small class="text-muted"><i class="bi bi-chat-left-text me-1"></i><strong>HR izohi:</strong> {{ leave.hr_note }}</small>
                     </div>
                     {% endif %}
                 </div>

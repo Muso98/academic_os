@@ -26,18 +26,15 @@
                     <div class="row g-2">
                         <div class="col-6">
                             <small class="text-muted d-block">Xodim</small>
-                            <span class="fw-semibold">{{ leave.employee.get_full_name|default:leave.employee.username
-                                }}</span>
+                            <span class="fw-semibold">{{ leave.employee.get_full_name|default:leave.employee.username }}</span>
                         </div>
                         <div class="col-6">
                             <small class="text-muted d-block">Kasallik davri</small>
-                            <span class="fw-semibold">{{ leave.start_date|date:"d.m.Y" }} — {{
-                                leave.end_date|date:"d.m.Y" }}</span>
+                            <span class="fw-semibold">{{ leave.start_date|date:"d.m.Y" }} — {{ leave.end_date|date:"d.m.Y" }}</span>
                         </div>
                         <div class="col-6">
                             <small class="text-muted d-block">Jami kun</small>
-                            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 fs-6">{{
-                                leave.days_count }} kun</span>
+                            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 fs-6">{{ leave.days_count }} kun</span>
                         </div>
                         <div class="col-6">
                             <small class="text-muted d-block">Hozirgi holat</small>
