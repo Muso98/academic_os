@@ -34,7 +34,11 @@
                         </div>
                         <div class="col-6">
                             <small class="text-muted d-block">Jami kun</small>
-                            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 fs-6">{{ leave.days_count }} kun</span>
+                            <span class="badge bg-primary-subtle text-primary rounded-pill px-3 fs-6"><script>
+    var start = new Date("{{ leave.start_date|date:'Y-m-d' }}");
+    var end = new Date("{{ leave.end_date|date:'Y-m-d' }}");
+    document.write(Math.round((end - start) / 86400000) + 1);
+</script> kun</span>
                         </div>
                         <div class="col-6">
                             <small class="text-muted d-block">Hozirgi holat</small>

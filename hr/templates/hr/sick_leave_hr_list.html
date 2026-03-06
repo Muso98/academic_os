@@ -54,7 +54,11 @@
                             <small class="text-muted">@{{ leave.employee.username }}</small>
                         </td>
                         <td>{{ leave.start_date|date:"d.m.Y" }} — {{ leave.end_date|date:"d.m.Y" }}</td>
-                        <td><span class="badge bg-secondary-subtle text-secondary rounded-pill px-3">{{ leave.days_count }} kun</span></td>
+                        <td><span class="badge bg-secondary-subtle text-secondary rounded-pill px-3"><script>
+    var start = new Date("{{ leave.start_date|date:'Y-m-d' }}");
+    var end = new Date("{{ leave.end_date|date:'Y-m-d' }}");
+    document.write(Math.round((end - start) / 86400000) + 1);
+</script> kun</span></td>
                         <td><small class="text-muted">{{ leave.submitted_at|date:"d.m.Y H:i" }}</small></td>
                         <td>
                             {% if leave.status == 'approved' %}
