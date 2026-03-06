@@ -13,12 +13,12 @@
 
             <div class="card-body pt-0 px-4 pb-4">
                 <div class="profile-avatar-container mb-3">
-                    {% if profile.avatar %}
+                    {% if profile.avatar and profile.avatar.name %}
                     <img src="{{ profile.avatar.url }}" alt="Profile"
                         class="profile-avatar rounded-circle object-fit-cover">
                     {% else %}
-                    <div class="profile-avatar rounded-circle bg-white d-flex align-items-center justify-content-center mx-auto text-primary fw-bold"
-                        style="font-size: 3rem;">
+                    <div class="profile-avatar rounded-circle bg-white d-flex align-items-center justify-content-center mx-auto text-primary fw-bold shadow"
+                        style="font-size: 3rem; width: 150px; height: 150px; border: 5px solid #fff;">
                         {{ user.username|slice:":1"|upper }}
                     </div>
                     {% endif %}
