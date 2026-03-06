@@ -36,7 +36,7 @@
                         <div class="col-6">
                             <label class="form-label fw-medium text-secondary">Ism</label>
                             <input type="text" name="first_name" class="form-control rounded-3"
-                                value="{{ employee.first_name|default:'' }}" {% if action=='create' %}required{% endif
+                                value="{{ employee.first_name|default:'' }}" {% if action == 'create' %}required{% endif
                                 %}>
                         </div>
                         <div class="col-6">
@@ -62,7 +62,7 @@
                                 Parol {% if action == 'edit' %}<small class="text-muted">(bo'sh qoldirsangiz
                                     o'zgarmaydi)</small>{% else %}<span class="text-danger">*</span>{% endif %}
                             </label>
-                            <input type="password" name="password" class="form-control rounded-3" {% if action=='create'
+                            <input type="password" name="password" class="form-control rounded-3" {% if action == 'create'
                                 %}required{% endif %}
                                 placeholder="{% if action == 'edit' %}Yangi parol (ixtiyoriy){% else %}Parolni kiriting{% endif %}">
                         </div>
