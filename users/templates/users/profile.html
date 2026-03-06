@@ -15,7 +15,8 @@
                 <div class="profile-avatar-container mb-3">
                     {% if profile.avatar and profile.avatar.name %}
                     <img src="{{ profile.avatar.url }}" alt="Profile"
-                        class="profile-avatar rounded-circle object-fit-cover">
+                        class="profile-avatar rounded-circle object-fit-cover shadow"
+                        onerror="this.onerror=null; this.outerHTML='<div class=\'profile-avatar rounded-circle bg-white d-flex align-items-center justify-content-center mx-auto text-primary fw-bold shadow\' style=\'font-size: 3rem; width: 150px; height: 150px; border: 5px solid #fff;\'>{{ user.username|make_list|first|upper }}</div>';">
                     {% else %}
                     <div class="profile-avatar rounded-circle bg-white d-flex align-items-center justify-content-center mx-auto text-primary fw-bold shadow"
                         style="font-size: 3rem; width: 150px; height: 150px; border: 5px solid #fff;">
