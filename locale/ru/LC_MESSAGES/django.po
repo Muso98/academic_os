@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-09 09:14+0200\n"
+"POT-Creation-Date: 2026-06-09 09:53+0200\n"
 "PO-Revision-Date: 2007-10-18 14:00+0100\n"
 "Last-Translator: system\n"
 "Language-Team: ru <localhost>\n"
@@ -28,7 +28,7 @@ msgstr ""
 #: .\academic\templates\academic\methodist_dashboard.html:170
 #: .\templates\base.html:112
 msgid "Resources"
-msgstr ""
+msgstr "Ресурсы"
 
 #: .\academic\templates\academic\methodist_dashboard.html:47
 msgid "Active Teachers"
@@ -50,7 +50,7 @@ msgstr ""
 #: .\academic\templates\academic\methodist_dashboard.html:74
 #: .\templates\base.html:105
 msgid "Observations"
-msgstr ""
+msgstr "Наблюдения"
 
 #: .\academic\templates\academic\methodist_dashboard.html:75
 msgid "Average Score"
@@ -266,15 +266,15 @@ msgstr ""
 msgid "No resources found. Upload one to get started."
 msgstr ""
 
-#: .\config\settings.py:169
+#: .\config\settings.py:170
 msgid "O'zbek"
 msgstr ""
 
-#: .\config\settings.py:170
+#: .\config\settings.py:171
 msgid "Русский"
 msgstr ""
 
-#: .\config\settings.py:171
+#: .\config\settings.py:172
 msgid "English"
 msgstr ""
 
@@ -624,7 +624,6 @@ msgstr "не указан"
 
 #: .\hr\templates\hr\certificate_print.html:172
 #, python-format
-#| msgid "%(year)s-yil %(num)s-sonli ma'lumotnoma"
 msgid "%(year)s-yil \"%(day)s\"-%(month)s %(num)s-son"
 msgstr "Справка №%(num)s от \"%(day)s\" %(month)s %(year)s года"
 
@@ -663,7 +662,6 @@ msgid "Asl nusxani tekshirish (QR)"
 msgstr "Проверка подлинности (QR)"
 
 #: .\hr\templates\hr\certificate_print.html:217
-#| msgid "Tashkilotlar"
 msgid "Tashkilot rahbari:"
 msgstr "Руководитель организации:"
 
@@ -680,7 +678,6 @@ msgid "Ushbu ma'lumotnoma Academic OS tizimi orqali tasdiqlangan."
 msgstr "Данная справка подтверждена через систему Academic OS."
 
 #: .\hr\templates\hr\certificate_verify.html:27
-#| msgid "Ma'lumotnoma Tartib Raqamlari"
 msgid "Ma'lumotnoma Tafsilotlari:"
 msgstr "Детали справки:"
 
@@ -702,7 +699,6 @@ msgid "Lavozimi (Vazifasi):"
 msgstr "Должность:"
 
 #: .\hr\templates\hr\certificate_verify.html:45
-#| msgid "Tashkilotlar"
 msgid "Tashkilot / Maktab:"
 msgstr "Организация / Школа:"
 
@@ -714,44 +710,43 @@ msgstr "Процесс проверки был осуществлен через
 msgid "Barcha huquqlar himoyalangan."
 msgstr "Все права защищены."
 
-#: .\hr\views.py:19
-#| msgid "KPI Indikatori"
+#: .\hr\views.py:72
 msgid "direktori"
 msgstr "директора"
 
-#: .\hr\views.py:20
+#: .\hr\views.py:73
 msgid "kafedra mudiri"
 msgstr "заведующего кафедрой"
 
-#: .\hr\views.py:21
+#: .\hr\views.py:74
 msgid "o'qituvchisi"
 msgstr "учителя"
 
-#: .\hr\views.py:22 .\hr\views.py:24
+#: .\hr\views.py:75 .\hr\views.py:77
 msgid "tizim ma'muri"
 msgstr "системного администратора"
 
-#: .\hr\views.py:23
+#: .\hr\views.py:76
 msgid "uslubchisi"
 msgstr "методиста"
 
-#: .\hr\views.py:44 .\hr\views.py:94 .\hr\views.py:153
+#: .\hr\views.py:97 .\hr\views.py:147 .\hr\views.py:206
 msgid "xodimi"
 msgstr "сотрудника"
 
-#: .\hr\views.py:161
+#: .\hr\views.py:214
 msgid "Noma'lum"
 msgstr "Неизвестно"
 
-#: .\hr\views.py:184
+#: .\hr\views.py:237
 msgid "Barcha maydonlarni to'ldiring va faylni yuklang."
 msgstr ""
 
-#: .\hr\views.py:192
+#: .\hr\views.py:245
 msgid "Kasallik varaqangiz HR bo'limiga yuborildi. Kutib turing."
 msgstr ""
 
-#: .\hr\views.py:236
+#: .\hr\views.py:289
 msgid "Kasallik varaqasi rad etildi."
 msgstr ""
 
@@ -805,51 +800,51 @@ msgstr "Метод. объединения"
 
 #: .\templates\base.html:92 .\templates\dashboard.html:4
 msgid "Dashboard"
-msgstr ""
+msgstr "Главная"
 
 #: .\templates\base.html:98 .\workflow\templates\workflow\task_list.html:4
 msgid "Tasks"
-msgstr ""
+msgstr "Задачи"
 
 #: .\templates\base.html:117
 msgid "Documents"
-msgstr ""
+msgstr "Документы"
 
 #: .\templates\base.html:123
 msgid "Orders"
-msgstr ""
+msgstr "Приказы"
 
 #: .\templates\base.html:130
 msgid "Reports"
-msgstr ""
+msgstr "Отчеты"
 
 #: .\templates\base.html:136 .\users\templates\users\profile.html:84
 msgid "Ish joyidan ma'lumotnoma"
-msgstr ""
+msgstr "Справка с места работы"
 
 #: .\templates\base.html:144
 msgid "Sick Leave"
-msgstr ""
+msgstr "Больничный"
 
 #: .\templates\base.html:150
 msgid "Submit Sick Leave"
-msgstr ""
+msgstr "Оформить больничный"
 
 #: .\templates\base.html:157
 msgid "My Sick Leaves"
-msgstr ""
+msgstr "Мои больничные"
 
 #: .\templates\base.html:165
 msgid "HR Review"
-msgstr ""
+msgstr "Проверка HR"
 
 #: .\templates\base.html:175
 msgid "Admin"
-msgstr ""
+msgstr "Админ"
 
 #: .\templates\base.html:181
 msgid "Xodimlar"
-msgstr ""
+msgstr "Сотрудники"
 
 #: .\templates\dashboard.html:16
 msgid "Welcome back"
