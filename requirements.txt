@@ -12,3 +12,5 @@ drf-yasg>=1.21
 cryptography>=41.0
 xhtml2pdf>=0.2.11
 django-modeltranslation==0.18.11
+qrcode>=7.4
+Pillow>=10.0
