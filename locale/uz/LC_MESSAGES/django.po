@@ -1,478 +1,1175 @@
 msgid ""
 msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-09 09:14+0200\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 
-# Sidebar
-msgid "Dashboard"
-msgstr "Boshqaruv Paneli"
-
-msgid "Tasks"
-msgstr "Vazifalar"
-
-msgid "Observations"
-msgstr "Kuzatuvlar"
-
-msgid "Resources"
-msgstr "Resurslar"
-
-msgid "Documents"
-msgstr "Hujjatlar"
-
-msgid "Orders"
-msgstr "Buyruqlar"
-
-msgid "Reports"
-msgstr "Hisobotlar"
-
-# Dashboard Content
-msgid "Welcome back"
-msgstr "Xush kelibsiz"
-
-msgid "Here's what's happening in your academic workspace today."
-msgstr "Bugungi akademik faoliyatingiz haqida qisqacha ma'lumot."
-
-msgid "My KPI Score"
-msgstr "Mening KPI Ballim"
-
-msgid "Completed Tasks"
-msgstr "Bajarilgan Vazifalar"
-
-msgid "All time"
-msgstr "Jami"
-
-msgid "Performance Analytics"
-msgstr "Samaradorlik Tahlili"
-
-msgid "Task Distribution"
-msgstr "Vazifalar Taqsimoti"
-
-msgid "Pending Tasks"
-msgstr "Kutilayotgan Vazifalar"
-
-msgid "No pending tasks."
-msgstr "Kutilayotgan vazifalar yo'q."
-
-msgid "Recent Observations"
-msgstr "So'nggi Kuzatuvlar"
-
-msgid "No recent observations."
-msgstr "Yangi kuzatuvlar yo'q."
-
-msgid "View All"
-msgstr "Barchasini ko'rish"
-
-msgid "Internal Orders Archive"
-msgstr "Ichki Buyruqlar Arxivi"
-
-msgid "Add first certificate"
-msgstr "Birinchi sertifikatni qo'shish"
-
-msgid "Address"
-msgstr "Manzil"
-
-msgid "Low"
-msgstr "Past"
-
-msgid "Add"
-msgstr "Qo'shish"
-
-msgid "Location / Address"
-msgstr "Joylashuv / Manzil"
-
-msgid "Download"
-msgstr "Yuklash"
-
-msgid "Class"
-msgstr "Sinf"
-
-msgid "Rejected"
-msgstr "Rad etildi"
-
-msgid "Reports List"
-msgstr "Hisobotlar Ro'yxati"
-
-msgid "My Reports"
-msgstr "Mening Hisobotlarim"
-
-msgid "Cancel"
-msgstr "Bekor qilish"
-
-msgid "Observation Journal - Academic OS"
-msgstr "Kuzatuv Jurnali - Academic OS"
-
-msgid "Reject"
-msgstr "Rad etish"
-
-msgid "Sign In"
-msgstr "Kirish"
-
-msgid "Pending"
-msgstr "Kutilmoqda"
-
-msgid "No reports yet."
-msgstr "Hozircha hisobotlar yo'q."
-
-msgid "Approve Report"
-msgstr "Hisobotni Tasdiqlash"
-
-msgid "items"
-msgstr "ta"
-
-msgid "Submit Report"
-msgstr "Hisobot Topshirish"
-
-msgid "Leave a comment about errors..."
-msgstr "Xatoliklar haqida izoh qoldiring..."
-
-msgid "Search"
-msgstr "Qidirish"
-
-msgid "Sign in to your account"
-msgstr "Hisobingizga kiring"
-
-msgid "Teacher"
-msgstr "O'qituvchi"
-
-msgid "Edit Profile"
-msgstr "Profilni Tahrirlash"
-
-msgid "Deadline"
-msgstr "Muddat"
-
-msgid "Approved"
-msgstr "Tasdiqlandi"
-
-msgid "Date"
-msgstr "Sana"
-
-msgid "Issued:"
-msgstr "Berilgan:"
-
-msgid "Profile Picture"
-msgstr "Profil Rasmi"
-
-msgid "Contact Information"
-msgstr "Bog'lanish Ma'lumotlari"
-
-msgid "High"
-msgstr "Yuqori"
-
-msgid "Yes, Approve"
-msgstr "Ha, Tasdiqlash"
-
-msgid "Reject Report"
-msgstr "Hisobotni Rad etish"
-
-msgid "Upload Resource"
-msgstr "Resurs Yuklash"
-
-msgid "Uploaded By"
-msgstr "Yuklagan"
-
-msgid "Orders - Academic OS"
-msgstr "Buyruqlar - Academic OS"
-
-msgid "Priority"
-msgstr "Muhimlik"
-
-msgid "Under Review"
-msgstr "Tekshiruvda"
-
-msgid "Clear Filters"
-msgstr "Filtrlarni tozalash"
-
-msgid "Save Changes"
-msgstr "O'zgarishlarni Saqlash"
-
-msgid "Start Date"
-msgstr "Boshlanish Sanasi"
-
-msgid "Score"
-msgstr "Ball"
-
-msgid "Personal Details"
-msgstr "Shaxsiy Ma'lumotlar"
-
-msgid "No certificates yet."
-msgstr "Hozircha sertifikatlar yo'q."
-
-msgid "Bio"
-msgstr "Tarjimayi Hol"
-
-msgid "Password"
-msgstr "Parol"
-
-msgid "Description"
-msgstr "Tavsif"
-
-msgid "Version"
-msgstr "Versiya"
-
-msgid "Status"
-msgstr "Holat"
-
-msgid "Type"
-msgstr "Tur"
-
-msgid "Educational Resources"
-msgstr "O'quv Resurslari"
-
-msgid "Action"
-msgstr "Amal"
-
-msgid "Number"
-msgstr "Raqam"
-
-msgid "Tasks assigned to you or created by you."
-msgstr "Sizga tayinlangan yoki siz yaratgan vazifalar."
-
-msgid "Completed"
-msgstr "Bajarildi"
-
-msgid "All"
-msgstr "Barchasi"
-
-msgid "No tasks found. Click 'New Task' to get started!"
-msgstr "Vazifalar topilmadi. Boshlash uchun 'Yangi Vazifa' tugmasini bosing!"
-
-msgid "In Progress"
-msgstr "Jarayonda"
-
-msgid "Medium"
-msgstr "O'rta"
-
-msgid "Reports - Academic OS"
-msgstr "Hisobotlar - Academic OS"
-
-msgid "Orders List"
-msgstr "Buyruqlar Ro'yxati"
-
-msgid "Record of all lesson observations."
-msgstr "Barcha dars kuzatuvlari tarixi."
-
-msgid "Certificates & Awards"
-msgstr "Sertifikatlar va Mukofotlar"
-
-msgid "Email Address"
-msgstr "Email Manzili"
-
-msgid "First Name"
-msgstr "Ism"
-
-msgid "No orders uploaded yet."
-msgstr "Hozircha buyruqlar yuklanmagan."
-
-msgid "Comment:"
-msgstr "Izoh:"
-
-msgid "New Order"
-msgstr "Yangi Buyruq"
-
-msgid "Username"
-msgstr "Foydalanuvchi nomi"
-
-msgid "Observations Journal"
-msgstr "Kuzatuvlar Jurnali"
-
-msgid "No file"
-msgstr "Fayl yo'q"
-
-msgid "Email"
-msgstr "Email"
-
-msgid "Filters"
-msgstr "Filtrlar"
-
-msgid "File"
-msgstr "Fayl"
-
-msgid "Invalid username or password."
-msgstr "Noto'g'ri foydalanuvchi nomi yoki parol."
-
-msgid "Phone Number"
-msgstr "Telefon Raqami"
-
-msgid "Are you sure you want to approve this report?"
-msgstr "Ushbu hisobotni tasdiqlaysizmi?"
-
-msgid "Reason for Rejection:"
-msgstr "Rad etish sababi:"
-
-msgid "Extended Profile"
-msgstr "Kengaytirilgan Profil"
-
-msgid "End Date"
-msgstr "Tugash Sanasi"
-
-msgid "Expires:"
-msgstr "Amal qiladi:"
-
-msgid "Topic"
-msgstr "Mavzu"
-
-msgid "My Tasks"
-msgstr "Mening Vazifalarim"
-
-msgid "Subject"
-msgstr "Fan"
-
-msgid "Phone"
-msgstr "Telefon"
-
-msgid "Mutual Lesson Observation Journal"
-msgstr "O'zaro Dars Kuzatuvi Jurnali"
-
-msgid "Lesson Observations"
-msgstr ""
-
-msgid " Enter your password"
-msgstr ""
-
-msgid " Enter your username"
-msgstr ""
-
-msgid "No observations found."
-msgstr "Kuzatuvlar topilmadi."
-
-msgid "New Task"
-msgstr "Yangi Vazifa"
-
-msgid "All Reports (Admin)"
-msgstr "Barcha Hisobotlar (Admin)"
-
-msgid "Member"
-msgstr "A'zo"
-
-msgid "My Profile"
-msgstr "Mening Profilim"
-
-msgid "Brief description about yourself."
-msgstr "O'zingiz haqingizda qisqacha."
-
-msgid "Approve"
-msgstr "Tasdiqlash"
-
-msgid "History"
-msgstr "Tarix"
-
-msgid "Observer"
-msgstr "Kuzatuvchi"
-
-msgid "New Observation"
-msgstr "Yangi Kuzatuv"
-
-msgid "Last Name"
-msgstr "Familiya"
-
-msgid "Resource Center"
-msgstr "Resurs Markazi"
-
-msgid "Actions"
-msgstr "Amallar"
-
-msgid "Login - Academic OS"
-msgstr "Kirish - Academic OS"
-
-msgid "No resources found. Upload one to get started."
-msgstr "Resurslar topilmadi. Boshlash uchun yuklang."
-
-msgid "Repository of study materials and documents."
-msgstr "O'quv materiallari va hujjatlar ombori."
-
-msgid "Title"
-msgstr "Sarlavha"
-
-msgid "Quick Actions"
-msgstr "Tezkor Amallar"
-
-msgid "Average Score"
-msgstr "O'rtacha Ball"
-
-msgid "Methodist Dashboard"
-msgstr "Metodist Boshqaruv Paneli"
-
-msgid "No observations yet"
-msgstr "Hozircha kuzatuvlar yo'q"
-
-msgid "No statistics yet"
-msgstr "Hozircha statistika yo'q"
-
-msgid "Back to List"
-msgstr "Ro'yxatga Qaytish"
-
-msgid "Active Teachers"
-msgstr "Faol O'qituvchilar"
-
-msgid "Task Details"
-msgstr "Vazifa Tafsilotlari"
-
-msgid "New Lesson Observation"
-msgstr ""
-
-msgid "Created By"
-msgstr "Yaratdi"
-
-msgid "Lesson Details"
-msgstr "Dars Tafsilotlari"
-
-msgid "Total Observations"
-msgstr "Jami Kuzatuvlar"
-
-msgid "Assignees"
-msgstr "Mas'ullar"
-
-msgid "No deadline"
-msgstr ""
-
-msgid "Edit Task"
-msgstr "Vazifani Tahrirlash"
-
-msgid "Save Task"
-msgstr "Vazifani Saqlash"
-
-msgid "Create Task"
-msgstr "Vazifa Yaratish"
-
-msgid "High Priority"
-msgstr "Yuqori Muhimlik"
-
-msgid "Low Priority"
-msgstr "Past Muhimlik"
-
-msgid "Upload"
-msgstr ""
-
-msgid "All Observations"
-msgstr "Barcha Kuzatuvlar"
-
-msgid "Dependencies"
-msgstr "Bog'liqliklar"
-
+#: .\academic\templates\academic\methodist_dashboard.html:3
 msgid "Methodist Dashboard - Academic OS"
 msgstr "Metodist Boshqaruv Paneli - Academic OS"
 
+#: .\academic\templates\academic\methodist_dashboard.html:5
+msgid "Methodist Dashboard"
+msgstr "Metodist Boshqaruv Paneli"
+
+#: .\academic\templates\academic\methodist_dashboard.html:15
+msgid "Total Observations"
+msgstr "Jami Kuzatuvlar"
+
+#: .\academic\templates\academic\methodist_dashboard.html:31
+#: .\academic\templates\academic\methodist_dashboard.html:170
+#: .\templates\base.html:112
+msgid "Resources"
+msgstr "Resurslar"
+
+#: .\academic\templates\academic\methodist_dashboard.html:47
+msgid "Active Teachers"
+msgstr "Faol O'qituvchilar"
+
+#: .\academic\templates\academic\methodist_dashboard.html:64
 msgid "Top Teachers"
 msgstr "Eng Yaxshi O'qituvchilar"
 
-msgid "Submit Observation"
-msgstr "Kuzatuvni Yuborish"
+#: .\academic\templates\academic\methodist_dashboard.html:73
+#: .\academic\templates\academic\observation_form.html:17
+#: .\academic\templates\academic\observation_journal.html:16
+#: .\academic\templates\academic\observation_journal.html:54
+#: .\academic\templates\academic\observation_list.html:25
+#: .\documents\templates\documents\report_list.html:26
+msgid "Teacher"
+msgstr "O'qituvchi"
 
-msgid "Created At"
-msgstr "Yaratilgan Vaqt"
+#: .\academic\templates\academic\methodist_dashboard.html:74
+#: .\templates\base.html:105
+msgid "Observations"
+msgstr "Kuzatuvlar"
 
-msgid "Evaluation Criteria"
-msgstr "Baholash Mezonlari"
+#: .\academic\templates\academic\methodist_dashboard.html:75
+msgid "Average Score"
+msgstr "O'rtacha Ball"
 
-msgid "Medium Priority"
-msgstr "O'rta Muhimlik"
+#: .\academic\templates\academic\methodist_dashboard.html:101
+msgid "No statistics yet"
+msgstr "Hozircha statistika yo'q"
 
+#: .\academic\templates\academic\methodist_dashboard.html:112
+#: .\templates\dashboard.html:129
+msgid "Recent Observations"
+msgstr "So'nggi Kuzatuvlar"
+
+#: .\academic\templates\academic\methodist_dashboard.html:113
+#: .\templates\dashboard.html:148
+msgid "View All"
+msgstr "Barchasini ko'rish"
+
+#: .\academic\templates\academic\methodist_dashboard.html:138
+msgid "No observations yet"
+msgstr "Hozircha kuzatuvlar yo'q"
+
+#: .\academic\templates\academic\methodist_dashboard.html:151
+msgid "Quick Actions"
+msgstr "Tezkor Amallar"
+
+#: .\academic\templates\academic\methodist_dashboard.html:158
+#: .\academic\templates\academic\observation_list.html:14
+msgid "New Observation"
+msgstr "Yangi Kuzatuv"
+
+#: .\academic\templates\academic\methodist_dashboard.html:164
+#: .\templates\dashboard.html:129
+msgid "All Observations"
+msgstr "Barcha Kuzatuvlar"
+
+#: .\academic\templates\academic\methodist_dashboard.html:176
+#: .\academic\templates\academic\resource_form.html:4
+#: .\academic\templates\academic\resource_list.html:14
+msgid "Upload Resource"
+msgstr "Resurs Yuklash"
+
+#: .\academic\templates\academic\observation_form.html:4
+msgid "New Lesson Observation"
+msgstr ""
+
+#: .\academic\templates\academic\observation_form.html:14
+msgid "Lesson Details"
+msgstr "Dars Tafsilotlari"
+
+#: .\academic\templates\academic\observation_form.html:21
+#: .\academic\templates\academic\observation_journal.html:53
+#: .\academic\templates\academic\observation_list.html:24
+#: .\academic\templates\academic\resource_list.html:27
+#: .\documents\templates\documents\order_list.html:26
+#: .\documents\templates\documents\report_list.html:30
+msgid "Date"
+msgstr "Sana"
+
+#: .\academic\templates\academic\observation_form.html:25
+#: .\academic\templates\academic\observation_journal.html:56
+#: .\academic\templates\academic\observation_list.html:27
+#: .\documents\templates\documents\order_list.html:25
+#: .\documents\templates\documents\report_list.html:27
+msgid "Subject"
+msgstr "Fan"
+
+#: .\academic\templates\academic\observation_form.html:29
 msgid "Class Group"
 msgstr "Sinf"
 
+#: .\academic\templates\academic\observation_form.html:33
+#: .\academic\templates\academic\observation_journal.html:57
+#: .\academic\templates\academic\observation_list.html:28
+msgid "Topic"
+msgstr "Mavzu"
 
+#: .\academic\templates\academic\observation_form.html:38
+msgid "Evaluation Criteria"
+msgstr "Baholash Mezonlari"
 
+#: .\academic\templates\academic\observation_form.html:76
+#: .\academic\templates\academic\resource_form.html:40
+#: .\documents\templates\documents\report_list.html:141
+#: .\workflow\templates\workflow\task_form.html:41
+msgid "Cancel"
+msgstr "Bekor qilish"
 
+#: .\academic\templates\academic\observation_form.html:77
+msgid "Submit Observation"
+msgstr "Kuzatuvni Yuborish"
 
-# Kasallik Varaqasi (Sick Leave)
+#: .\academic\templates\academic\observation_journal.html:4
+msgid "Observation Journal - Academic OS"
+msgstr "Kuzatuv Jurnali - Academic OS"
 
-# Sick Leave
+#: .\academic\templates\academic\observation_journal.html:6
+msgid "Mutual Lesson Observation Journal"
+msgstr "O'zaro Dars Kuzatuvi Jurnali"
+
+#: .\academic\templates\academic\observation_journal.html:11
+msgid "Filters"
+msgstr "Filtrlar"
+
+#: .\academic\templates\academic\observation_journal.html:18
+msgid "All"
+msgstr "Barchasi"
+
+#: .\academic\templates\academic\observation_journal.html:27
+msgid "Start Date"
+msgstr "Boshlanish Sanasi"
+
+#: .\academic\templates\academic\observation_journal.html:31
+msgid "End Date"
+msgstr "Tugash Sanasi"
+
+#: .\academic\templates\academic\observation_journal.html:35
+msgid "Search"
+msgstr "Qidirish"
+
+#: .\academic\templates\academic\observation_journal.html:43
+msgid "Observations Journal"
+msgstr "Kuzatuvlar Jurnali"
+
+#: .\academic\templates\academic\observation_journal.html:45
+msgid "items"
+msgstr "ta"
+
+#: .\academic\templates\academic\observation_journal.html:55
+#: .\academic\templates\academic\observation_list.html:26
+msgid "Observer"
+msgstr "Kuzatuvchi"
+
+#: .\academic\templates\academic\observation_journal.html:58
+msgid "Class"
+msgstr "Sinf"
+
+#: .\academic\templates\academic\observation_journal.html:59
+#: .\academic\templates\academic\observation_list.html:29
+msgid "Score"
+msgstr "Ball"
+
+#: .\academic\templates\academic\observation_journal.html:103
+#: .\academic\templates\academic\observation_list.html:54
+msgid "No observations found."
+msgstr "Kuzatuvlar topilmadi."
+
+#: .\academic\templates\academic\observation_journal.html:105
+msgid "Clear Filters"
+msgstr "Filtrlarni tozalash"
+
+#: .\academic\templates\academic\observation_list.html:4
+msgid "Lesson Observations"
+msgstr ""
+
+#: .\academic\templates\academic\observation_list.html:10
+msgid "History"
+msgstr "Tarix"
+
+#: .\academic\templates\academic\observation_list.html:11
+msgid "Record of all lesson observations."
+msgstr "Barcha dars kuzatuvlari tarixi."
+
+#: .\academic\templates\academic\resource_form.html:41
+msgid "Upload"
+msgstr ""
+
+#: .\academic\templates\academic\resource_list.html:4
+msgid "Resource Center"
+msgstr "Resurs Markazi"
+
+#: .\academic\templates\academic\resource_list.html:10
+msgid "Educational Resources"
+msgstr "O'quv Resurslari"
+
+#: .\academic\templates\academic\resource_list.html:11
+msgid "Repository of study materials and documents."
+msgstr "O'quv materiallari va hujjatlar ombori."
+
+#: .\academic\templates\academic\resource_list.html:24
+#: .\workflow\templates\workflow\task_list.html:27
+msgid "Title"
+msgstr "Sarlavha"
+
+#: .\academic\templates\academic\resource_list.html:25
+msgid "Description"
+msgstr "Tavsif"
+
+#: .\academic\templates\academic\resource_list.html:26
+msgid "Uploaded By"
+msgstr "Yuklagan"
+
+#: .\academic\templates\academic\resource_list.html:28
+msgid "Version"
+msgstr "Versiya"
+
+#: .\academic\templates\academic\resource_list.html:29
+msgid "Action"
+msgstr "Amal"
+
+#: .\academic\templates\academic\resource_list.html:43
+#: .\documents\templates\documents\order_list.html:38
+#: .\documents\templates\documents\report_list.html:66
+msgid "Download"
+msgstr "Yuklash"
+
+#: .\academic\templates\academic\resource_list.html:46
+msgid "No file"
+msgstr "Fayl yo'q"
+
+#: .\academic\templates\academic\resource_list.html:53
+msgid "No resources found. Upload one to get started."
+msgstr "Resurslar topilmadi. Boshlash uchun yuklang."
+
+#: .\config\settings.py:169
+msgid "O'zbek"
+msgstr ""
+
+#: .\config\settings.py:170
+msgid "Русский"
+msgstr ""
+
+#: .\config\settings.py:171
+msgid "English"
+msgstr ""
+
+#: .\documents\templates\documents\order_list.html:4
+msgid "Orders - Academic OS"
+msgstr "Buyruqlar - Academic OS"
+
+#: .\documents\templates\documents\order_list.html:6
+msgid "Internal Orders Archive"
+msgstr "Ichki Buyruqlar Arxivi"
+
+#: .\documents\templates\documents\order_list.html:11
+msgid "Orders List"
+msgstr "Buyruqlar Ro'yxati"
+
+#: .\documents\templates\documents\order_list.html:14
+msgid "New Order"
+msgstr "Yangi Buyruq"
+
+#: .\documents\templates\documents\order_list.html:24
+msgid "Number"
+msgstr "Raqam"
+
+#: .\documents\templates\documents\order_list.html:27
+msgid "File"
+msgstr "Fayl"
+
+#: .\documents\templates\documents\order_list.html:49
+msgid "No orders uploaded yet."
+msgstr "Hozircha buyruqlar yuklanmagan."
+
+#: .\documents\templates\documents\report_list.html:4
+msgid "Reports - Academic OS"
+msgstr "Hisobotlar - Academic OS"
+
+#: .\documents\templates\documents\report_list.html:7
+msgid "All Reports (Admin)"
+msgstr "Barcha Hisobotlar (Admin)"
+
+#: .\documents\templates\documents\report_list.html:7
+msgid "My Reports"
+msgstr "Mening Hisobotlarim"
+
+#: .\documents\templates\documents\report_list.html:13
+msgid "Reports List"
+msgstr "Hisobotlar Ro'yxati"
+
+#: .\documents\templates\documents\report_list.html:16
+msgid "Submit Report"
+msgstr "Hisobot Topshirish"
+
+#: .\documents\templates\documents\report_list.html:28
+msgid "Type"
+msgstr "Tur"
+
+#: .\documents\templates\documents\report_list.html:29
+#: .\workflow\templates\workflow\task_detail.html:47
+#: .\workflow\templates\workflow\task_list.html:29
+msgid "Status"
+msgstr "Holat"
+
+#: .\documents\templates\documents\report_list.html:31
+#: .\workflow\templates\workflow\task_list.html:31
+msgid "Actions"
+msgstr "Amallar"
+
+#: .\documents\templates\documents\report_list.html:44
+msgid "Comment:"
+msgstr "Izoh:"
+
+#: .\documents\templates\documents\report_list.html:53
+msgid "Approved"
+msgstr "Tasdiqlandi"
+
+#: .\documents\templates\documents\report_list.html:56
+msgid "Rejected"
+msgstr "Rad etildi"
+
+#: .\documents\templates\documents\report_list.html:59
+msgid "Under Review"
+msgstr "Tekshiruvda"
+
+#: .\documents\templates\documents\report_list.html:72
+msgid "Approve"
+msgstr "Tasdiqlash"
+
+#: .\documents\templates\documents\report_list.html:76
+#: .\documents\templates\documents\report_list.html:142
+msgid "Reject"
+msgstr "Rad etish"
+
+#: .\documents\templates\documents\report_list.html:90
+msgid "No reports yet."
+msgstr "Hozircha hisobotlar yo'q."
+
+#: .\documents\templates\documents\report_list.html:105
+msgid "Approve Report"
+msgstr "Hisobotni Tasdiqlash"
+
+#: .\documents\templates\documents\report_list.html:110
+msgid "Are you sure you want to approve this report?"
+msgstr "Ushbu hisobotni tasdiqlaysizmi?"
+
+#: .\documents\templates\documents\report_list.html:114
+msgid "Yes, Approve"
+msgstr "Ha, Tasdiqlash"
+
+#: .\documents\templates\documents\report_list.html:126
+msgid "Reject Report"
+msgstr "Hisobotni Rad etish"
+
+#: .\documents\templates\documents\report_list.html:135
+msgid "Reason for Rejection:"
+msgstr "Rad etish sababi:"
+
+#: .\documents\templates\documents\report_list.html:137
+msgid "Leave a comment about errors..."
+msgstr "Xatoliklar haqida izoh qoldiring..."
+
+#: .\hr\models.py:9 .\hr\models.py:45 .\users\models.py:10
+msgid "Foydalanuvchi"
+msgstr ""
+
+#: .\hr\models.py:10
+msgid "Pasport raqami/JShSHIR"
+msgstr ""
+
+#: .\hr\models.py:11
+msgid "Oylik maosh (UZS)"
+msgstr ""
+
+#: .\hr\models.py:11
+msgid "Oylik maosh"
+msgstr ""
+
+#: .\hr\models.py:12
+msgid "Shartnoma tugash sanasi"
+msgstr ""
+
+#: .\hr\models.py:13
+msgid "Malaka toifasi / Aniq vazifasi"
+msgstr ""
+
+#: .\hr\models.py:16
+msgid "Qiyofacha (Avatar)"
+msgstr ""
+
+#: .\hr\models.py:17
+msgid "Tarjimayi hol (Bio)"
+msgstr ""
+
+#: .\hr\models.py:18 .\organization\models.py:10
+msgid "Telefon raqami"
+msgstr ""
+
+#: .\hr\models.py:19 .\organization\models.py:11
+msgid "Manzil"
+msgstr ""
+
+#: .\hr\models.py:22
+msgid "Sertifikatlar (JSON)"
+msgstr ""
+
+#: .\hr\models.py:25
+#, fuzzy
+#| msgid "Edit Profile"
+msgid "Xodim Profili"
+msgstr "Profilni Tahrirlash"
+
+#: .\hr\models.py:26
+msgid "Xodimlar Profillari"
+msgstr ""
+
+#: .\hr\models.py:32 .\organization\models.py:7 .\organization\models.py:26
+#: .\organization\models.py:41
+msgid "Nomi"
+msgstr ""
+
+#: .\hr\models.py:33
+msgid "Tavsif"
+msgstr ""
+
+#: .\hr\models.py:34
+msgid "Ushbu indikator uchun beriladigan ball"
+msgstr ""
+
+#: .\hr\models.py:34
+msgid "Vazni"
+msgstr ""
+
+#: .\hr\models.py:35
+msgid "Ushbu KPI ga erishish qoidalari"
+msgstr ""
+
+#: .\hr\models.py:35
+msgid "Mezonlar"
+msgstr ""
+
+#: .\hr\models.py:38
+msgid "KPI Indikatori"
+msgstr ""
+
+#: .\hr\models.py:39
+msgid "KPI Indikatorlari"
+msgstr ""
+
+#: .\hr\models.py:46
+msgid "Indikator"
+msgstr ""
+
+#: .\hr\models.py:47
+msgid "Erishilgan sana"
+msgstr ""
+
+#: .\hr\models.py:48
+msgid "Olingan ball"
+msgstr ""
+
+#: .\hr\models.py:49
+msgid "Isbotlovchi hujjat"
+msgstr ""
+
+#: .\hr\models.py:50
+msgid "Tasdiqlangan"
+msgstr ""
+
+#: .\hr\models.py:53
+msgid "KPI Yozuvi (Natijasi)"
+msgstr ""
+
+#: .\hr\models.py:54
+msgid "KPI Yozuvlari (Natijalari)"
+msgstr ""
+
+#: .\hr\models.py:75
+msgid "Sertifikat"
+msgstr ""
+
+#: .\hr\models.py:76
+msgid "Sertifikatlar"
+msgstr ""
+
+#: .\hr\models.py:94
+msgid "Yil (Masalan: 2026)"
+msgstr ""
+
+#: .\hr\models.py:94
+msgid "Yil"
+msgstr ""
+
+#: .\hr\models.py:95
+msgid "Oxirgi berilgan ma'lumotnoma raqami"
+msgstr ""
+
+#: .\hr\models.py:95
+msgid "Oxirgi raqam"
+msgstr ""
+
+#: .\hr\models.py:98
+msgid "Ma'lumotnoma Tartib Raqami"
+msgstr ""
+
+#: .\hr\models.py:99
+msgid "Ma'lumotnoma Tartib Raqamlari"
+msgstr ""
+
+#: .\hr\models.py:122
+msgid "Kutilmoqda"
+msgstr ""
+
+#: .\hr\models.py:123
+msgid "Tasdiqlandi"
+msgstr ""
+
+#: .\hr\models.py:124
+msgid "Rad etildi"
+msgstr ""
+
+#: .\hr\models.py:131
+msgid "Xodim"
+msgstr ""
+
+#: .\hr\models.py:133
+msgid "Boshlash sanasi"
+msgstr ""
+
+#: .\hr\models.py:134
+msgid "Tugash sanasi"
+msgstr ""
+
+#: .\hr\models.py:137
+msgid "Kasallik varaqasi (fayl)"
+msgstr ""
+
+#: .\hr\models.py:143
+msgid "Holat"
+msgstr ""
+
+#: .\hr\models.py:153
+msgid "HR izohi"
+msgstr ""
+
+#: .\hr\models.py:160
+msgid "Ko'rib chiqqan HR"
+msgstr ""
+
+#: .\hr\models.py:162
+msgid "Yuborilgan vaqt"
+msgstr ""
+
+#: .\hr\models.py:163
+msgid "Ko'rib chiqilgan vaqt"
+msgstr ""
+
+#: .\hr\models.py:166
+msgid "Kasallik Varaqasi"
+msgstr ""
+
+#: .\hr\models.py:167
+msgid "Kasallik Varaqalari"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_print.html:153
+msgid "Chop etish"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_print.html:161
+msgid "MAKTABGACHA VA MAKTAB TA'LIMI BO'LIMIGA QARASHLI"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_print.html:166
+msgid "Manzil kiritilmagan"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_print.html:166
+#: .\hr\templates\hr\certificate_print.html:224
+msgid "Tel:"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_print.html:166
+msgid "kiritilmagan"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_print.html:172
+#, python-format
+msgid "%(year)s-yil \"%(day)s\"-%(month)s %(num)s-son"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_print.html:181
+msgid "MA'LUMOTNOMA"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_print.html:188
+#, python-format
+msgid ""
+"\n"
+"                    Berildi ushbu ma'lumotnoma shu haqdadirki, <b>%(name)s</"
+"b> %(region)sdagi %(org_name)sning %(position)s vazifasida ishlaydi.\n"
+"                    "
+msgstr ""
+
+#: .\hr\templates\hr\certificate_print.html:192
+#, python-format
+msgid ""
+"\n"
+"                    Berildi ushbu ma'lumotnoma shu haqdadirki, <b>%(name)s</"
+"b> %(org_name)sning %(position)s vazifasida ishlaydi.\n"
+"                    "
+msgstr ""
+
+#: .\hr\templates\hr\certificate_print.html:198
+msgid "Ma'lumotnoma so'ralgan joyga taqdim etish uchun berildi."
+msgstr ""
+
+#: .\hr\templates\hr\certificate_print.html:209
+msgid "Asl nusxani tekshirish (QR)"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_print.html:217
+msgid "Tashkilot rahbari:"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_verify.html:8
+msgid "Hujjat Haqiqiyligini Tekshirish - Academic OS"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_verify.html:22
+msgid "HUJJAT HAQIQIY!"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_verify.html:23
+msgid "Ushbu ma'lumotnoma Academic OS tizimi orqali tasdiqlangan."
+msgstr ""
+
+#: .\hr\templates\hr\certificate_verify.html:27
+msgid "Ma'lumotnoma Tafsilotlari:"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_verify.html:30
+msgid "Hujjat Raqami:"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_verify.html:31
+#, python-format
+msgid "%(year)s-yil %(num)s-sonli ma'lumotnoma"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_verify.html:35
+msgid "Xodim (F.I.Sh):"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_verify.html:40
+msgid "Lavozimi (Vazifasi):"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_verify.html:45
+msgid "Tashkilot / Maktab:"
+msgstr ""
+
+#: .\hr\templates\hr\certificate_verify.html:50
+msgid "Tekshiruv amaliyoti xavfsiz server orqali amalga oshirildi."
+msgstr ""
+
+#: .\hr\templates\hr\certificate_verify.html:55
+msgid "Barcha huquqlar himoyalangan."
+msgstr ""
+
+#: .\hr\views.py:19
+msgid "direktori"
+msgstr ""
+
+#: .\hr\views.py:20
+msgid "kafedra mudiri"
+msgstr ""
+
+#: .\hr\views.py:21
+msgid "o'qituvchisi"
+msgstr ""
+
+#: .\hr\views.py:22 .\hr\views.py:24
+msgid "tizim ma'muri"
+msgstr ""
+
+#: .\hr\views.py:23
+msgid "uslubchisi"
+msgstr ""
+
+#: .\hr\views.py:44 .\hr\views.py:94 .\hr\views.py:153
+msgid "xodimi"
+msgstr ""
+
+#: .\hr\views.py:161
+msgid "Noma'lum"
+msgstr ""
+
+#: .\hr\views.py:184
+msgid "Barcha maydonlarni to'ldiring va faylni yuklang."
+msgstr ""
+
+#: .\hr\views.py:192
+msgid "Kasallik varaqangiz HR bo'limiga yuborildi. Kutib turing."
+msgstr ""
+
+#: .\hr\views.py:236
+msgid "Kasallik varaqasi rad etildi."
+msgstr ""
+
+#: .\organization\models.py:8
+msgid "Tuman/Shahar nomi"
+msgstr ""
+
+#: .\organization\models.py:8
+msgid "Masalan: Angor tumani"
+msgstr ""
+
+#: .\organization\models.py:9
+msgid "Direktor ism-sharifi"
+msgstr ""
+
+#: .\organization\models.py:9
+msgid "Masalan: B.Xolbutayev"
+msgstr ""
+
+#: .\organization\models.py:15 .\organization\models.py:25
+msgid "Tashkilot"
+msgstr ""
+
+#: .\organization\models.py:16
+msgid "Tashkilotlar"
+msgstr ""
+
+#: .\organization\models.py:27
+msgid "Mudiri"
+msgstr ""
+
+#: .\organization\models.py:30 .\organization\models.py:40
+msgid "Kafedra"
+msgstr ""
+
+#: .\organization\models.py:31
+msgid "Kafedralar"
+msgstr ""
+
+#: .\organization\models.py:42
+msgid "Rahbari"
+msgstr ""
+
+#: .\organization\models.py:45
+msgid "Metod birlashma"
+msgstr ""
+
+#: .\organization\models.py:46
+msgid "Metod birlashmalar"
+msgstr ""
+
+# Sidebar
+#: .\templates\base.html:92 .\templates\dashboard.html:4
+msgid "Dashboard"
+msgstr "Boshqaruv Paneli"
+
+#: .\templates\base.html:98 .\workflow\templates\workflow\task_list.html:4
+msgid "Tasks"
+msgstr "Vazifalar"
+
+#: .\templates\base.html:117
+msgid "Documents"
+msgstr "Hujjatlar"
+
+#: .\templates\base.html:123
+msgid "Orders"
+msgstr "Buyruqlar"
+
+#: .\templates\base.html:130
+msgid "Reports"
+msgstr "Hisobotlar"
+
+#: .\templates\base.html:136 .\users\templates\users\profile.html:84
+msgid "Ish joyidan ma'lumotnoma"
+msgstr ""
+
+#: .\templates\base.html:144
+msgid "Sick Leave"
+msgstr ""
+
+#: .\templates\base.html:150
+msgid "Submit Sick Leave"
+msgstr ""
+
+#: .\templates\base.html:157
+msgid "My Sick Leaves"
+msgstr ""
+
+#: .\templates\base.html:165
+#, fuzzy
+#| msgid "Under Review"
+msgid "HR Review"
+msgstr "Tekshiruvda"
+
+#: .\templates\base.html:175
+msgid "Admin"
+msgstr ""
+
+#: .\templates\base.html:181
+msgid "Xodimlar"
+msgstr ""
+
+# Dashboard Content
+#: .\templates\dashboard.html:16
+msgid "Welcome back"
+msgstr "Xush kelibsiz"
+
+#: .\templates\dashboard.html:18
+msgid "Overview of the entire academic system."
+msgstr ""
+
+#: .\templates\dashboard.html:20
+msgid "Here's what's happening in your academic workspace today."
+msgstr "Bugungi akademik faoliyatingiz haqida qisqacha ma'lumot."
+
+#: .\templates\dashboard.html:41
+msgid "Avg System KPI"
+msgstr ""
+
+#: .\templates\dashboard.html:41
+msgid "My KPI Score"
+msgstr "Mening KPI Ballim"
+
+#: .\templates\dashboard.html:63
+#, fuzzy
+#| msgid "Completed Tasks"
+msgid "Completed Tasks (All)"
+msgstr "Bajarilgan Vazifalar"
+
+#: .\templates\dashboard.html:63
+msgid "Completed Tasks"
+msgstr "Bajarilgan Vazifalar"
+
+#: .\templates\dashboard.html:68
+msgid "All time"
+msgstr "Jami"
+
+#: .\templates\dashboard.html:79
+#, fuzzy
+#| msgid "Performance Analytics"
+msgid "System Performance Analytics"
+msgstr "Samaradorlik Tahlili"
+
+#: .\templates\dashboard.html:79
+msgid "Performance Analytics"
+msgstr "Samaradorlik Tahlili"
+
+#: .\templates\dashboard.html:89
+#, fuzzy
+#| msgid "Task Distribution"
+msgid "System Task Distribution"
+msgstr "Vazifalar Taqsimoti"
+
+#: .\templates\dashboard.html:89
+msgid "Task Distribution"
+msgstr "Vazifalar Taqsimoti"
+
+#: .\templates\dashboard.html:103
+msgid "Pending Tasks"
+msgstr "Kutilayotgan Vazifalar"
+
+#: .\templates\dashboard.html:119
+msgid "No pending tasks."
+msgstr "Kutilayotgan vazifalar yo'q."
+
+#: .\templates\dashboard.html:145
+msgid "No recent observations."
+msgstr "Yangi kuzatuvlar yo'q."
+
+#: .\templates\dashboard.html:158
+#, fuzzy
+#| msgid "Add first certificate"
+msgid "Latest Certificates"
+msgstr "Birinchi sertifikatni qo'shish"
+
+#: .\templates\dashboard.html:158
+#, fuzzy
+#| msgid "No certificates yet."
+msgid "My Certificates"
+msgstr "Hozircha sertifikatlar yo'q."
+
+#: .\templates\dashboard.html:179
+#, fuzzy
+#| msgid "No certificates yet."
+msgid "No certificates found."
+msgstr "Hozircha sertifikatlar yo'q."
+
+#: .\users\admin.py:11
+msgid "Xodim faoliyati va shaxsiy tafsilotlari"
+msgstr ""
+
+#: .\users\admin.py:27
+msgid "Shaxsiy ma'lumotlar (Foydalanuvchi)"
+msgstr ""
+
+#: .\users\admin.py:28
+msgid "Guruhlar va Ruxsatlar (Vazifasi)"
+msgstr ""
+
+#: .\users\admin.py:46
+msgid "Vazifasi (Guruhlar)"
+msgstr ""
+
+#: .\users\models.py:11
+msgid "Foydalanuvchilar"
+msgstr ""
+
+#: .\users\templates\users\login.html:4
+msgid "Login - Academic OS"
+msgstr "Kirish - Academic OS"
+
+#: .\users\templates\users\login.html:16
+msgid "Sign in to your account"
+msgstr "Hisobingizga kiring"
+
+#: .\users\templates\users\login.html:23
+msgid "Invalid username or password."
+msgstr "Noto'g'ri foydalanuvchi nomi yoki parol."
+
+#: .\users\templates\users\login.html:28
+msgid "Username"
+msgstr "Foydalanuvchi nomi"
+
+#: .\users\templates\users\login.html:30
+msgid " Enter your username"
+msgstr ""
+
+#: .\users\templates\users\login.html:34
+msgid "Password"
+msgstr "Parol"
+
+#: .\users\templates\users\login.html:36
+msgid " Enter your password"
+msgstr ""
+
+#: .\users\templates\users\login.html:39
+msgid "Sign In"
+msgstr "Kirish"
+
+#: .\users\templates\users\profile.html:4
+msgid "My Profile"
+msgstr "Mening Profilim"
+
+#: .\users\templates\users\profile.html:36
+msgid "Member"
+msgstr "A'zo"
+
+#: .\users\templates\users\profile.html:49
+msgid "Contact Information"
+msgstr "Bog'lanish Ma'lumotlari"
+
+#: .\users\templates\users\profile.html:56
+msgid "Email"
+msgstr "Email"
+
+#: .\users\templates\users\profile.html:66
+msgid "Phone"
+msgstr "Telefon"
+
+#: .\users\templates\users\profile.html:76
+msgid "Address"
+msgstr "Manzil"
+
+#: .\users\templates\users\profile.html:97
+msgid "Edit Profile"
+msgstr "Profilni Tahrirlash"
+
+#: .\users\templates\users\profile.html:98
+msgid "Personal Details"
+msgstr "Shaxsiy Ma'lumotlar"
+
+#: .\users\templates\users\profile.html:114
+#, fuzzy
+#| msgid "Contact Information"
+msgid "User Information"
+msgstr "Bog'lanish Ma'lumotlari"
+
+#: .\users\templates\users\profile.html:117
+msgid "First Name"
+msgstr "Ism"
+
+#: .\users\templates\users\profile.html:121
+msgid "Last Name"
+msgstr "Familiya"
+
+#: .\users\templates\users\profile.html:125
+msgid "Email Address"
+msgstr "Email Manzili"
+
+#: .\users\templates\users\profile.html:130
+msgid "Extended Profile"
+msgstr "Kengaytirilgan Profil"
+
+#: .\users\templates\users\profile.html:133
+msgid "Phone Number"
+msgstr "Telefon Raqami"
+
+#: .\users\templates\users\profile.html:137
+msgid "Location / Address"
+msgstr "Joylashuv / Manzil"
+
+#: .\users\templates\users\profile.html:141
+msgid "Bio"
+msgstr "Tarjimayi Hol"
+
+#: .\users\templates\users\profile.html:143
+msgid "Brief description about yourself."
+msgstr "O'zingiz haqingizda qisqacha."
+
+#: .\users\templates\users\profile.html:146
+msgid "Profile Picture"
+msgstr "Profil Rasmi"
+
+#: .\users\templates\users\profile.html:153
+msgid "Save Changes"
+msgstr "O'zgarishlarni Saqlash"
+
+#: .\users\templates\users\profile.html:167
+msgid "Certificates & Awards"
+msgstr "Sertifikatlar va Mukofotlar"
+
+#: .\users\templates\users\profile.html:169
+msgid "Add"
+msgstr "Qo'shish"
+
+#: .\users\templates\users\profile.html:193
+msgid "Issued:"
+msgstr "Berilgan:"
+
+#: .\users\templates\users\profile.html:196
+msgid "Expires:"
+msgstr "Amal qiladi:"
+
+#: .\users\templates\users\profile.html:215
+msgid "No certificates yet."
+msgstr "Hozircha sertifikatlar yo'q."
+
+#: .\users\templates\users\profile.html:217
+msgid "Add first certificate"
+msgstr "Birinchi sertifikatni qo'shish"
+
+#: .\workflow\templates\workflow\task_detail.html:4
+msgid "Task Details"
+msgstr "Vazifa Tafsilotlari"
+
+#: .\workflow\templates\workflow\task_detail.html:10
+msgid "Back to List"
+msgstr "Ro'yxatga Qaytish"
+
+#: .\workflow\templates\workflow\task_detail.html:22
+msgid "High Priority"
+msgstr "Yuqori Muhimlik"
+
+#: .\workflow\templates\workflow\task_detail.html:24
+msgid "Medium Priority"
+msgstr "O'rta Muhimlik"
+
+#: .\workflow\templates\workflow\task_detail.html:26
+msgid "Low Priority"
+msgstr "Past Muhimlik"
+
+#: .\workflow\templates\workflow\task_detail.html:35
+#: .\workflow\templates\workflow\task_list.html:30
+msgid "Deadline"
+msgstr "Muddat"
+
+#: .\workflow\templates\workflow\task_detail.html:41
+msgid "No deadline"
+msgstr ""
+
+#: .\workflow\templates\workflow\task_detail.html:56
+msgid "Assignees"
+msgstr "Mas'ullar"
+
+#: .\workflow\templates\workflow\task_detail.html:68
+#: .\workflow\templates\workflow\task_form.html:4
+msgid "Edit Task"
+msgstr "Vazifani Tahrirlash"
+
+#: .\workflow\templates\workflow\task_detail.html:79
+msgid "Created By"
+msgstr "Yaratdi"
+
+#: .\workflow\templates\workflow\task_detail.html:88
+msgid "Created At"
+msgstr "Yaratilgan Vaqt"
+
+#: .\workflow\templates\workflow\task_detail.html:96
+msgid "Dependencies"
+msgstr "Bog'liqliklar"
+
+#: .\workflow\templates\workflow\task_form.html:4
+msgid "Create Task"
+msgstr "Vazifa Yaratish"
+
+#: .\workflow\templates\workflow\task_form.html:42
+msgid "Save Task"
+msgstr "Vazifani Saqlash"
+
+#: .\workflow\templates\workflow\task_list.html:10
+msgid "My Tasks"
+msgstr "Mening Vazifalarim"
+
+#: .\workflow\templates\workflow\task_list.html:11
+msgid "Tasks assigned to you or created by you."
+msgstr "Sizga tayinlangan yoki siz yaratgan vazifalar."
+
+#: .\workflow\templates\workflow\task_list.html:14
+msgid "New Task"
+msgstr "Yangi Vazifa"
+
+#: .\workflow\templates\workflow\task_list.html:28
+msgid "Priority"
+msgstr "Muhimlik"
+
+#: .\workflow\templates\workflow\task_list.html:48
+msgid "High"
+msgstr "Yuqori"
+
+#: .\workflow\templates\workflow\task_list.html:50
+msgid "Medium"
+msgstr "O'rta"
+
+#: .\workflow\templates\workflow\task_list.html:52
+msgid "Low"
+msgstr "Past"
+
+#: .\workflow\templates\workflow\task_list.html:57
+msgid "Completed"
+msgstr "Bajarildi"
+
+#: .\workflow\templates\workflow\task_list.html:59
+msgid "In Progress"
+msgstr "Jarayonda"
+
+#: .\workflow\templates\workflow\task_list.html:61
+msgid "Pending"
+msgstr "Kutilmoqda"
+
+#: .\workflow\templates\workflow\task_list.html:86
+msgid "No tasks found. Click 'New Task' to get started!"
+msgstr "Vazifalar topilmadi. Boshlash uchun 'Yangi Vazifa' tugmasini bosing!"

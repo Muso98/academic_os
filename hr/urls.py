@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path('employee/<uuid:pk>/certificate/print/', views.print_employee_certificate, name='print_employee_certificate'),
+    path('employee/my-certificate/pdf/', views.download_my_certificate_pdf, name='download_my_certificate_pdf'),
     path('verify/<uuid:pk>/', views.verify_employee_certificate, name='verify_certificate'),
     # Sick Leave
     path('sick-leave/submit/', views.sick_leave_submit, name='sick_leave_submit'),

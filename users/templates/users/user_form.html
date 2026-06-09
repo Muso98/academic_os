@@ -72,7 +72,7 @@
                             <select name="role" class="form-select rounded-3" required>
                                 <option value="">— Rol tanlang —</option>
                                 {% for role_key, role_label in school_roles %}
-                                <option value="{{ role_key }}" {% if current_role==role_key %}selected{% endif %}>
+                                <option value="{{ role_key }}" {% if current_role == role_key %}selected{% endif %}>
                                     {{ role_label }}
                                 </option>
                                 {% endfor %}
