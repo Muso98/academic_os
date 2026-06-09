@@ -163,7 +163,7 @@
         </div>
 
         <div class="header-contact">
-            {% if organization.address %}{{ organization.address }}{% else %}{% trans "Manzil kiritilmagan" %}{% endif %}, {% trans "Tel:" %} {% if organization.phone_number %}{{ organization.phone_number }}{% else %}{% trans "kiritilmagan" %}{% endif %}
+            {% if organization.address %}{{ organization.address }}{% else %}{% trans "Manzil kiritilmagan" %}{% endif %}, {% trans "Tel:" %} {% if director_phone %}{{ director_phone }}{% else %}{% trans "kiritilmagan" %}{% endif %}
         </div>
 
         <!-- Meta info -->
@@ -221,7 +221,7 @@
                     </div>
                 </div>
                 <div class="directors-phone" style="text-align: right; margin-right: -10px; margin-top: 10px;">
-                    {% trans "Tel:" %} {{ organization.phone_number|default:"_______________" }}
+                    {% trans "Tel:" %} {{ director_phone|default:"_______________" }}
                 </div>
             </div>
         </div>
