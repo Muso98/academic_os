@@ -10,8 +10,8 @@ User = get_user_model()
 
 SCHOOL_ROLES = [
     ('Director', "Direktor"),
-    ('DeputyDirector', "Direktor o'rinbosari"),
-    ('HeadOfDepartment', "Bo'lim/Kafedra mudiri"),
+    ('DeputyDirectorAcademic', "O'quv ishlari bo'yicha direktor o'rinbosari"),
+    ('DeputyDirectorSpiritual', "Ma'naviy-ma'rifiy ishlar bo'yicha direktor o'rinbosari"),
     ('Teacher', "O'qituvchi"),
     ('Methodist', "Metodist"),
     ('Accountant', "Buxgalter"),
