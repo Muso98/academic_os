@@ -119,6 +119,9 @@ def print_employee_certificate(request, pk):
     img.save(buffer, format="PNG")
     qr_code_base64 = base64.b64encode(buffer.getvalue()).decode("utf-8")
 
+    director = User.objects.filter(groups__name='Director').first()
+    actual_director_name = director.get_full_name() or director.username if director else getattr(organization, 'director_name', '')
+
     context = {
         'employee': employee,
         'profile': profile,
@@ -127,6 +130,7 @@ def print_employee_certificate(request, pk):
         'current_date': now,
         'employee_position': employee_position,
         'qr_code_base64': qr_code_base64,
+        'actual_director_name': actual_director_name,
     }
     return render(request, 'hr/certificate_print.html', context)
 
@@ -169,6 +173,9 @@ def download_my_certificate_pdf(request):
     img.save(buffer, format="PNG")
     qr_code_base64 = base64.b64encode(buffer.getvalue()).decode("utf-8")
 
+    director = User.objects.filter(groups__name='Director').first()
+    actual_director_name = director.get_full_name() or director.username if director else getattr(organization, 'director_name', '')
+
     context = {
         'employee': employee,
         'profile': profile,
@@ -179,6 +186,7 @@ def download_my_certificate_pdf(request):
         'qr_code_base64': qr_code_base64,
         'is_pdf': True,
         'fonts_dir': os.path.join(settings.BASE_DIR, 'static', 'fonts').replace('\\', '/'),
+        'actual_director_name': actual_director_name,
     }
     
     template = get_template('hr/certificate_print.html')
