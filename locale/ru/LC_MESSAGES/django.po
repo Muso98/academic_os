@@ -622,10 +622,8 @@ msgid "kiritilmagan"
 msgstr "не указан"
 
 #: .\hr\templates\hr\certificate_print.html:123
-#, fuzzy, python-format
-#| msgid "%(year)s-yil \"%(day)s\"-%(month)s %(num)s-son"
 msgid "%(year)s-yil \"%(day)s\"-%(month)s <br> %(num)s-son"
-msgstr "Справка №%(num)s от \"%(day)s\" %(month)s %(year)s года"
+msgstr "от \"%(day)s\" %(month)s %(year)s года <br> № %(num)s"
 
 #: .\hr\templates\hr\certificate_print.html:133
 msgid "MA'LUMOTNOMA"

@@ -622,10 +622,8 @@ msgid "kiritilmagan"
 msgstr "not specified"
 
 #: .\hr\templates\hr\certificate_print.html:123
-#, fuzzy, python-format
-#| msgid "%(year)s-yil \"%(day)s\"-%(month)s %(num)s-son"
 msgid "%(year)s-yil \"%(day)s\"-%(month)s <br> %(num)s-son"
-msgstr "Certificate No. %(num)s of %(month)s %(day)s, %(year)s"
+msgstr "Date: %(month)s %(day)s, %(year)s <br> No. %(num)s"
 
 #: .\hr\templates\hr\certificate_print.html:133
 msgid "MA'LUMOTNOMA"
