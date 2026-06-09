@@ -1,14 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 
-if [ "$DATABASE" = "postgres" ]
-then
-    echo "Waiting for postgres..."
+echo "Apply database migrations"
+python manage.py migrate
 
-    while ! nc -z $SQL_HOST $SQL_PORT; do
-      sleep 0.1
-    done
+echo "Compile translations"
+python manage.py compilemessages
 
-    echo "PostgreSQL started"
-fi
+echo "Collect static files"
+python manage.py collectstatic --noinput
 
-exec "$@"
+echo "Starting server"
+exec gunicorn config.wsgi:application --bind 0.0.0.0:8000 --workers 3
