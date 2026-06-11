@@ -36,7 +36,7 @@ DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '127.0.0.1,localhost').split(',')
 
-
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Application definition
 
 INSTALLED_APPS = [
@@ -190,7 +190,12 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_TRUSTED_ORIGINS', 'http://127.0.0.1,http://localhost').split(',')
+# Add ALLOWED_HOSTS dynamically to CSRF_TRUSTED_ORIGINS to prevent CSRF errors
+_trusted_origins = os.getenv('CSRF_TRUSTED_ORIGINS', 'http://127.0.0.1,http://localhost').split(',')
+for host in ALLOWED_HOSTS:
+    if host and host != '*':
+        _trusted_origins.extend([f'http://{host}', f'https://{host}'])
+CSRF_TRUSTED_ORIGINS = list(set(_trusted_origins))
 
 
 MEDIA_URL = '/media/'
