@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-11 10:46+0200\n"
+"POT-Creation-Date: 2026-06-11 11:04+0200\n"
 "PO-Revision-Date: 2007-10-18 14:00+0100\n"
 "Last-Translator: system\n"
 "Language-Team: en <localhost>\n"
@@ -26,7 +26,7 @@ msgstr "Total Observations"
 
 #: .\academic\templates\academic\methodist_dashboard.html:31
 #: .\academic\templates\academic\methodist_dashboard.html:170
-#: .\templates\base.html:112
+#: .\templates\base.html:113
 msgid "Resources"
 msgstr "Resources"
 
@@ -48,7 +48,7 @@ msgid "Teacher"
 msgstr "Teacher"
 
 #: .\academic\templates\academic\methodist_dashboard.html:74
-#: .\templates\base.html:105
+#: .\templates\base.html:106
 msgid "Observations"
 msgstr "Observations"
 
@@ -277,6 +277,26 @@ msgstr "Russian"
 #: .\config\settings.py:172
 msgid "English"
 msgstr "English"
+
+#: .\core\templatetags\notification_tags.py:13
+#, python-format
+msgid "Sizga yangi vazifa biriktirildi: '%(title)s' (belgiladi: %(creator)s)"
+msgstr ""
+
+#: .\core\templatetags\notification_tags.py:19
+#, python-format
+msgid "Vazifa '%(title)s' TUGALLANGAN holatiga o'tkazildi"
+msgstr ""
+
+#: .\core\templatetags\notification_tags.py:25
+#, python-format
+msgid "Ogohlantirish: '%(title)s' vazifasi muddati tugashiga 24 soat qoldi!"
+msgstr ""
+
+#: .\core\templatetags\notification_tags.py:31
+#, python-format
+msgid "Ogohlantirish: '%(title)s' vazifasi muddati tugashiga 1 soat qoldi!"
+msgstr ""
 
 #: .\documents\models.py:10
 msgid "Buyruq mavzusi"
@@ -795,6 +815,32 @@ msgstr "The verification process was carried out via a secure server."
 msgid "Barcha huquqlar himoyalangan."
 msgstr "All rights reserved."
 
+#: .\hr\templates\hr\sick_leave_hr_list.html:4
+#, fuzzy
+#| msgid "Kasallik Varaqalari"
+msgid "HR: Kasallik varaqalari"
+msgstr "Sickness Sheets"
+
+#: .\hr\templates\hr\sick_leave_list.html:4
+#: .\hr\templates\hr\sick_leave_list.html:9
+#, fuzzy
+#| msgid "Kasallik Varaqalari"
+msgid "Mening kasallik varaqlariim"
+msgstr "Sickness Sheets"
+
+#: .\hr\templates\hr\sick_leave_review.html:4
+#, fuzzy
+#| msgid "Kasallik varaqasi rad etildi."
+msgid "Kasallik varaqasini ko'rib chiqish"
+msgstr "The sick leave was rejected."
+
+#: .\hr\templates\hr\sick_leave_submit.html:4
+#: .\hr\templates\hr\sick_leave_submit.html:11
+#, fuzzy
+#| msgid "Kasallik varaqasi (fayl)"
+msgid "Kasallik varaqasi yuborish"
+msgstr "Sick leave (file)"
+
 #: .\hr\views.py:72
 msgid "direktori"
 msgstr "director"
@@ -883,53 +929,59 @@ msgstr "Methodological Unit"
 msgid "Metod birlashmalar"
 msgstr "Methodological Units"
 
-#: .\templates\base.html:92 .\templates\dashboard.html:4
+#: .\templates\base.html:93 .\templates\dashboard.html:4
 msgid "Dashboard"
 msgstr "Dashboard"
 
-#: .\templates\base.html:98 .\workflow\templates\workflow\task_list.html:4
+#: .\templates\base.html:99 .\workflow\templates\workflow\task_list.html:4
 msgid "Tasks"
 msgstr "Tasks"
 
-#: .\templates\base.html:117
+#: .\templates\base.html:118
 msgid "Documents"
 msgstr "Documents"
 
-#: .\templates\base.html:123
+#: .\templates\base.html:124
 msgid "Orders"
 msgstr "Orders"
 
-#: .\templates\base.html:130
+#: .\templates\base.html:131
 msgid "Reports"
 msgstr "Reports"
 
-#: .\templates\base.html:136 .\users\templates\users\profile.html:84
+#: .\templates\base.html:137 .\users\templates\users\profile.html:84
 msgid "Ish joyidan ma'lumotnoma"
 msgstr "Certificate of Employment"
 
-#: .\templates\base.html:144
+#: .\templates\base.html:145
 msgid "Sick Leave"
 msgstr "Sick Leave"
 
-#: .\templates\base.html:150
+#: .\templates\base.html:151
 msgid "Submit Sick Leave"
 msgstr "Submit Sick Leave"
 
-#: .\templates\base.html:157
+#: .\templates\base.html:158
 msgid "My Sick Leaves"
 msgstr "My Sick Leaves"
 
-#: .\templates\base.html:165
+#: .\templates\base.html:166
 msgid "HR Review"
 msgstr "HR Review"
 
-#: .\templates\base.html:175
+#: .\templates\base.html:176
 msgid "Admin"
 msgstr "Admin"
 
-#: .\templates\base.html:181
+#: .\templates\base.html:182
 msgid "Xodimlar"
 msgstr "Employees"
+
+#: .\templates\base.html:256
+#, fuzzy
+#| msgid "Kasallik Varaqalari"
+msgid "Kasallik varaqlariim"
+msgstr "Sickness Sheets"
 
 #: .\templates\dashboard.html:16
 msgid "Welcome back"
@@ -1160,6 +1212,18 @@ msgstr "No certificates yet."
 #: .\users\templates\users\profile.html:217
 msgid "Add first certificate"
 msgstr "Add first certificate"
+
+#: .\users\templates\users\user_management.html:4
+#, fuzzy
+#| msgid "Xodimlar Profillari"
+msgid "Xodimlarni boshqarish"
+msgstr "Employee Profiles"
+
+#: .\users\templates\users\user_management.html:9
+#, fuzzy
+#| msgid "Xodimlar Profillari"
+msgid "Xodimlar boshqaruvi"
+msgstr "Employee Profiles"
 
 #: .\workflow\templates\workflow\task_detail.html:4
 msgid "Task Details"

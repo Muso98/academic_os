@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-11 10:46+0200\n"
+"POT-Creation-Date: 2026-06-11 11:04+0200\n"
 "PO-Revision-Date: 2007-10-18 14:00+0100\n"
 "Last-Translator: system\n"
 "Language-Team: ru <localhost>\n"
@@ -26,7 +26,7 @@ msgstr "Всего наблюдений"
 
 #: .\academic\templates\academic\methodist_dashboard.html:31
 #: .\academic\templates\academic\methodist_dashboard.html:170
-#: .\templates\base.html:112
+#: .\templates\base.html:113
 msgid "Resources"
 msgstr "Ресурсы"
 
@@ -48,7 +48,7 @@ msgid "Teacher"
 msgstr "Учитель"
 
 #: .\academic\templates\academic\methodist_dashboard.html:74
-#: .\templates\base.html:105
+#: .\templates\base.html:106
 msgid "Observations"
 msgstr "Наблюдения"
 
@@ -277,6 +277,26 @@ msgstr "Русский"
 #: .\config\settings.py:172
 msgid "English"
 msgstr "Английский"
+
+#: .\core\templatetags\notification_tags.py:13
+#, python-format
+msgid "Sizga yangi vazifa biriktirildi: '%(title)s' (belgiladi: %(creator)s)"
+msgstr ""
+
+#: .\core\templatetags\notification_tags.py:19
+#, python-format
+msgid "Vazifa '%(title)s' TUGALLANGAN holatiga o'tkazildi"
+msgstr ""
+
+#: .\core\templatetags\notification_tags.py:25
+#, python-format
+msgid "Ogohlantirish: '%(title)s' vazifasi muddati tugashiga 24 soat qoldi!"
+msgstr ""
+
+#: .\core\templatetags\notification_tags.py:31
+#, python-format
+msgid "Ogohlantirish: '%(title)s' vazifasi muddati tugashiga 1 soat qoldi!"
+msgstr ""
 
 #: .\documents\models.py:10
 msgid "Buyruq mavzusi"
@@ -720,7 +740,7 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                дана настоящая справка в том, что <b>%(name)s</b> действительно работает в %(org_name)s (%(region)s) в должности %(position)s.\n"
+"                Дана настоящая справка в том, что <b>%(name)s</b> действительно работает в %(org_name)s (%(region)s) в должности %(position)s.\n"
 "                "
 
 #: .\hr\templates\hr\certificate_print.html:143
@@ -731,7 +751,7 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"                дана настоящая справка в том, что <b>%(name)s</b> действительно работает в %(org_name)s в должности %(position)s.\n"
+"                Дана настоящая справка в том, что <b>%(name)s</b> действительно работает в %(org_name)s в должности %(position)s.\n"
 "                "
 
 #: .\hr\templates\hr\certificate_print.html:149
@@ -794,6 +814,32 @@ msgstr "Процесс проверки был осуществлен через
 #: .\hr\templates\hr\certificate_verify.html:55
 msgid "Barcha huquqlar himoyalangan."
 msgstr "Все права защищены."
+
+#: .\hr\templates\hr\sick_leave_hr_list.html:4
+#, fuzzy
+#| msgid "Kasallik Varaqalari"
+msgid "HR: Kasallik varaqalari"
+msgstr "Больничные листы"
+
+#: .\hr\templates\hr\sick_leave_list.html:4
+#: .\hr\templates\hr\sick_leave_list.html:9
+#, fuzzy
+#| msgid "Kasallik Varaqalari"
+msgid "Mening kasallik varaqlariim"
+msgstr "Больничные листы"
+
+#: .\hr\templates\hr\sick_leave_review.html:4
+#, fuzzy
+#| msgid "Kasallik varaqasi rad etildi."
+msgid "Kasallik varaqasini ko'rib chiqish"
+msgstr "В больничном было отказано."
+
+#: .\hr\templates\hr\sick_leave_submit.html:4
+#: .\hr\templates\hr\sick_leave_submit.html:11
+#, fuzzy
+#| msgid "Kasallik varaqasi (fayl)"
+msgid "Kasallik varaqasi yuborish"
+msgstr "Больничный лист (файл)"
 
 #: .\hr\views.py:72
 msgid "direktori"
@@ -883,53 +929,59 @@ msgstr "Метод. объединение"
 msgid "Metod birlashmalar"
 msgstr "Метод. объединения"
 
-#: .\templates\base.html:92 .\templates\dashboard.html:4
+#: .\templates\base.html:93 .\templates\dashboard.html:4
 msgid "Dashboard"
 msgstr "Главная"
 
-#: .\templates\base.html:98 .\workflow\templates\workflow\task_list.html:4
+#: .\templates\base.html:99 .\workflow\templates\workflow\task_list.html:4
 msgid "Tasks"
 msgstr "Задачи"
 
-#: .\templates\base.html:117
+#: .\templates\base.html:118
 msgid "Documents"
 msgstr "Документы"
 
-#: .\templates\base.html:123
+#: .\templates\base.html:124
 msgid "Orders"
 msgstr "Приказы"
 
-#: .\templates\base.html:130
+#: .\templates\base.html:131
 msgid "Reports"
 msgstr "Отчеты"
 
-#: .\templates\base.html:136 .\users\templates\users\profile.html:84
+#: .\templates\base.html:137 .\users\templates\users\profile.html:84
 msgid "Ish joyidan ma'lumotnoma"
 msgstr "Справка с места работы"
 
-#: .\templates\base.html:144
+#: .\templates\base.html:145
 msgid "Sick Leave"
 msgstr "Больничный"
 
-#: .\templates\base.html:150
+#: .\templates\base.html:151
 msgid "Submit Sick Leave"
 msgstr "Оформить больничный"
 
-#: .\templates\base.html:157
+#: .\templates\base.html:158
 msgid "My Sick Leaves"
 msgstr "Мои больничные"
 
-#: .\templates\base.html:165
+#: .\templates\base.html:166
 msgid "HR Review"
 msgstr "Проверка HR"
 
-#: .\templates\base.html:175
+#: .\templates\base.html:176
 msgid "Admin"
 msgstr "Админ"
 
-#: .\templates\base.html:181
+#: .\templates\base.html:182
 msgid "Xodimlar"
 msgstr "Сотрудники"
+
+#: .\templates\base.html:256
+#, fuzzy
+#| msgid "Kasallik Varaqalari"
+msgid "Kasallik varaqlariim"
+msgstr "Больничные листы"
 
 #: .\templates\dashboard.html:16
 msgid "Welcome back"
@@ -1161,6 +1213,18 @@ msgstr "Сертификатов пока нет."
 #: .\users\templates\users\profile.html:217
 msgid "Add first certificate"
 msgstr "Добавить первый сертификат"
+
+#: .\users\templates\users\user_management.html:4
+#, fuzzy
+#| msgid "Xodimlar Profillari"
+msgid "Xodimlarni boshqarish"
+msgstr "Профили сотрудников"
+
+#: .\users\templates\users\user_management.html:9
+#, fuzzy
+#| msgid "Xodimlar Profillari"
+msgid "Xodimlar boshqaruvi"
+msgstr "Профили сотрудников"
 
 #: .\workflow\templates\workflow\task_detail.html:4
 msgid "Task Details"
