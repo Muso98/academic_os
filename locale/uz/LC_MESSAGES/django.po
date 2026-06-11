@@ -2,20 +2,20 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-09 09:53+0200\n"
+"POT-Creation-Date: 2026-06-11 10:46+0200\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 
 #: .\academic\templates\academic\methodist_dashboard.html:3
 msgid "Methodist Dashboard - Academic OS"
-msgstr "Metodist Boshqaruv Paneli - Academic OS"
+msgstr "Metodist boshqaruv paneli - academic OS"
 
 #: .\academic\templates\academic\methodist_dashboard.html:5
 msgid "Methodist Dashboard"
-msgstr "Metodist Boshqaruv Paneli"
+msgstr "Metodist boshqaruv paneli"
 
 #: .\academic\templates\academic\methodist_dashboard.html:15
 msgid "Total Observations"
-msgstr "Jami Kuzatuvlar"
+msgstr "Jami kuzatuvlar"
 
 #: .\academic\templates\academic\methodist_dashboard.html:31
 #: .\academic\templates\academic\methodist_dashboard.html:170
@@ -25,11 +25,11 @@ msgstr "Resurslar"
 
 #: .\academic\templates\academic\methodist_dashboard.html:47
 msgid "Active Teachers"
-msgstr "Faol O'qituvchilar"
+msgstr "Faol o'qituvchilar"
 
 #: .\academic\templates\academic\methodist_dashboard.html:64
 msgid "Top Teachers"
-msgstr "Eng Yaxshi O'qituvchilar"
+msgstr "Eng yaxshi o'qituvchilar"
 
 #: .\academic\templates\academic\methodist_dashboard.html:73
 #: .\academic\templates\academic\observation_form.html:17
@@ -47,7 +47,7 @@ msgstr "Kuzatuvlar"
 
 #: .\academic\templates\academic\methodist_dashboard.html:75
 msgid "Average Score"
-msgstr "O'rtacha Ball"
+msgstr "O'rtacha ball"
 
 #: .\academic\templates\academic\methodist_dashboard.html:101
 msgid "No statistics yet"
@@ -56,7 +56,7 @@ msgstr "Hozircha statistika yo'q"
 #: .\academic\templates\academic\methodist_dashboard.html:112
 #: .\templates\dashboard.html:129
 msgid "Recent Observations"
-msgstr "So'nggi Kuzatuvlar"
+msgstr "So'nggi kuzatuvlar"
 
 #: .\academic\templates\academic\methodist_dashboard.html:113
 #: .\templates\dashboard.html:148
@@ -69,31 +69,31 @@ msgstr "Hozircha kuzatuvlar yo'q"
 
 #: .\academic\templates\academic\methodist_dashboard.html:151
 msgid "Quick Actions"
-msgstr "Tezkor Amallar"
+msgstr "Tezkor amallar"
 
 #: .\academic\templates\academic\methodist_dashboard.html:158
 #: .\academic\templates\academic\observation_list.html:14
 msgid "New Observation"
-msgstr "Yangi Kuzatuv"
+msgstr "Yangi kuzatuv"
 
 #: .\academic\templates\academic\methodist_dashboard.html:164
 #: .\templates\dashboard.html:129
 msgid "All Observations"
-msgstr "Barcha Kuzatuvlar"
+msgstr "Barcha kuzatuvlar"
 
 #: .\academic\templates\academic\methodist_dashboard.html:176
 #: .\academic\templates\academic\resource_form.html:4
 #: .\academic\templates\academic\resource_list.html:14
 msgid "Upload Resource"
-msgstr "Resurs Yuklash"
+msgstr "Resurs yuklash"
 
 #: .\academic\templates\academic\observation_form.html:4
 msgid "New Lesson Observation"
-msgstr ""
+msgstr "Yangi darsni kuzatish"
 
 #: .\academic\templates\academic\observation_form.html:14
 msgid "Lesson Details"
-msgstr "Dars Tafsilotlari"
+msgstr "Dars tafsilotlari"
 
 #: .\academic\templates\academic\observation_form.html:21
 #: .\academic\templates\academic\observation_journal.html:53
@@ -124,7 +124,7 @@ msgstr "Mavzu"
 
 #: .\academic\templates\academic\observation_form.html:38
 msgid "Evaluation Criteria"
-msgstr "Baholash Mezonlari"
+msgstr "Baholash mezonlari"
 
 #: .\academic\templates\academic\observation_form.html:76
 #: .\academic\templates\academic\resource_form.html:40
@@ -135,15 +135,15 @@ msgstr "Bekor qilish"
 
 #: .\academic\templates\academic\observation_form.html:77
 msgid "Submit Observation"
-msgstr "Kuzatuvni Yuborish"
+msgstr "Kuzatuvni yuborish"
 
 #: .\academic\templates\academic\observation_journal.html:4
 msgid "Observation Journal - Academic OS"
-msgstr "Kuzatuv Jurnali - Academic OS"
+msgstr "Kuzatuv jurnali - academic OS"
 
 #: .\academic\templates\academic\observation_journal.html:6
 msgid "Mutual Lesson Observation Journal"
-msgstr "O'zaro Dars Kuzatuvi Jurnali"
+msgstr "O'zaro dars kuzatuvi jurnali"
 
 #: .\academic\templates\academic\observation_journal.html:11
 msgid "Filters"
@@ -155,11 +155,11 @@ msgstr "Barchasi"
 
 #: .\academic\templates\academic\observation_journal.html:27
 msgid "Start Date"
-msgstr "Boshlanish Sanasi"
+msgstr "Boshlanish sanasi"
 
 #: .\academic\templates\academic\observation_journal.html:31
 msgid "End Date"
-msgstr "Tugash Sanasi"
+msgstr "Tugash sanasi"
 
 #: .\academic\templates\academic\observation_journal.html:35
 msgid "Search"
@@ -167,7 +167,7 @@ msgstr "Qidirish"
 
 #: .\academic\templates\academic\observation_journal.html:43
 msgid "Observations Journal"
-msgstr "Kuzatuvlar Jurnali"
+msgstr "Kuzatuvlar jurnali"
 
 #: .\academic\templates\academic\observation_journal.html:45
 msgid "items"
@@ -198,7 +198,7 @@ msgstr "Filtrlarni tozalash"
 
 #: .\academic\templates\academic\observation_list.html:4
 msgid "Lesson Observations"
-msgstr ""
+msgstr "Dars kuzatuvlari"
 
 #: .\academic\templates\academic\observation_list.html:10
 msgid "History"
@@ -210,15 +210,15 @@ msgstr "Barcha dars kuzatuvlari tarixi."
 
 #: .\academic\templates\academic\resource_form.html:41
 msgid "Upload"
-msgstr ""
+msgstr "Yuklash"
 
 #: .\academic\templates\academic\resource_list.html:4
 msgid "Resource Center"
-msgstr "Resurs Markazi"
+msgstr "Resurs markazi"
 
 #: .\academic\templates\academic\resource_list.html:10
 msgid "Educational Resources"
-msgstr "O'quv Resurslari"
+msgstr "O'quv resurslari"
 
 #: .\academic\templates\academic\resource_list.html:11
 msgid "Repository of study materials and documents."
@@ -243,7 +243,7 @@ msgstr "Versiya"
 
 #: .\academic\templates\academic\resource_list.html:29
 msgid "Action"
-msgstr "Amal"
+msgstr "Harakat"
 
 #: .\academic\templates\academic\resource_list.html:43
 #: .\documents\templates\documents\order_list.html:38
@@ -257,35 +257,79 @@ msgstr "Fayl yo'q"
 
 #: .\academic\templates\academic\resource_list.html:53
 msgid "No resources found. Upload one to get started."
-msgstr "Resurslar topilmadi. Boshlash uchun yuklang."
+msgstr "Resurslar topilmadi. boshlash uchun yuklang."
 
 #: .\config\settings.py:170
 msgid "O'zbek"
-msgstr ""
+msgstr "O'zbek"
 
 #: .\config\settings.py:171
 msgid "Русский"
-msgstr ""
+msgstr "rus"
 
 #: .\config\settings.py:172
 msgid "English"
-msgstr ""
+msgstr "Ingliz"
+
+#: .\documents\models.py:10
+msgid "Buyruq mavzusi"
+msgstr "Buyruq mavzusi"
+
+#: .\documents\models.py:11
+msgid "Buyruq raqami"
+msgstr "Buyruq raqami"
+
+#: .\documents\models.py:12
+msgid "Buyruq fayli (PDF/Word)"
+msgstr "Buyruq fayli (pdf/word)"
+
+#: .\documents\models.py:13
+msgid "Imzolangan sana"
+msgstr "Imzolangan sana"
+
+#: .\documents\models.py:20
+msgid "Buyruq"
+msgstr "Buyruq"
+
+#: .\documents\models.py:21
+msgid "Buyruqlar"
+msgstr "Buyruqlar"
+
+#: .\documents\models.py:43
+msgid "Hisobot nomi"
+msgstr "Hisobot nomi"
+
+#: .\documents\models.py:45
+msgid "Hisobot fayli"
+msgstr "Hisobot fayli"
+
+#: .\documents\models.py:48
+msgid "Admin izohi (Rad etish sababi)"
+msgstr "Admin izohi (rad etish sababi)"
+
+#: .\documents\models.py:55
+msgid "Hisobot"
+msgstr "Hisobot"
+
+#: .\documents\models.py:56
+msgid "Hisobotlar"
+msgstr "Hisobotlar"
 
 #: .\documents\templates\documents\order_list.html:4
 msgid "Orders - Academic OS"
-msgstr "Buyruqlar - Academic OS"
+msgstr "Buyruqlar - academic OS"
 
 #: .\documents\templates\documents\order_list.html:6
 msgid "Internal Orders Archive"
-msgstr "Ichki Buyruqlar Arxivi"
+msgstr "Ichki buyruqlar arxivi"
 
 #: .\documents\templates\documents\order_list.html:11
 msgid "Orders List"
-msgstr "Buyruqlar Ro'yxati"
+msgstr "Buyruqlar ro'yxati"
 
 #: .\documents\templates\documents\order_list.html:14
 msgid "New Order"
-msgstr "Yangi Buyruq"
+msgstr "Yangi buyruq"
 
 #: .\documents\templates\documents\order_list.html:24
 msgid "Number"
@@ -301,23 +345,23 @@ msgstr "Hozircha buyruqlar yuklanmagan."
 
 #: .\documents\templates\documents\report_list.html:4
 msgid "Reports - Academic OS"
-msgstr "Hisobotlar - Academic OS"
+msgstr "Hisobotlar - academic OS"
 
 #: .\documents\templates\documents\report_list.html:7
 msgid "All Reports (Admin)"
-msgstr "Barcha Hisobotlar (Admin)"
+msgstr "Barcha hisobotlar (admin)"
 
 #: .\documents\templates\documents\report_list.html:7
 msgid "My Reports"
-msgstr "Mening Hisobotlarim"
+msgstr "Mening hisobotlarim"
 
 #: .\documents\templates\documents\report_list.html:13
 msgid "Reports List"
-msgstr "Hisobotlar Ro'yxati"
+msgstr "Hisobotlar ro'yxati"
 
 #: .\documents\templates\documents\report_list.html:16
 msgid "Submit Report"
-msgstr "Hisobot Topshirish"
+msgstr "Hisobot topshirish"
 
 #: .\documents\templates\documents\report_list.html:28
 msgid "Type"
@@ -365,7 +409,7 @@ msgstr "Hozircha hisobotlar yo'q."
 
 #: .\documents\templates\documents\report_list.html:105
 msgid "Approve Report"
-msgstr "Hisobotni Tasdiqlash"
+msgstr "Hisobotni tasdiqlash"
 
 #: .\documents\templates\documents\report_list.html:110
 msgid "Are you sure you want to approve this report?"
@@ -373,11 +417,11 @@ msgstr "Ushbu hisobotni tasdiqlaysizmi?"
 
 #: .\documents\templates\documents\report_list.html:114
 msgid "Yes, Approve"
-msgstr "Ha, Tasdiqlash"
+msgstr "Ha, tasdiqlash"
 
 #: .\documents\templates\documents\report_list.html:126
 msgid "Reject Report"
-msgstr "Hisobotni Rad etish"
+msgstr "Hisobotni rad etish"
 
 #: .\documents\templates\documents\report_list.html:135
 msgid "Reason for Rejection:"
@@ -389,397 +433,434 @@ msgstr "Xatoliklar haqida izoh qoldiring..."
 
 #: .\hr\models.py:9 .\hr\models.py:45 .\users\models.py:10
 msgid "Foydalanuvchi"
-msgstr ""
+msgstr "Foydalanuvchi"
 
 #: .\hr\models.py:10
 msgid "Pasport raqami/JShSHIR"
-msgstr ""
+msgstr "Pasport raqami/jshshir"
 
 #: .\hr\models.py:11
 msgid "Oylik maosh (UZS)"
-msgstr ""
+msgstr "Oylik maosh (UZS)"
 
 #: .\hr\models.py:11
 msgid "Oylik maosh"
-msgstr ""
+msgstr "Oylik maosh"
 
 #: .\hr\models.py:12
 msgid "Shartnoma tugash sanasi"
-msgstr ""
+msgstr "Shartnoma tugash sanasi"
 
 #: .\hr\models.py:13
 msgid "Malaka toifasi / Aniq vazifasi"
-msgstr ""
+msgstr "Malaka toifasi / aniq vazifasi"
 
 #: .\hr\models.py:16
 msgid "Qiyofacha (Avatar)"
-msgstr ""
+msgstr "Qiyofacha (avatar)"
 
 #: .\hr\models.py:17
 msgid "Tarjimayi hol (Bio)"
-msgstr ""
+msgstr "Tarjimayi hol (bio)"
 
 #: .\hr\models.py:18 .\organization\models.py:10
 msgid "Telefon raqami"
-msgstr ""
+msgstr "Telefon raqami"
 
 #: .\hr\models.py:19 .\organization\models.py:11
 msgid "Manzil"
-msgstr ""
+msgstr "Manzil"
 
 #: .\hr\models.py:22
 msgid "Sertifikatlar (JSON)"
-msgstr ""
+msgstr "Sertifikatlar (JSON)"
 
 #: .\hr\models.py:25
 #, fuzzy
 #| msgid "Edit Profile"
 msgid "Xodim Profili"
-msgstr "Profilni Tahrirlash"
+msgstr "Profilni tahrirlash"
 
 #: .\hr\models.py:26
 msgid "Xodimlar Profillari"
-msgstr ""
+msgstr "Xodimlar profillari"
 
 #: .\hr\models.py:32 .\organization\models.py:7 .\organization\models.py:26
 #: .\organization\models.py:41
 msgid "Nomi"
-msgstr ""
+msgstr "Nomi"
 
 #: .\hr\models.py:33
 msgid "Tavsif"
-msgstr ""
+msgstr "Tavsif"
 
 #: .\hr\models.py:34
 msgid "Ushbu indikator uchun beriladigan ball"
-msgstr ""
+msgstr "Ushbu indikator uchun beriladigan ball"
 
 #: .\hr\models.py:34
 msgid "Vazni"
-msgstr ""
+msgstr "Vazni"
 
 #: .\hr\models.py:35
 msgid "Ushbu KPI ga erishish qoidalari"
-msgstr ""
+msgstr "Ushbu KPI ga erishish qoidalari"
 
 #: .\hr\models.py:35
 msgid "Mezonlar"
-msgstr ""
+msgstr "Mezonlar"
 
 #: .\hr\models.py:38
 msgid "KPI Indikatori"
-msgstr ""
+msgstr "KPI ko'rsatkichlari"
 
 #: .\hr\models.py:39
 msgid "KPI Indikatorlari"
-msgstr ""
+msgstr "KPI indikatorlari"
 
 #: .\hr\models.py:46
 msgid "Indikator"
-msgstr ""
+msgstr "Ko'rsatkich"
 
 #: .\hr\models.py:47
 msgid "Erishilgan sana"
-msgstr ""
+msgstr "Erishilgan sana"
 
 #: .\hr\models.py:48
 msgid "Olingan ball"
-msgstr ""
+msgstr "Olingan ball"
 
 #: .\hr\models.py:49
 msgid "Isbotlovchi hujjat"
-msgstr ""
+msgstr "Isbotlovchi hujjat"
 
 #: .\hr\models.py:50
 msgid "Tasdiqlangan"
-msgstr ""
+msgstr "Tasdiqlangan"
 
 #: .\hr\models.py:53
 msgid "KPI Yozuvi (Natijasi)"
-msgstr ""
+msgstr "KPI yozuvi (natijasi)"
 
 #: .\hr\models.py:54
 msgid "KPI Yozuvlari (Natijalari)"
-msgstr ""
+msgstr "KPI yozuvlari (natijalari)"
+
+#: .\hr\models.py:65
+msgid "Sertifikat nomi"
+msgstr "Sertifikat nomi"
+
+#: .\hr\models.py:65
+msgid "Masalan: IELTS 7.5, CEFR C1"
+msgstr "Masalan: IELTS 7.5, CEFR C1"
+
+#: .\hr\models.py:66
+msgid "Beruvchi tashkilot"
+msgstr "Beruvchi tashkilot"
+
+#: .\hr\models.py:66
+msgid "Masalan: British Council"
+msgstr "Masalan: british council"
+
+#: .\hr\models.py:67
+msgid "Berilgan sana"
+msgstr "Berilgan sana"
+
+#: .\hr\models.py:68
+msgid "Amal qilish muddati"
+msgstr "Amal qilish muddati"
+
+#: .\hr\models.py:69
+msgid "Sertifikat fayli (PDF/JPG)"
+msgstr "Batafsil oʻqish (PDF/JPG)"
 
 #: .\hr\models.py:75
 msgid "Sertifikat"
-msgstr ""
+msgstr "Sertifikat"
 
 #: .\hr\models.py:76
 msgid "Sertifikatlar"
-msgstr ""
+msgstr "Sertifikatlar"
 
 #: .\hr\models.py:94
 msgid "Yil (Masalan: 2026)"
-msgstr ""
+msgstr "Yil (masalan: 2026)"
 
 #: .\hr\models.py:94
 msgid "Yil"
-msgstr ""
+msgstr "Yil"
 
 #: .\hr\models.py:95
 msgid "Oxirgi berilgan ma'lumotnoma raqami"
-msgstr ""
+msgstr "Oxirgi berilgan ma'lumotnoma raqami"
 
 #: .\hr\models.py:95
 msgid "Oxirgi raqam"
-msgstr ""
+msgstr "Oxirgi raqam"
 
 #: .\hr\models.py:98
 msgid "Ma'lumotnoma Tartib Raqami"
-msgstr ""
+msgstr "Ma'lumotnoma tartib raqami"
 
 #: .\hr\models.py:99
 msgid "Ma'lumotnoma Tartib Raqamlari"
-msgstr ""
+msgstr "Ma'lumotnoma tartib raqamlari"
 
 #: .\hr\models.py:122
 msgid "Kutilmoqda"
-msgstr ""
+msgstr "Kutilmoqda"
 
 #: .\hr\models.py:123
 msgid "Tasdiqlandi"
-msgstr ""
+msgstr "Tasdiqlandi"
 
 #: .\hr\models.py:124
 msgid "Rad etildi"
-msgstr ""
+msgstr "Rad etildi"
 
 #: .\hr\models.py:131
 msgid "Xodim"
-msgstr ""
+msgstr "Xodim"
 
 #: .\hr\models.py:133
 msgid "Boshlash sanasi"
-msgstr ""
+msgstr "Boshlash sanasi"
 
 #: .\hr\models.py:134
 msgid "Tugash sanasi"
-msgstr ""
+msgstr "Tugash sanasi"
 
 #: .\hr\models.py:137
 msgid "Kasallik varaqasi (fayl)"
-msgstr ""
+msgstr "Kasallik varaqasi (fayl)"
 
 #: .\hr\models.py:143
 msgid "Holat"
-msgstr ""
+msgstr "Holat"
 
 #: .\hr\models.py:153
 msgid "HR izohi"
-msgstr ""
+msgstr "HR izohi"
 
 #: .\hr\models.py:160
 msgid "Ko'rib chiqqan HR"
-msgstr ""
+msgstr "Ko'rib chiqqan HR"
 
 #: .\hr\models.py:162
 msgid "Yuborilgan vaqt"
-msgstr ""
+msgstr "Yuborilgan vaqt"
 
 #: .\hr\models.py:163
 msgid "Ko'rib chiqilgan vaqt"
-msgstr ""
+msgstr "Ko'rib chiqilgan vaqt"
 
 #: .\hr\models.py:166
 msgid "Kasallik Varaqasi"
-msgstr ""
+msgstr "Kasallik varaqasi"
 
 #: .\hr\models.py:167
 msgid "Kasallik Varaqalari"
-msgstr ""
+msgstr "Kasallik varaqalari"
 
-#: .\hr\templates\hr\certificate_print.html:153
+#: .\hr\templates\hr\certificate_print.html:103
 msgid "Chop etish"
-msgstr ""
+msgstr "Chop etish"
 
-#: .\hr\templates\hr\certificate_print.html:161
+#: .\hr\templates\hr\certificate_print.html:111
 msgid "MAKTABGACHA VA MAKTAB TA'LIMI BO'LIMIGA QARASHLI"
-msgstr ""
+msgstr "MAKTABGACHA VA MAKTAB TA'LIMI BO'LIMIGA QARASHLI"
 
-#: .\hr\templates\hr\certificate_print.html:166
+#: .\hr\templates\hr\certificate_print.html:116
 msgid "Manzil kiritilmagan"
-msgstr ""
+msgstr "Manzil kiritilmagan"
 
-#: .\hr\templates\hr\certificate_print.html:166
-#: .\hr\templates\hr\certificate_print.html:224
+#: .\hr\templates\hr\certificate_print.html:116
 msgid "Tel:"
-msgstr ""
+msgstr "Tel:"
 
-#: .\hr\templates\hr\certificate_print.html:166
+#: .\hr\templates\hr\certificate_print.html:116
 msgid "kiritilmagan"
-msgstr ""
+msgstr "kiritilmagan"
 
-#: .\hr\templates\hr\certificate_print.html:172
+#: .\hr\templates\hr\certificate_print.html:123
 #, python-format
-msgid "%(year)s-yil \"%(day)s\"-%(month)s %(num)s-son"
-msgstr ""
+msgid "%(year)s-yil \"%(day)s\"-%(month)s <br> %(num)s-son"
+msgstr "%(year)s-yil \"%(day)s\"-%(month)s <br> %(num)s-son"
 
-#: .\hr\templates\hr\certificate_print.html:181
+#: .\hr\templates\hr\certificate_print.html:133
 msgid "MA'LUMOTNOMA"
-msgstr ""
+msgstr "MA'LUMOTNOMA"
 
-#: .\hr\templates\hr\certificate_print.html:188
+#: .\hr\templates\hr\certificate_print.html:139
 #, python-format
 msgid ""
 "\n"
-"                    Berildi ushbu ma'lumotnoma shu haqdadirki, <b>%(name)s</b> %(region)sdagi %(org_name)sning %(position)s vazifasida ishlaydi.\n"
-"                    "
+"                Berildi ushbu ma'lumotnoma shu haqdadirki, <b>%(name)s</b> haqiqatan ham %(region)sdagi %(org_name)sning %(position)s vazifasida ishlaydi.\n"
+"                "
 msgstr ""
+"\n"
+"                berildi ushbu ma'lumotnoma shu haqdadirki, <b>%(name)s</b> haqiqatan ham %(region)sdagi %(org_name)sning %(position)s vazifasida ishlaydi.\n"
+"                "
 
-#: .\hr\templates\hr\certificate_print.html:192
+#: .\hr\templates\hr\certificate_print.html:143
 #, python-format
 msgid ""
 "\n"
-"                    Berildi ushbu ma'lumotnoma shu haqdadirki, <b>%(name)s</b> %(org_name)sning %(position)s vazifasida ishlaydi.\n"
-"                    "
+"                Berildi ushbu ma'lumotnoma shu haqdadirki, <b>%(name)s</b> haqiqatan ham %(org_name)sning %(position)s vazifasida ishlaydi.\n"
+"                "
 msgstr ""
+"\n"
+"                berildi ushbu ma'lumotnoma shu haqdadirki, <b>%(name)s</b> haqiqatan ham %(org_name)sning %(position)s vazifasida ishlaydi.\n"
+"                "
 
-#: .\hr\templates\hr\certificate_print.html:198
+#: .\hr\templates\hr\certificate_print.html:149
 msgid "Ma'lumotnoma so'ralgan joyga taqdim etish uchun berildi."
-msgstr ""
+msgstr "Ma'lumotnoma so'ralgan joyga taqdim etish uchun berildi."
 
-#: .\hr\templates\hr\certificate_print.html:209
+#: .\hr\templates\hr\certificate_print.html:159
 msgid "Asl nusxani tekshirish (QR)"
-msgstr ""
+msgstr "Asl nusxani tekshirish (QR)"
 
-#: .\hr\templates\hr\certificate_print.html:217
+#: .\hr\templates\hr\certificate_print.html:165
 msgid "Tashkilot rahbari:"
-msgstr ""
+msgstr "Tashkilot rahbari:"
+
+#: .\hr\templates\hr\certificate_print.html:170
+msgid "Murojaat uchun tel:"
+msgstr "Murojaat uchun tel:"
 
 #: .\hr\templates\hr\certificate_verify.html:8
 msgid "Hujjat Haqiqiyligini Tekshirish - Academic OS"
-msgstr ""
+msgstr "Hujjat haqiqiyligini tekshirish - academic OS"
 
 #: .\hr\templates\hr\certificate_verify.html:22
 msgid "HUJJAT HAQIQIY!"
-msgstr ""
+msgstr "HUJJAT HAQIQIY!"
 
 #: .\hr\templates\hr\certificate_verify.html:23
 msgid "Ushbu ma'lumotnoma Academic OS tizimi orqali tasdiqlangan."
-msgstr ""
+msgstr "Ushbu ma'lumotnoma academic OS tizimi orqali tasdiqlangan."
 
 #: .\hr\templates\hr\certificate_verify.html:27
 msgid "Ma'lumotnoma Tafsilotlari:"
-msgstr ""
+msgstr "Ma'lumotnoma tafsilotlari:"
 
 #: .\hr\templates\hr\certificate_verify.html:30
 msgid "Hujjat Raqami:"
-msgstr ""
+msgstr "Hujjat raqami:"
 
 #: .\hr\templates\hr\certificate_verify.html:31
 #, python-format
 msgid "%(year)s-yil %(num)s-sonli ma'lumotnoma"
-msgstr ""
+msgstr "%(year)s-yil %(num)s-sonli ma'lumotnoma"
 
 #: .\hr\templates\hr\certificate_verify.html:35
 msgid "Xodim (F.I.Sh):"
-msgstr ""
+msgstr "Xodim (f.i.sh):"
 
 #: .\hr\templates\hr\certificate_verify.html:40
 msgid "Lavozimi (Vazifasi):"
-msgstr ""
+msgstr "Lavozimi (vazifasi):"
 
 #: .\hr\templates\hr\certificate_verify.html:45
 msgid "Tashkilot / Maktab:"
-msgstr ""
+msgstr "Tashkilot / maktab:"
 
 #: .\hr\templates\hr\certificate_verify.html:50
 msgid "Tekshiruv amaliyoti xavfsiz server orqali amalga oshirildi."
-msgstr ""
+msgstr "Tekshiruv amaliyoti xavfsiz server orqali amalga oshirildi."
 
 #: .\hr\templates\hr\certificate_verify.html:55
 msgid "Barcha huquqlar himoyalangan."
-msgstr ""
+msgstr "Barcha huquqlar himoyalangan."
 
 #: .\hr\views.py:72
 msgid "direktori"
-msgstr ""
+msgstr "direktori"
 
 #: .\hr\views.py:73
 msgid "kafedra mudiri"
-msgstr ""
+msgstr "kafedra mudiri"
 
 #: .\hr\views.py:74
 msgid "o'qituvchisi"
-msgstr ""
+msgstr "o'qituvchisi"
 
 #: .\hr\views.py:75 .\hr\views.py:77
 msgid "tizim ma'muri"
-msgstr ""
+msgstr "tizim ma'muri"
 
 #: .\hr\views.py:76
 msgid "uslubchisi"
-msgstr ""
+msgstr "uslubchisi"
 
-#: .\hr\views.py:97 .\hr\views.py:147 .\hr\views.py:206
+#: .\hr\views.py:97 .\hr\views.py:160 .\hr\views.py:232
 msgid "xodimi"
-msgstr ""
+msgstr "xodimi"
 
-#: .\hr\views.py:214
+#: .\hr\views.py:240
 msgid "Noma'lum"
-msgstr ""
+msgstr "Or'lum"
 
-#: .\hr\views.py:237
+#: .\hr\views.py:263
 msgid "Barcha maydonlarni to'ldiring va faylni yuklang."
-msgstr ""
+msgstr "Barcha maydonlarni to'ldiring va faylni yuklang."
 
-#: .\hr\views.py:245
+#: .\hr\views.py:271
 msgid "Kasallik varaqangiz HR bo'limiga yuborildi. Kutib turing."
-msgstr ""
+msgstr "Kasallik varaqangiz HR bo'limiga yuborildi. kutib turing."
 
-#: .\hr\views.py:289
+#: .\hr\views.py:315
 msgid "Kasallik varaqasi rad etildi."
-msgstr ""
+msgstr "Kasallik varaqasi rad etildi."
 
 #: .\organization\models.py:8
 msgid "Tuman/Shahar nomi"
-msgstr ""
+msgstr "Tuman/Shahar nomi"
 
 #: .\organization\models.py:8
 msgid "Masalan: Angor tumani"
-msgstr ""
+msgstr "Masalan: angor tumani"
 
 #: .\organization\models.py:9
 msgid "Direktor ism-sharifi"
-msgstr ""
+msgstr "Direktor ism-sharifi"
 
 #: .\organization\models.py:9
 msgid "Masalan: B.Xolbutayev"
-msgstr ""
+msgstr "Masalan: b.xolbutayev"
 
 #: .\organization\models.py:15 .\organization\models.py:25
 msgid "Tashkilot"
-msgstr ""
+msgstr "Tashkilot"
 
 #: .\organization\models.py:16
 msgid "Tashkilotlar"
-msgstr ""
+msgstr "Tashkilotlar"
 
 #: .\organization\models.py:27
 msgid "Mudiri"
-msgstr ""
+msgstr "Mudiri"
 
 #: .\organization\models.py:30 .\organization\models.py:40
 msgid "Kafedra"
-msgstr ""
+msgstr "Kafedra"
 
 #: .\organization\models.py:31
 msgid "Kafedralar"
-msgstr ""
+msgstr "Kafedralar"
 
 #: .\organization\models.py:42
 msgid "Rahbari"
-msgstr ""
+msgstr "Rahbari"
 
 #: .\organization\models.py:45
 msgid "Metod birlashma"
-msgstr ""
+msgstr "Metod birlashma"
 
 #: .\organization\models.py:46
 msgid "Metod birlashmalar"
-msgstr ""
+msgstr "Metod birlashmalar"
 
 # Sidebar
 #: .\templates\base.html:92 .\templates\dashboard.html:4
@@ -819,7 +900,6 @@ msgid "My Sick Leaves"
 msgstr "Mening kasallik varaqalarim"
 
 #: .\templates\base.html:165
-#| msgid "Under Review"
 msgid "HR Review"
 msgstr "Kadrlar bo'limi tekshiruvi"
 
@@ -838,7 +918,7 @@ msgstr "Xush kelibsiz"
 
 #: .\templates\dashboard.html:18
 msgid "Overview of the entire academic system."
-msgstr ""
+msgstr "Butun akademik tizimning umumiy ko'rinishi."
 
 #: .\templates\dashboard.html:20
 msgid "Here's what's happening in your academic workspace today."
@@ -846,21 +926,21 @@ msgstr "Bugungi akademik faoliyatingiz haqida qisqacha ma'lumot."
 
 #: .\templates\dashboard.html:41
 msgid "Avg System KPI"
-msgstr ""
+msgstr "Oʻrtacha tizim KPI"
 
 #: .\templates\dashboard.html:41
 msgid "My KPI Score"
-msgstr "Mening KPI Ballim"
+msgstr "Mening KPI ballim"
 
 #: .\templates\dashboard.html:63
 #, fuzzy
 #| msgid "Completed Tasks"
 msgid "Completed Tasks (All)"
-msgstr "Bajarilgan Vazifalar"
+msgstr "Bajarilgan vazifalar"
 
 #: .\templates\dashboard.html:63
 msgid "Completed Tasks"
-msgstr "Bajarilgan Vazifalar"
+msgstr "Bajarilgan vazifalar"
 
 #: .\templates\dashboard.html:68
 msgid "All time"
@@ -870,25 +950,25 @@ msgstr "Jami"
 #, fuzzy
 #| msgid "Performance Analytics"
 msgid "System Performance Analytics"
-msgstr "Samaradorlik Tahlili"
+msgstr "Samaradorlik tahlili"
 
 #: .\templates\dashboard.html:79
 msgid "Performance Analytics"
-msgstr "Samaradorlik Tahlili"
+msgstr "Samaradorlik tahlili"
 
 #: .\templates\dashboard.html:89
 #, fuzzy
 #| msgid "Task Distribution"
 msgid "System Task Distribution"
-msgstr "Vazifalar Taqsimoti"
+msgstr "Vazifalar taqsimoti"
 
 #: .\templates\dashboard.html:89
 msgid "Task Distribution"
-msgstr "Vazifalar Taqsimoti"
+msgstr "Vazifalar taqsimoti"
 
 #: .\templates\dashboard.html:103
 msgid "Pending Tasks"
-msgstr "Kutilayotgan Vazifalar"
+msgstr "Kutilayotgan vazifalar"
 
 #: .\templates\dashboard.html:119
 msgid "No pending tasks."
@@ -918,27 +998,27 @@ msgstr "Hozircha sertifikatlar yo'q."
 
 #: .\users\admin.py:11
 msgid "Xodim faoliyati va shaxsiy tafsilotlari"
-msgstr ""
+msgstr "Xodim faoliyati va shaxsiy tafsilotlari"
 
 #: .\users\admin.py:27
 msgid "Shaxsiy ma'lumotlar (Foydalanuvchi)"
-msgstr ""
+msgstr "Shaxsiy ma'lumotlar (foydalanuvchi)"
 
 #: .\users\admin.py:28
 msgid "Guruhlar va Ruxsatlar (Vazifasi)"
-msgstr ""
+msgstr "Guruhlar va ruxsatlar (vazifasi)"
 
 #: .\users\admin.py:46
 msgid "Vazifasi (Guruhlar)"
-msgstr ""
+msgstr "Vazifasi (guruhlar)"
 
 #: .\users\models.py:11
 msgid "Foydalanuvchilar"
-msgstr ""
+msgstr "Foydalanuvchilar"
 
 #: .\users\templates\users\login.html:4
 msgid "Login - Academic OS"
-msgstr "Kirish - Academic OS"
+msgstr "Kirish - academic OS"
 
 #: .\users\templates\users\login.html:16
 msgid "Sign in to your account"
@@ -954,7 +1034,7 @@ msgstr "Foydalanuvchi nomi"
 
 #: .\users\templates\users\login.html:30
 msgid " Enter your username"
-msgstr ""
+msgstr "Foydalanuvchi nomingizni kiriting"
 
 #: .\users\templates\users\login.html:34
 msgid "Password"
@@ -962,7 +1042,7 @@ msgstr "Parol"
 
 #: .\users\templates\users\login.html:36
 msgid " Enter your password"
-msgstr ""
+msgstr "Parolingizni kiriting"
 
 #: .\users\templates\users\login.html:39
 msgid "Sign In"
@@ -970,7 +1050,7 @@ msgstr "Kirish"
 
 #: .\users\templates\users\profile.html:4
 msgid "My Profile"
-msgstr "Mening Profilim"
+msgstr "Mening profilim"
 
 #: .\users\templates\users\profile.html:36
 msgid "Member"
@@ -978,7 +1058,7 @@ msgstr "A'zo"
 
 #: .\users\templates\users\profile.html:49
 msgid "Contact Information"
-msgstr "Bog'lanish Ma'lumotlari"
+msgstr "Bog'lanish ma'lumotlari"
 
 #: .\users\templates\users\profile.html:56
 msgid "Email"
@@ -994,17 +1074,17 @@ msgstr "Manzil"
 
 #: .\users\templates\users\profile.html:97
 msgid "Edit Profile"
-msgstr "Profilni Tahrirlash"
+msgstr "Profilni tahrirlash"
 
 #: .\users\templates\users\profile.html:98
 msgid "Personal Details"
-msgstr "Shaxsiy Ma'lumotlar"
+msgstr "Shaxsiy ma'lumotlar"
 
 #: .\users\templates\users\profile.html:114
 #, fuzzy
 #| msgid "Contact Information"
 msgid "User Information"
-msgstr "Bog'lanish Ma'lumotlari"
+msgstr "Bog'lanish ma'lumotlari"
 
 #: .\users\templates\users\profile.html:117
 msgid "First Name"
@@ -1016,23 +1096,23 @@ msgstr "Familiya"
 
 #: .\users\templates\users\profile.html:125
 msgid "Email Address"
-msgstr "Email Manzili"
+msgstr "Email manzili"
 
 #: .\users\templates\users\profile.html:130
 msgid "Extended Profile"
-msgstr "Kengaytirilgan Profil"
+msgstr "Kengaytirilgan profil"
 
 #: .\users\templates\users\profile.html:133
 msgid "Phone Number"
-msgstr "Telefon Raqami"
+msgstr "Telefon raqami"
 
 #: .\users\templates\users\profile.html:137
 msgid "Location / Address"
-msgstr "Joylashuv / Manzil"
+msgstr "Joylashuv / manzil"
 
 #: .\users\templates\users\profile.html:141
 msgid "Bio"
-msgstr "Tarjimayi Hol"
+msgstr "Tarjimayi hol"
 
 #: .\users\templates\users\profile.html:143
 msgid "Brief description about yourself."
@@ -1040,15 +1120,15 @@ msgstr "O'zingiz haqingizda qisqacha."
 
 #: .\users\templates\users\profile.html:146
 msgid "Profile Picture"
-msgstr "Profil Rasmi"
+msgstr "Profil rasmi"
 
 #: .\users\templates\users\profile.html:153
 msgid "Save Changes"
-msgstr "O'zgarishlarni Saqlash"
+msgstr "O'zgarishlarni saqlash"
 
 #: .\users\templates\users\profile.html:167
 msgid "Certificates & Awards"
-msgstr "Sertifikatlar va Mukofotlar"
+msgstr "Sertifikatlar va mukofotlar"
 
 #: .\users\templates\users\profile.html:169
 msgid "Add"
@@ -1072,23 +1152,23 @@ msgstr "Birinchi sertifikatni qo'shish"
 
 #: .\workflow\templates\workflow\task_detail.html:4
 msgid "Task Details"
-msgstr "Vazifa Tafsilotlari"
+msgstr "Vazifa tafsilotlari"
 
 #: .\workflow\templates\workflow\task_detail.html:10
 msgid "Back to List"
-msgstr "Ro'yxatga Qaytish"
+msgstr "Ro'yxatga qaytish"
 
 #: .\workflow\templates\workflow\task_detail.html:22
 msgid "High Priority"
-msgstr "Yuqori Muhimlik"
+msgstr "Yuqori muhimlik"
 
 #: .\workflow\templates\workflow\task_detail.html:24
 msgid "Medium Priority"
-msgstr "O'rta Muhimlik"
+msgstr "O'rta muhimlik"
 
 #: .\workflow\templates\workflow\task_detail.html:26
 msgid "Low Priority"
-msgstr "Past Muhimlik"
+msgstr "Past muhimlik"
 
 #: .\workflow\templates\workflow\task_detail.html:35
 #: .\workflow\templates\workflow\task_list.html:30
@@ -1097,7 +1177,7 @@ msgstr "Muddat"
 
 #: .\workflow\templates\workflow\task_detail.html:41
 msgid "No deadline"
-msgstr ""
+msgstr "Muddati yo'q"
 
 #: .\workflow\templates\workflow\task_detail.html:56
 msgid "Assignees"
@@ -1106,7 +1186,7 @@ msgstr "Mas'ullar"
 #: .\workflow\templates\workflow\task_detail.html:68
 #: .\workflow\templates\workflow\task_form.html:4
 msgid "Edit Task"
-msgstr "Vazifani Tahrirlash"
+msgstr "Vazifani tahrirlash"
 
 #: .\workflow\templates\workflow\task_detail.html:79
 msgid "Created By"
@@ -1114,7 +1194,7 @@ msgstr "Yaratdi"
 
 #: .\workflow\templates\workflow\task_detail.html:88
 msgid "Created At"
-msgstr "Yaratilgan Vaqt"
+msgstr "Yaratilgan vaqt"
 
 #: .\workflow\templates\workflow\task_detail.html:96
 msgid "Dependencies"
@@ -1122,15 +1202,15 @@ msgstr "Bog'liqliklar"
 
 #: .\workflow\templates\workflow\task_form.html:4
 msgid "Create Task"
-msgstr "Vazifa Yaratish"
+msgstr "Vazifa yaratish"
 
 #: .\workflow\templates\workflow\task_form.html:42
 msgid "Save Task"
-msgstr "Vazifani Saqlash"
+msgstr "Vazifani saqlash"
 
 #: .\workflow\templates\workflow\task_list.html:10
 msgid "My Tasks"
-msgstr "Mening Vazifalarim"
+msgstr "Mening vazifalarim"
 
 #: .\workflow\templates\workflow\task_list.html:11
 msgid "Tasks assigned to you or created by you."
@@ -1138,7 +1218,7 @@ msgstr "Sizga tayinlangan yoki siz yaratgan vazifalar."
 
 #: .\workflow\templates\workflow\task_list.html:14
 msgid "New Task"
-msgstr "Yangi Vazifa"
+msgstr "Yangi vazifa"
 
 #: .\workflow\templates\workflow\task_list.html:28
 msgid "Priority"
@@ -1170,4 +1250,148 @@ msgstr "Kutilmoqda"
 
 #: .\workflow\templates\workflow\task_list.html:86
 msgid "No tasks found. Click 'New Task' to get started!"
-msgstr "Vazifalar topilmadi. Boshlash uchun 'Yangi Vazifa' tugmasini bosing!"
+msgstr "Vazifalar topilmadi. boshlash uchun 'yangi vazifa' tugmasini bosing!"
+
+#: django/contrib/admin:0
+msgid "Change"
+msgstr "O'zgartirish"
+
+#: django/contrib/admin:0
+msgid "Delete"
+msgstr "O'chirish"
+
+#: django/contrib/admin:0
+msgid "Save"
+msgstr "Saqlash"
+
+#: django/contrib/admin:0
+msgid "Save and add another"
+msgstr "Saqlash va yana qo'shish"
+
+#: django/contrib/admin:0
+msgid "Save and continue editing"
+msgstr "Saqlash va tahrirlashda davom etish"
+
+#: django/contrib/admin:0
+msgid "Are you sure?"
+msgstr "Ishonchingiz komilmi?"
+
+#: django/contrib/admin:0
+msgid "Yes, I'm sure"
+msgstr "Ha, ishonchim komil"
+
+#: django/contrib/admin:0
+msgid "No, take me back"
+msgstr "Yo'q, orqaga qaytish"
+
+#: django/contrib/admin:0
+msgid "Action:"
+msgstr "Harakat:"
+
+#: django/contrib/admin:0
+msgid "Go"
+msgstr "Bajarish"
+
+#: django/contrib/admin:0
+msgid "Filter"
+msgstr "Filtr"
+
+#: django/contrib/admin:0
+msgid "Clear all filters"
+msgstr "Barcha filtrlarni tozalash"
+
+#: django/contrib/admin:0
+msgid "Select all"
+msgstr "Barchasini tanlash"
+
+#: django/contrib/admin:0
+msgid "Welcome,"
+msgstr "Xush kelibsiz,"
+
+#: django/contrib/admin:0
+msgid "View site"
+msgstr "Saytni ko'rish"
+
+#: django/contrib/admin:0
+msgid "Change password"
+msgstr "Parolni o'zgartirish"
+
+#: django/contrib/admin:0
+msgid "Log out"
+msgstr "Chiqish"
+
+#: django/contrib/admin:0
+msgid "Home"
+msgstr "Bosh sahifa"
+
+#: django/contrib/admin:0
+msgid "View on site"
+msgstr "Saytda ko'rish"
+
+#: django/contrib/admin:0
+msgid "Delete selected"
+msgstr "Tanlanganlarni o'chirish"
+
+#: django/contrib/admin:0
+msgid "Select %s to change"
+msgstr "O'zgartirish uchun %s tanlang"
+
+#: django/contrib/admin:0
+msgid "Select %s to view"
+msgstr "Ko'rish uchun %s tanlang"
+
+#: django/contrib/admin:0
+msgid "Add %s"
+msgstr "%s qo'shish"
+
+#: django/contrib/admin:0
+msgid "Change %s"
+msgstr "%s o'zgartirish"
+
+#: django/contrib/admin:0
+msgid "Recent actions"
+msgstr "Oxirgi harakatlar"
+
+#: django/contrib/admin:0
+msgid "My actions"
+msgstr "Mening harakatlarim"
+
+#: django/contrib/admin:0
+msgid "None available"
+msgstr "Mavjud emas"
+
+#: django/contrib/admin:0
+msgid "Unknown content"
+msgstr "Noma'lum kontent"
+
+#: django/contrib/admin:0
+msgid "Authentication and Authorization"
+msgstr "Autentifikatsiya va avtorizatsiya"
+
+#: django/contrib/admin:0
+msgid "Users"
+msgstr "Foydalanuvchilar"
+
+#: django/contrib/admin:0
+msgid "Groups"
+msgstr "Guruhlar"
+
+#: django/contrib/admin:0
+msgid "Added"
+msgstr "Qo'shildi"
+
+#: django/contrib/admin:0
+msgid "Changed"
+msgstr "O'zgartirildi"
+
+#: django/contrib/admin:0
+msgid "Deleted"
+msgstr "O'chirildi"
+
+#: django/contrib/admin:0
+msgid "Date/time"
+msgstr "Sana/vaqt"
+
+#: django/contrib/admin:0
+msgid "User"
+msgstr "Foydalanuvchi"

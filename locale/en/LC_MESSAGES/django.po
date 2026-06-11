@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-09 20:20+0200\n"
+"POT-Creation-Date: 2026-06-11 10:46+0200\n"
 "PO-Revision-Date: 2007-10-18 14:00+0100\n"
 "Last-Translator: system\n"
 "Language-Team: en <localhost>\n"
@@ -14,15 +14,15 @@ msgstr ""
 
 #: .\academic\templates\academic\methodist_dashboard.html:3
 msgid "Methodist Dashboard - Academic OS"
-msgstr ""
+msgstr "Methodist Dashboard - Academic OS"
 
 #: .\academic\templates\academic\methodist_dashboard.html:5
 msgid "Methodist Dashboard"
-msgstr ""
+msgstr "Methodist Dashboard"
 
 #: .\academic\templates\academic\methodist_dashboard.html:15
 msgid "Total Observations"
-msgstr ""
+msgstr "Total Observations"
 
 #: .\academic\templates\academic\methodist_dashboard.html:31
 #: .\academic\templates\academic\methodist_dashboard.html:170
@@ -32,11 +32,11 @@ msgstr "Resources"
 
 #: .\academic\templates\academic\methodist_dashboard.html:47
 msgid "Active Teachers"
-msgstr ""
+msgstr "Active Teachers"
 
 #: .\academic\templates\academic\methodist_dashboard.html:64
 msgid "Top Teachers"
-msgstr ""
+msgstr "Top Teachers"
 
 #: .\academic\templates\academic\methodist_dashboard.html:73
 #: .\academic\templates\academic\observation_form.html:17
@@ -45,7 +45,7 @@ msgstr ""
 #: .\academic\templates\academic\observation_list.html:25
 #: .\documents\templates\documents\report_list.html:26
 msgid "Teacher"
-msgstr ""
+msgstr "Teacher"
 
 #: .\academic\templates\academic\methodist_dashboard.html:74
 #: .\templates\base.html:105
@@ -54,53 +54,53 @@ msgstr "Observations"
 
 #: .\academic\templates\academic\methodist_dashboard.html:75
 msgid "Average Score"
-msgstr ""
+msgstr "Average Score"
 
 #: .\academic\templates\academic\methodist_dashboard.html:101
 msgid "No statistics yet"
-msgstr ""
+msgstr "No statistics yet"
 
 #: .\academic\templates\academic\methodist_dashboard.html:112
 #: .\templates\dashboard.html:129
 msgid "Recent Observations"
-msgstr ""
+msgstr "Recent Observations"
 
 #: .\academic\templates\academic\methodist_dashboard.html:113
 #: .\templates\dashboard.html:148
 msgid "View All"
-msgstr ""
+msgstr "View All"
 
 #: .\academic\templates\academic\methodist_dashboard.html:138
 msgid "No observations yet"
-msgstr ""
+msgstr "No observations yet"
 
 #: .\academic\templates\academic\methodist_dashboard.html:151
 msgid "Quick Actions"
-msgstr ""
+msgstr "Quick Actions"
 
 #: .\academic\templates\academic\methodist_dashboard.html:158
 #: .\academic\templates\academic\observation_list.html:14
 msgid "New Observation"
-msgstr ""
+msgstr "New Observation"
 
 #: .\academic\templates\academic\methodist_dashboard.html:164
 #: .\templates\dashboard.html:129
 msgid "All Observations"
-msgstr ""
+msgstr "All Observations"
 
 #: .\academic\templates\academic\methodist_dashboard.html:176
 #: .\academic\templates\academic\resource_form.html:4
 #: .\academic\templates\academic\resource_list.html:14
 msgid "Upload Resource"
-msgstr ""
+msgstr "Upload Resource"
 
 #: .\academic\templates\academic\observation_form.html:4
 msgid "New Lesson Observation"
-msgstr ""
+msgstr "New Lesson Observation"
 
 #: .\academic\templates\academic\observation_form.html:14
 msgid "Lesson Details"
-msgstr ""
+msgstr "Lesson Details"
 
 #: .\academic\templates\academic\observation_form.html:21
 #: .\academic\templates\academic\observation_journal.html:53
@@ -109,7 +109,7 @@ msgstr ""
 #: .\documents\templates\documents\order_list.html:26
 #: .\documents\templates\documents\report_list.html:30
 msgid "Date"
-msgstr ""
+msgstr "Date"
 
 #: .\academic\templates\academic\observation_form.html:25
 #: .\academic\templates\academic\observation_journal.html:56
@@ -117,282 +117,328 @@ msgstr ""
 #: .\documents\templates\documents\order_list.html:25
 #: .\documents\templates\documents\report_list.html:27
 msgid "Subject"
-msgstr ""
+msgstr "Subject"
 
 #: .\academic\templates\academic\observation_form.html:29
 msgid "Class Group"
-msgstr ""
+msgstr "Class Group"
 
 #: .\academic\templates\academic\observation_form.html:33
 #: .\academic\templates\academic\observation_journal.html:57
 #: .\academic\templates\academic\observation_list.html:28
 msgid "Topic"
-msgstr ""
+msgstr "Topic"
 
 #: .\academic\templates\academic\observation_form.html:38
 msgid "Evaluation Criteria"
-msgstr ""
+msgstr "Evaluation Criteria"
 
 #: .\academic\templates\academic\observation_form.html:76
 #: .\academic\templates\academic\resource_form.html:40
 #: .\documents\templates\documents\report_list.html:141
 #: .\workflow\templates\workflow\task_form.html:41
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel"
 
 #: .\academic\templates\academic\observation_form.html:77
 msgid "Submit Observation"
-msgstr ""
+msgstr "Submit Observation"
 
 #: .\academic\templates\academic\observation_journal.html:4
 msgid "Observation Journal - Academic OS"
-msgstr ""
+msgstr "Observation Journal - Academic OS"
 
 #: .\academic\templates\academic\observation_journal.html:6
 msgid "Mutual Lesson Observation Journal"
-msgstr ""
+msgstr "Mutual Lesson Observation Journal"
 
 #: .\academic\templates\academic\observation_journal.html:11
 msgid "Filters"
-msgstr ""
+msgstr "Filters"
 
 #: .\academic\templates\academic\observation_journal.html:18
 msgid "All"
-msgstr ""
+msgstr "All"
 
 #: .\academic\templates\academic\observation_journal.html:27
 msgid "Start Date"
-msgstr ""
+msgstr "Start Date"
 
 #: .\academic\templates\academic\observation_journal.html:31
 msgid "End Date"
-msgstr ""
+msgstr "End Date"
 
 #: .\academic\templates\academic\observation_journal.html:35
 msgid "Search"
-msgstr ""
+msgstr "Search"
 
 #: .\academic\templates\academic\observation_journal.html:43
 msgid "Observations Journal"
-msgstr ""
+msgstr "Observations Journal"
 
 #: .\academic\templates\academic\observation_journal.html:45
 msgid "items"
-msgstr ""
+msgstr "items"
 
 #: .\academic\templates\academic\observation_journal.html:55
 #: .\academic\templates\academic\observation_list.html:26
 msgid "Observer"
-msgstr ""
+msgstr "Observer"
 
 #: .\academic\templates\academic\observation_journal.html:58
 msgid "Class"
-msgstr ""
+msgstr "Class"
 
 #: .\academic\templates\academic\observation_journal.html:59
 #: .\academic\templates\academic\observation_list.html:29
 msgid "Score"
-msgstr ""
+msgstr "Score"
 
 #: .\academic\templates\academic\observation_journal.html:103
 #: .\academic\templates\academic\observation_list.html:54
 msgid "No observations found."
-msgstr ""
+msgstr "No observations found."
 
 #: .\academic\templates\academic\observation_journal.html:105
 msgid "Clear Filters"
-msgstr ""
+msgstr "Clear Filters"
 
 #: .\academic\templates\academic\observation_list.html:4
 msgid "Lesson Observations"
-msgstr ""
+msgstr "Lesson Observations"
 
 #: .\academic\templates\academic\observation_list.html:10
 msgid "History"
-msgstr ""
+msgstr "History"
 
 #: .\academic\templates\academic\observation_list.html:11
 msgid "Record of all lesson observations."
-msgstr ""
+msgstr "Record of all lesson observations."
 
 #: .\academic\templates\academic\resource_form.html:41
 msgid "Upload"
-msgstr ""
+msgstr "Upload"
 
 #: .\academic\templates\academic\resource_list.html:4
 msgid "Resource Center"
-msgstr ""
+msgstr "Resource Center"
 
 #: .\academic\templates\academic\resource_list.html:10
 msgid "Educational Resources"
-msgstr ""
+msgstr "Educational Resources"
 
 #: .\academic\templates\academic\resource_list.html:11
 msgid "Repository of study materials and documents."
-msgstr ""
+msgstr "Repository of study materials and documents."
 
 #: .\academic\templates\academic\resource_list.html:24
 #: .\workflow\templates\workflow\task_list.html:27
 msgid "Title"
-msgstr ""
+msgstr "Title"
 
 #: .\academic\templates\academic\resource_list.html:25
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: .\academic\templates\academic\resource_list.html:26
 msgid "Uploaded By"
-msgstr ""
+msgstr "Uploaded By"
 
 #: .\academic\templates\academic\resource_list.html:28
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 #: .\academic\templates\academic\resource_list.html:29
 msgid "Action"
-msgstr ""
+msgstr "Action"
 
 #: .\academic\templates\academic\resource_list.html:43
 #: .\documents\templates\documents\order_list.html:38
 #: .\documents\templates\documents\report_list.html:66
 msgid "Download"
-msgstr ""
+msgstr "Download"
 
 #: .\academic\templates\academic\resource_list.html:46
 msgid "No file"
-msgstr ""
+msgstr "No file"
 
 #: .\academic\templates\academic\resource_list.html:53
 msgid "No resources found. Upload one to get started."
-msgstr ""
+msgstr "No resources found. Upload one to get started."
 
 #: .\config\settings.py:170
 msgid "O'zbek"
-msgstr ""
+msgstr "Uzbek"
 
 #: .\config\settings.py:171
 msgid "Русский"
-msgstr ""
+msgstr "Russian"
 
 #: .\config\settings.py:172
 msgid "English"
-msgstr ""
+msgstr "English"
+
+#: .\documents\models.py:10
+msgid "Buyruq mavzusi"
+msgstr "Command subject"
+
+#: .\documents\models.py:11
+msgid "Buyruq raqami"
+msgstr "Order number"
+
+#: .\documents\models.py:12
+msgid "Buyruq fayli (PDF/Word)"
+msgstr "Command file (PDF/Word)"
+
+#: .\documents\models.py:13
+#, fuzzy
+#| msgid "Erishilgan sana"
+msgid "Imzolangan sana"
+msgstr "Date Achieved"
+
+#: .\documents\models.py:20
+msgid "Buyruq"
+msgstr "Command"
+
+#: .\documents\models.py:21
+msgid "Buyruqlar"
+msgstr "Commands"
+
+#: .\documents\models.py:43
+msgid "Hisobot nomi"
+msgstr "Name of the report"
+
+#: .\documents\models.py:45
+msgid "Hisobot fayli"
+msgstr "Report file"
+
+#: .\documents\models.py:48
+msgid "Admin izohi (Rad etish sababi)"
+msgstr "Admin Comment (Reason for Rejection)"
+
+#: .\documents\models.py:55
+msgid "Hisobot"
+msgstr "Report"
+
+#: .\documents\models.py:56
+msgid "Hisobotlar"
+msgstr "Reports"
 
 #: .\documents\templates\documents\order_list.html:4
 msgid "Orders - Academic OS"
-msgstr ""
+msgstr "Orders - Academic OS"
 
 #: .\documents\templates\documents\order_list.html:6
 msgid "Internal Orders Archive"
-msgstr ""
+msgstr "Internal Orders Archive"
 
 #: .\documents\templates\documents\order_list.html:11
 msgid "Orders List"
-msgstr ""
+msgstr "Orders List"
 
 #: .\documents\templates\documents\order_list.html:14
 msgid "New Order"
-msgstr ""
+msgstr "New Order"
 
 #: .\documents\templates\documents\order_list.html:24
 msgid "Number"
-msgstr ""
+msgstr "Number"
 
 #: .\documents\templates\documents\order_list.html:27
 msgid "File"
-msgstr ""
+msgstr "File"
 
 #: .\documents\templates\documents\order_list.html:49
 msgid "No orders uploaded yet."
-msgstr ""
+msgstr "No orders uploaded yet."
 
 #: .\documents\templates\documents\report_list.html:4
 msgid "Reports - Academic OS"
-msgstr ""
+msgstr "Reports - Academic OS"
 
 #: .\documents\templates\documents\report_list.html:7
 msgid "All Reports (Admin)"
-msgstr ""
+msgstr "All Reports (Admin)"
 
 #: .\documents\templates\documents\report_list.html:7
 msgid "My Reports"
-msgstr ""
+msgstr "My Reports"
 
 #: .\documents\templates\documents\report_list.html:13
 msgid "Reports List"
-msgstr ""
+msgstr "Reports List"
 
 #: .\documents\templates\documents\report_list.html:16
 msgid "Submit Report"
-msgstr ""
+msgstr "Submit Report"
 
 #: .\documents\templates\documents\report_list.html:28
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: .\documents\templates\documents\report_list.html:29
 #: .\workflow\templates\workflow\task_detail.html:47
 #: .\workflow\templates\workflow\task_list.html:29
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: .\documents\templates\documents\report_list.html:31
 #: .\workflow\templates\workflow\task_list.html:31
 msgid "Actions"
-msgstr ""
+msgstr "Actions"
 
 #: .\documents\templates\documents\report_list.html:44
 msgid "Comment:"
-msgstr ""
+msgstr "Comment:"
 
 #: .\documents\templates\documents\report_list.html:53
 msgid "Approved"
-msgstr ""
+msgstr "Approved"
 
 #: .\documents\templates\documents\report_list.html:56
 msgid "Rejected"
-msgstr ""
+msgstr "Rejected"
 
 #: .\documents\templates\documents\report_list.html:59
 msgid "Under Review"
-msgstr ""
+msgstr "Under Review"
 
 #: .\documents\templates\documents\report_list.html:72
 msgid "Approve"
-msgstr ""
+msgstr "Approve"
 
 #: .\documents\templates\documents\report_list.html:76
 #: .\documents\templates\documents\report_list.html:142
 msgid "Reject"
-msgstr ""
+msgstr "Reject"
 
 #: .\documents\templates\documents\report_list.html:90
 msgid "No reports yet."
-msgstr ""
+msgstr "No reports yet."
 
 #: .\documents\templates\documents\report_list.html:105
 msgid "Approve Report"
-msgstr ""
+msgstr "Approve Report"
 
 #: .\documents\templates\documents\report_list.html:110
 msgid "Are you sure you want to approve this report?"
-msgstr ""
+msgstr "Are you sure you want to approve this report?"
 
 #: .\documents\templates\documents\report_list.html:114
 msgid "Yes, Approve"
-msgstr ""
+msgstr "Yes, Approve"
 
 #: .\documents\templates\documents\report_list.html:126
 msgid "Reject Report"
-msgstr ""
+msgstr "Reject Report"
 
 #: .\documents\templates\documents\report_list.html:135
 msgid "Reason for Rejection:"
-msgstr ""
+msgstr "Reason for Rejection:"
 
 #: .\documents\templates\documents\report_list.html:137
 msgid "Leave a comment about errors..."
-msgstr ""
+msgstr "Leave a comment about errors..."
 
 #: .\hr\models.py:9 .\hr\models.py:45 .\users\models.py:10
 msgid "Foydalanuvchi"
@@ -507,6 +553,42 @@ msgstr "KPI Record (Result)"
 msgid "KPI Yozuvlari (Natijalari)"
 msgstr "KPI Records (Results)"
 
+#: .\hr\models.py:65
+#, fuzzy
+#| msgid "Sertifikat"
+msgid "Sertifikat nomi"
+msgstr "Certificate"
+
+#: .\hr\models.py:65
+msgid "Masalan: IELTS 7.5, CEFR C1"
+msgstr "For example: IELTS 7.5, CEFR C1"
+
+#: .\hr\models.py:66
+msgid "Beruvchi tashkilot"
+msgstr "Donor organization"
+
+#: .\hr\models.py:66
+#, fuzzy
+#| msgid "Masalan: Angor tumani"
+msgid "Masalan: British Council"
+msgstr "Example: Angor district"
+
+#: .\hr\models.py:67
+#, fuzzy
+#| msgid "Erishilgan sana"
+msgid "Berilgan sana"
+msgstr "Date Achieved"
+
+#: .\hr\models.py:68
+msgid "Amal qilish muddati"
+msgstr "Validity period"
+
+#: .\hr\models.py:69
+#, fuzzy
+#| msgid "Sertifikatlar (JSON)"
+msgid "Sertifikat fayli (PDF/JPG)"
+msgstr "Certificates (JSON)"
+
 #: .\hr\models.py:75
 msgid "Sertifikat"
 msgstr "Certificate"
@@ -541,7 +623,7 @@ msgstr "Certificate Sequence Numbers"
 
 #: .\hr\models.py:122
 msgid "Kutilmoqda"
-msgstr ""
+msgstr "Waiting"
 
 #: .\hr\models.py:123
 #, fuzzy
@@ -551,11 +633,11 @@ msgstr "Verified"
 
 #: .\hr\models.py:124
 msgid "Rad etildi"
-msgstr ""
+msgstr "Rejected"
 
 #: .\hr\models.py:131
 msgid "Xodim"
-msgstr ""
+msgstr "Employee"
 
 #: .\hr\models.py:133
 #, fuzzy
@@ -571,35 +653,35 @@ msgstr "Contract End Date"
 
 #: .\hr\models.py:137
 msgid "Kasallik varaqasi (fayl)"
-msgstr ""
+msgstr "Sick leave (file)"
 
 #: .\hr\models.py:143
 msgid "Holat"
-msgstr ""
+msgstr "Status"
 
 #: .\hr\models.py:153
 msgid "HR izohi"
-msgstr ""
+msgstr "HR explanation"
 
 #: .\hr\models.py:160
 msgid "Ko'rib chiqqan HR"
-msgstr ""
+msgstr "Reviewed by HR"
 
 #: .\hr\models.py:162
 msgid "Yuborilgan vaqt"
-msgstr ""
+msgstr "Sent time"
 
 #: .\hr\models.py:163
 msgid "Ko'rib chiqilgan vaqt"
-msgstr ""
+msgstr "Time considered"
 
 #: .\hr\models.py:166
 msgid "Kasallik Varaqasi"
-msgstr ""
+msgstr "Sickness Sheet"
 
 #: .\hr\models.py:167
 msgid "Kasallik Varaqalari"
-msgstr ""
+msgstr "Sickness Sheets"
 
 #: .\hr\templates\hr\certificate_print.html:103
 msgid "Chop etish"
@@ -622,6 +704,7 @@ msgid "kiritilmagan"
 msgstr "not specified"
 
 #: .\hr\templates\hr\certificate_print.html:123
+#, python-format
 msgid "%(year)s-yil \"%(day)s\"-%(month)s <br> %(num)s-son"
 msgstr "Date: %(month)s %(day)s, %(year)s <br> No. %(num)s"
 
@@ -631,32 +714,24 @@ msgstr "CERTIFICATE"
 
 #: .\hr\templates\hr\certificate_print.html:139
 #, python-format
-#| msgid ""
-#| "\n"
-#| "                    Berildi ushbu ma'lumotnoma shu haqdadirki, <b>%(name)s</b> %(region)sdagi %(org_name)sning %(position)s vazifasida ishlaydi.\n"
-#| "                    "
 msgid ""
 "\n"
 "                Berildi ushbu ma'lumotnoma shu haqdadirki, <b>%(name)s</b> haqiqatan ham %(region)sdagi %(org_name)sning %(position)s vazifasida ishlaydi.\n"
 "                "
 msgstr ""
 "\n"
-"                This certificate confirms that <b>%(name)s</b> is currently employed as %(position)s at %(org_name)s in %(region)s.\n"
+"                This certificate confirms that <b>%(name)s</b> is employed at %(org_name)s in %(region)s as %(position)s.\n"
 "                "
 
 #: .\hr\templates\hr\certificate_print.html:143
 #, python-format
-#| msgid ""
-#| "\n"
-#| "                    Berildi ushbu ma'lumotnoma shu haqdadirki, <b>%(name)s</b> %(org_name)sning %(position)s vazifasida ishlaydi.\n"
-#| "                    "
 msgid ""
 "\n"
 "                Berildi ushbu ma'lumotnoma shu haqdadirki, <b>%(name)s</b> haqiqatan ham %(org_name)sning %(position)s vazifasida ishlaydi.\n"
 "                "
 msgstr ""
 "\n"
-"                This certificate confirms that <b>%(name)s</b> is currently employed as %(position)s at %(org_name)s.\n"
+"                This certificate confirms that <b>%(name)s</b> is employed at %(org_name)s as %(position)s.\n"
 "                "
 
 #: .\hr\templates\hr\certificate_print.html:149
@@ -750,15 +825,15 @@ msgstr "Unknown"
 
 #: .\hr\views.py:263
 msgid "Barcha maydonlarni to'ldiring va faylni yuklang."
-msgstr ""
+msgstr "Fill in all the fields and upload the file."
 
 #: .\hr\views.py:271
 msgid "Kasallik varaqangiz HR bo'limiga yuborildi. Kutib turing."
-msgstr ""
+msgstr "Your sick leave has been sent to HR. Hang on."
 
 #: .\hr\views.py:315
 msgid "Kasallik varaqasi rad etildi."
-msgstr ""
+msgstr "The sick leave was rejected."
 
 #: .\organization\models.py:8
 msgid "Tuman/Shahar nomi"
@@ -858,67 +933,67 @@ msgstr "Employees"
 
 #: .\templates\dashboard.html:16
 msgid "Welcome back"
-msgstr ""
+msgstr "Welcome back"
 
 #: .\templates\dashboard.html:18
 msgid "Overview of the entire academic system."
-msgstr ""
+msgstr "Overview of the entire academic system."
 
 #: .\templates\dashboard.html:20
 msgid "Here's what's happening in your academic workspace today."
-msgstr ""
+msgstr "Here's what's happening in your academic workspace today."
 
 #: .\templates\dashboard.html:41
 msgid "Avg System KPI"
-msgstr ""
+msgstr "Avg System KPI"
 
 #: .\templates\dashboard.html:41
 msgid "My KPI Score"
-msgstr ""
+msgstr "My KPI Score"
 
 #: .\templates\dashboard.html:63
 msgid "Completed Tasks (All)"
-msgstr ""
+msgstr "Completed Tasks (All)"
 
 #: .\templates\dashboard.html:63
 msgid "Completed Tasks"
-msgstr ""
+msgstr "Completed Tasks"
 
 #: .\templates\dashboard.html:68
 msgid "All time"
-msgstr ""
+msgstr "All time"
 
 #: .\templates\dashboard.html:79
 msgid "System Performance Analytics"
-msgstr ""
+msgstr "System Performance Analytics"
 
 #: .\templates\dashboard.html:79
 msgid "Performance Analytics"
-msgstr ""
+msgstr "Performance Analytics"
 
 #: .\templates\dashboard.html:89
 msgid "System Task Distribution"
-msgstr ""
+msgstr "System Task Distribution"
 
 #: .\templates\dashboard.html:89
 msgid "Task Distribution"
-msgstr ""
+msgstr "Task Distribution"
 
 #: .\templates\dashboard.html:103
 msgid "Pending Tasks"
-msgstr ""
+msgstr "Pending Tasks"
 
 #: .\templates\dashboard.html:119
 msgid "No pending tasks."
-msgstr ""
+msgstr "No pending tasks."
 
 #: .\templates\dashboard.html:145
 msgid "No recent observations."
-msgstr ""
+msgstr "No recent observations."
 
 #: .\templates\dashboard.html:158
 msgid "Latest Certificates"
-msgstr ""
+msgstr "Latest Certificates"
 
 #: .\templates\dashboard.html:158
 #, fuzzy
@@ -928,7 +1003,7 @@ msgstr "Certificate"
 
 #: .\templates\dashboard.html:179
 msgid "No certificates found."
-msgstr ""
+msgstr "No certificates found."
 
 #: .\users\admin.py:11
 msgid "Xodim faoliyati va shaxsiy tafsilotlari"
@@ -952,35 +1027,35 @@ msgstr "Users"
 
 #: .\users\templates\users\login.html:4
 msgid "Login - Academic OS"
-msgstr ""
+msgstr "Login - Academic OS"
 
 #: .\users\templates\users\login.html:16
 msgid "Sign in to your account"
-msgstr ""
+msgstr "Sign in to your account"
 
 #: .\users\templates\users\login.html:23
 msgid "Invalid username or password."
-msgstr ""
+msgstr "Invalid username or password."
 
 #: .\users\templates\users\login.html:28
 msgid "Username"
-msgstr ""
+msgstr "Username"
 
 #: .\users\templates\users\login.html:30
 msgid " Enter your username"
-msgstr ""
+msgstr "Enter your username"
 
 #: .\users\templates\users\login.html:34
 msgid "Password"
-msgstr ""
+msgstr "Password"
 
 #: .\users\templates\users\login.html:36
 msgid " Enter your password"
-msgstr ""
+msgstr "Enter your password"
 
 #: .\users\templates\users\login.html:39
 msgid "Sign In"
-msgstr ""
+msgstr "Sign In"
 
 #: .\users\templates\users\profile.html:4
 #, fuzzy
@@ -990,23 +1065,23 @@ msgstr "Employee Profile"
 
 #: .\users\templates\users\profile.html:36
 msgid "Member"
-msgstr ""
+msgstr "Member"
 
 #: .\users\templates\users\profile.html:49
 msgid "Contact Information"
-msgstr ""
+msgstr "Contact Information"
 
 #: .\users\templates\users\profile.html:56
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: .\users\templates\users\profile.html:66
 msgid "Phone"
-msgstr ""
+msgstr "Phone"
 
 #: .\users\templates\users\profile.html:76
 msgid "Address"
-msgstr ""
+msgstr "Address"
 
 #: .\users\templates\users\profile.html:97
 #, fuzzy
@@ -1016,174 +1091,174 @@ msgstr "Employee Profile"
 
 #: .\users\templates\users\profile.html:98
 msgid "Personal Details"
-msgstr ""
+msgstr "Personal Details"
 
 #: .\users\templates\users\profile.html:114
 msgid "User Information"
-msgstr ""
+msgstr "User Information"
 
 #: .\users\templates\users\profile.html:117
 msgid "First Name"
-msgstr ""
+msgstr "First Name"
 
 #: .\users\templates\users\profile.html:121
 msgid "Last Name"
-msgstr ""
+msgstr "Last Name"
 
 #: .\users\templates\users\profile.html:125
 msgid "Email Address"
-msgstr ""
+msgstr "Email Address"
 
 #: .\users\templates\users\profile.html:130
 msgid "Extended Profile"
-msgstr ""
+msgstr "Extended Profile"
 
 #: .\users\templates\users\profile.html:133
 msgid "Phone Number"
-msgstr ""
+msgstr "Phone Number"
 
 #: .\users\templates\users\profile.html:137
 msgid "Location / Address"
-msgstr ""
+msgstr "Location / Address"
 
 #: .\users\templates\users\profile.html:141
 msgid "Bio"
-msgstr ""
+msgstr "Bio"
 
 #: .\users\templates\users\profile.html:143
 msgid "Brief description about yourself."
-msgstr ""
+msgstr "Brief description about yourself."
 
 #: .\users\templates\users\profile.html:146
 msgid "Profile Picture"
-msgstr ""
+msgstr "Profile Picture"
 
 #: .\users\templates\users\profile.html:153
 msgid "Save Changes"
-msgstr ""
+msgstr "Save Changes"
 
 #: .\users\templates\users\profile.html:167
 msgid "Certificates & Awards"
-msgstr ""
+msgstr "Certificates & Awards"
 
 #: .\users\templates\users\profile.html:169
 msgid "Add"
-msgstr ""
+msgstr "Add"
 
 #: .\users\templates\users\profile.html:193
 msgid "Issued:"
-msgstr ""
+msgstr "Issued:"
 
 #: .\users\templates\users\profile.html:196
 msgid "Expires:"
-msgstr ""
+msgstr "Expires:"
 
 #: .\users\templates\users\profile.html:215
 msgid "No certificates yet."
-msgstr ""
+msgstr "No certificates yet."
 
 #: .\users\templates\users\profile.html:217
 msgid "Add first certificate"
-msgstr ""
+msgstr "Add first certificate"
 
 #: .\workflow\templates\workflow\task_detail.html:4
 msgid "Task Details"
-msgstr ""
+msgstr "Task Details"
 
 #: .\workflow\templates\workflow\task_detail.html:10
 msgid "Back to List"
-msgstr ""
+msgstr "Back to List"
 
 #: .\workflow\templates\workflow\task_detail.html:22
 msgid "High Priority"
-msgstr ""
+msgstr "High Priority"
 
 #: .\workflow\templates\workflow\task_detail.html:24
 msgid "Medium Priority"
-msgstr ""
+msgstr "Medium Priority"
 
 #: .\workflow\templates\workflow\task_detail.html:26
 msgid "Low Priority"
-msgstr ""
+msgstr "Low Priority"
 
 #: .\workflow\templates\workflow\task_detail.html:35
 #: .\workflow\templates\workflow\task_list.html:30
 msgid "Deadline"
-msgstr ""
+msgstr "Deadline"
 
 #: .\workflow\templates\workflow\task_detail.html:41
 msgid "No deadline"
-msgstr ""
+msgstr "No deadline"
 
 #: .\workflow\templates\workflow\task_detail.html:56
 msgid "Assignees"
-msgstr ""
+msgstr "Assignees"
 
 #: .\workflow\templates\workflow\task_detail.html:68
 #: .\workflow\templates\workflow\task_form.html:4
 msgid "Edit Task"
-msgstr ""
+msgstr "Edit Task"
 
 #: .\workflow\templates\workflow\task_detail.html:79
 msgid "Created By"
-msgstr ""
+msgstr "Created By"
 
 #: .\workflow\templates\workflow\task_detail.html:88
 msgid "Created At"
-msgstr ""
+msgstr "Created At"
 
 #: .\workflow\templates\workflow\task_detail.html:96
 msgid "Dependencies"
-msgstr ""
+msgstr "Dependencies"
 
 #: .\workflow\templates\workflow\task_form.html:4
 msgid "Create Task"
-msgstr ""
+msgstr "Create Task"
 
 #: .\workflow\templates\workflow\task_form.html:42
 msgid "Save Task"
-msgstr ""
+msgstr "Save Task"
 
 #: .\workflow\templates\workflow\task_list.html:10
 msgid "My Tasks"
-msgstr ""
+msgstr "My Tasks"
 
 #: .\workflow\templates\workflow\task_list.html:11
 msgid "Tasks assigned to you or created by you."
-msgstr ""
+msgstr "Tasks assigned to you or created by you."
 
 #: .\workflow\templates\workflow\task_list.html:14
 msgid "New Task"
-msgstr ""
+msgstr "New Task"
 
 #: .\workflow\templates\workflow\task_list.html:28
 msgid "Priority"
-msgstr ""
+msgstr "Priority"
 
 #: .\workflow\templates\workflow\task_list.html:48
 msgid "High"
-msgstr ""
+msgstr "High"
 
 #: .\workflow\templates\workflow\task_list.html:50
 msgid "Medium"
-msgstr ""
+msgstr "Medium"
 
 #: .\workflow\templates\workflow\task_list.html:52
 msgid "Low"
-msgstr ""
+msgstr "Low"
 
 #: .\workflow\templates\workflow\task_list.html:57
 msgid "Completed"
-msgstr ""
+msgstr "Completed"
 
 #: .\workflow\templates\workflow\task_list.html:59
 msgid "In Progress"
-msgstr ""
+msgstr "In Progress"
 
 #: .\workflow\templates\workflow\task_list.html:61
 msgid "Pending"
-msgstr ""
+msgstr "Pending"
 
 #: .\workflow\templates\workflow\task_list.html:86
 msgid "No tasks found. Click 'New Task' to get started!"
-msgstr ""
+msgstr "No tasks found. Click 'New Task' to get started!"

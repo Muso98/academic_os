@@ -62,11 +62,11 @@ class Certificate(UUIDModel):
     Replaces the JSON field in EmployeeProfile.
     """
     employee = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='certificates')
-    name = models.CharField(max_length=255, verbose_name="Sertifikat nomi", help_text="Masalan: IELTS 7.5, CEFR C1")
-    issuer = models.CharField(max_length=255, blank=True, verbose_name="Beruvchi tashkilot", help_text="Masalan: British Council")
-    date_issued = models.DateField(verbose_name="Berilgan sana")
-    expiry_date = models.DateField(null=True, blank=True, verbose_name="Amal qilish muddati")
-    file = models.FileField(upload_to='certificates/', blank=True, null=True, verbose_name="Sertifikat fayli (PDF/JPG)")
+    name = models.CharField(max_length=255, verbose_name=_("Sertifikat nomi"), help_text=_("Masalan: IELTS 7.5, CEFR C1"))
+    issuer = models.CharField(max_length=255, blank=True, verbose_name=_("Beruvchi tashkilot"), help_text=_("Masalan: British Council"))
+    date_issued = models.DateField(verbose_name=_("Berilgan sana"))
+    expiry_date = models.DateField(null=True, blank=True, verbose_name=_("Amal qilish muddati"))
+    file = models.FileField(upload_to='certificates/', blank=True, null=True, verbose_name=_("Sertifikat fayli (PDF/JPG)"))
     
     created_at = models.DateTimeField(auto_now_add=True)
     
